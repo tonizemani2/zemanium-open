@@ -35,7 +35,7 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 - [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal electricity cost, enhanced geothermal systems and superhot rock, written by an invention lab and free to reuse with credit.
 - [Zemanium: geothermal invention lab, open models and data](https://zemanium.com/): Zemanium is a geothermal invention lab. Run our power-cost model, read sourced guides to enhanced and superhot geothermal, and inspect our hardware drawings.
 - [Open geothermal models, data and drawings | Zemanium](https://zemanium.com/open/index.md): Everything Zemanium has published: the Project Red forecast record, a geothermal power-cost model, a 3D reservoir simulator, hardware drawings and guides.
-- [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, failed gates and downloadable records. Updated 20 November 2026.
+- [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, test gates and downloadable records. Updated 20 November 2026.
 
 ## Optional
 

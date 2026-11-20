@@ -40,7 +40,7 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 
 | Date | What | Where |
 |---|---|---|
-| 5 October 2026 | Power-cost model: 1,080 scenarios, with the failing cases shown | [Live model](https://zemanium.com/confidence/) |
+| 5 October 2026 | Power-cost model: 1,080 scenarios and a 2,000-draw financial stress test | [Live model](https://zemanium.com/confidence/) |
 | 5 October 2026 | Release demonstrator drawings and a commanded-release model that passes its full test in 6 of 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
 | 8 October 2026 | Sensor readout software: maximum temperature error cut from 131.178 K to 1.240 K on the same simulated signals | [Research](https://zemanium.com/room/#sensing) |
 | 19 November 2026 | Forecasts of the Project Red well pair registered and time-stamped. The model matches the Nevada regulator's record to 0.51 °F on nine steady months | [Forecast and audit record](https://github.com/tonizemani2/forecast-audit) |
