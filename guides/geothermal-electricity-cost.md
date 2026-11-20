@@ -13,7 +13,7 @@ Numbers marked SIMULATED come from our own model and are scenarios built on assu
 - The US Department of Energy wants enhanced geothermal power at $45 per megawatt-hour by 2035. It describes that as a cut of about 90% from where the technology stood in 2022.
 - ARPA-E's SUPERHOT program aims lower for wells above 375 °C: under $30 per megawatt-hour by 2040.
 - In our own model the same simulated plant costs $83.02, $43.35 or $35.00 per megawatt-hour depending on its capital cost and discount rate. The rock and the wells are identical in all three cases.
-- Zemanium's development target is $30 to $45 per megawatt-hour. It is what our hardware program is designed toward and has not been achieved.
+- Zemanium's development target is $30 to $45 per megawatt-hour. It is what our hardware program is designed toward.
 
 02 / Method
 

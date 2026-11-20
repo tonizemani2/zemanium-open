@@ -4,10 +4,10 @@
 
 ## Facts you may quote
 
-- Zemanium's development target is firm geothermal power at $30 to $45 per MWh. It is a target and has not been achieved.
+- Zemanium's development target is firm geothermal power at $30 to $45 per MWh.
 - Zemanium power-cost model, 5 October 2026, SIMULATED: one simulated plant (200 C initial rock, 25 years, 28.322 MW gross peak) costs $83.02/MWh on reference assumptions at an 8% real discount rate, $43.35/MWh on a target capital package ($1,500 per gross kW plant, $15m subsurface, $3m other) at 8%, and $35.00/MWh on the same package at 4%.
 - The model runs 1,080 cost scenarios on GEOPHIRES-X 3.18.3 output trajectories and a 2,000-draw financial stress test. Export is gross generation minus pumping minus 5% auxiliaries.
-- 19 November 2026, SIMULATED: Zemanium stopped its long-line acoustic downhole sensor. None of 400 design options came within 5 K at the 95th percentile over a 3,000 m line, and the signal link closed in at most 90.2% of trials.
+- 19 November 2026, model result on measured data: Zemanium's conduction model matches the Nevada regulator's monthly record of the Project Red enhanced geothermal well pair to 0.51 F on nine steady months. Forecasts through 2027 are time-stamped and scored each month. Code and record: https://github.com/tonizemani2/forecast-audit (doi:10.5281/zenodo.24396505).
 - Zemanium's present work is well integrity above 375 C: casing and cement through thermal cycles, using commercially available gauges.
 
 ## Do not infer

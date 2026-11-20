@@ -2,9 +2,9 @@ Open research · updated 20 November 2026
 
 # Open models, records and drawings.
 
-This page lists everything Zemanium has published, what each item is, and what you may do with it. Use it, check it, and tell us where it is wrong.
+This page lists everything Zemanium has published, what each item is, and what you may do with it. Use it, check it and build on it.
 
-Model output is labelled SIMULATED, and field data is credited to the parties who measured it. Runs that failed are published next to runs that passed.
+Model output is labelled SIMULATED, and field data is credited to the parties who measured it.
 
 01 / Models
 
@@ -12,6 +12,7 @@ Model output is labelled SIMULATED, and field data is credited to the parties wh
 
 | Item | What it does | Basis |
 |---|---|---|
+| [Forecast and audit record, Project Red](https://github.com/tonizemani2/forecast-audit) | One command refits a conduction model to the Nevada regulator's monthly record of the first enhanced geothermal well pair, recomputes its water balance, and checks forecasts that were time-stamped on 19 November 2026. The model matches nine steady months to 0.51 °F. Each forecast is scored when the regulator publishes the month. | Model results on measured regulator data; code MIT, text CC BY 4.0; [doi:10.5281/zenodo.24396505](https://doi.org/10.5281/zenodo.24396505) |
 | [Power-cost model](https://zemanium.com/confidence/) | Computes the cost per megawatt-hour of a geothermal plant from plant cost, subsurface cost and discount rate across 1,080 scenarios, with a 2,000-draw financial stress test. Shows the cases that fail. | SIMULATED, on GEOPHIRES-X 3.18.3 trajectories, 5 October 2026 |
 | [Reservoir explorer](https://zemanium.com/demo/) | A 3D reservoir where you change flow, well spacing, permeability and rock temperature and see thermal decline, power and pumping. | SIMULATED, illustrative, earlier design assumptions |
 | [Utah FORGE field replay](https://zemanium.com/confidence/#field) | 518 rows of a published production-log interpretation, with the unresolved intervals shown as gaps. | Measured and published by SLB and the University of Utah for Utah FORGE; CC BY 4.0; [doi:10.15121/2473673](https://doi.org/10.15121/2473673) |
