@@ -1,0 +1,509 @@
+{
+  "record_type": "ladder_reinforced",
+  "date": "2026-10-02",
+  "evidence": "SIMULATED (IAPWS-IF97 verified properties; assumption-class cost and stress inputs; no measured plant performance)",
+  "seed": 20261002,
+  "n_draws": 20000,
+  "boxes": {
+    "declared_box": {
+      "capital_multiplier": [
+        0.95,
+        1.15
+      ],
+      "energy_multiplier": [
+        0.9,
+        1.05
+      ],
+      "surface_price_multiplier": [
+        0.9,
+        1.15
+      ],
+      "subsurface_multiplier": [
+        0.85,
+        1.25
+      ],
+      "discount_rate": [
+        0.06,
+        0.1
+      ],
+      "capacity_factor": [
+        0.85,
+        0.95
+      ],
+      "extra_variable_om_usd_mwh": [
+        0.0,
+        3.0
+      ]
+    },
+    "contract_box": {
+      "capital_multiplier": [
+        0.95,
+        1.05
+      ],
+      "energy_multiplier": [
+        0.9,
+        1.05
+      ],
+      "surface_price_multiplier": [
+        0.9,
+        1.1
+      ],
+      "subsurface_multiplier": [
+        0.85,
+        1.15
+      ],
+      "discount_rate": [
+        0.055,
+        0.075
+      ],
+      "capacity_factor": [
+        0.85,
+        0.95
+      ],
+      "extra_variable_om_usd_mwh": [
+        0.0,
+        3.0
+      ]
+    }
+  },
+  "source_sha256": {
+    "tools/audit-thirty-mwh.py": "b4e6ddb970af34ec0670f6f63301ba27602abbadb11274a76b08232fd09b49c8",
+    "tools/stress-ladder.py": "4d5c3d1e4897990eefc2f04a33737a323ffbfc4c5a928bedb97f5bb05cf6a86b",
+    "software/power-block/cycle_select.py": "50fa230bbf141f61f2043874278e27c78b978eb7e1ac8e2c5201f199aea56f95",
+    "software/power-block/steam.py": "6deeb4e3b75e92228f58ccdee67af9c7aa7391fa2152f91e9a37a2a4958b135e"
+  },
+  "transcription_gate": {
+    "proxy_matches_coupled_to_1e-9": true,
+    "reference_lcoe": 29.801515451011966,
+    "proxy_lcoe": 29.801515451011966
+  },
+  "ratio_curves": {
+    "flash_binary": [
+      [
+        180.0,
+        0.8971,
+        0.6334
+      ],
+      [
+        195.24,
+        0.9045,
+        0.661
+      ],
+      [
+        210.48,
+        0.9161,
+        0.6879
+      ],
+      [
+        225.71,
+        0.9309,
+        0.7143
+      ],
+      [
+        240.95,
+        0.9464,
+        0.7408
+      ],
+      [
+        256.19,
+        0.9628,
+        0.768
+      ],
+      [
+        271.43,
+        0.9841,
+        0.7964
+      ],
+      [
+        286.67,
+        1.007,
+        0.8269
+      ],
+      [
+        301.9,
+        1.0341,
+        0.8604
+      ],
+      [
+        317.14,
+        1.0683,
+        0.8985
+      ],
+      [
+        332.38,
+        1.1072,
+        0.944
+      ],
+      [
+        347.62,
+        1.1487,
+        0.9979
+      ]
+    ],
+    "single_flash": [
+      [
+        180.0,
+        0.3272,
+        0.2771
+      ],
+      [
+        195.24,
+        0.3694,
+        0.3221
+      ],
+      [
+        210.48,
+        0.4095,
+        0.3637
+      ],
+      [
+        225.71,
+        0.4481,
+        0.4032
+      ],
+      [
+        240.95,
+        0.4862,
+        0.4414
+      ],
+      [
+        256.19,
+        0.5243,
+        0.4793
+      ],
+      [
+        271.43,
+        0.5633,
+        0.5175
+      ],
+      [
+        286.67,
+        0.6041,
+        0.5572
+      ],
+      [
+        301.9,
+        0.6479,
+        0.5995
+      ],
+      [
+        317.14,
+        0.6964,
+        0.6461
+      ],
+      [
+        332.38,
+        0.7528,
+        0.7
+      ],
+      [
+        347.62,
+        0.8235,
+        0.7672
+      ],
+      [
+        378.1,
+        0.9938,
+        0.9286
+      ],
+      [
+        393.33,
+        1.6052,
+        1.5052
+      ],
+      [
+        408.57,
+        1.7249,
+        1.6185
+      ],
+      [
+        423.81,
+        1.752,
+        1.6444
+      ],
+      [
+        439.05,
+        1.9459,
+        1.8264
+      ],
+      [
+        454.29,
+        1.9858,
+        1.8638
+      ],
+      [
+        469.52,
+        1.9543,
+        1.8343
+      ],
+      [
+        484.76,
+        1.9205,
+        1.8026
+      ],
+      [
+        500.0,
+        1.8859,
+        1.7702
+      ]
+    ]
+  },
+  "rows": {
+    "R5P_320c_allowance_realphysics": {
+      "declared_box": {
+        "nominal_lcoe_usd_mwh": 30.443378112536585,
+        "nominal_mean_net_mw": 47.53223243670756,
+        "nominal_gross_initial_mw": 60.893047694331955,
+        "nominal_capex_musd": 79.62376426666394,
+        "p05": 29.53909550617327,
+        "p50": 34.32255695441749,
+        "p95": 39.88885798986052,
+        "frac_le_30": 0.07145,
+        "frac_le_45": 0.99925,
+        "rank_corr": {
+          "capital_multiplier": 0.4312,
+          "energy_multiplier": -0.3341,
+          "surface_price_multiplier": 0.4183,
+          "subsurface_multiplier": 0.1839,
+          "discount_rate": 0.5667,
+          "capacity_factor": -0.2555,
+          "extra_variable_om_usd_mwh": 0.2756
+        }
+      },
+      "spec": {
+        "id": "R5P_320c_allowance_realphysics",
+        "rock_c": 320.0,
+        "subsurface_musd": 15.0,
+        "surface_usd_gross_kw": 1012.0,
+        "note": "the $30 row as specced, real conversion"
+      },
+      "contract_box": {
+        "nominal_lcoe_usd_mwh": 30.443378112536585,
+        "nominal_mean_net_mw": 47.53223243670756,
+        "nominal_gross_initial_mw": 60.893047694331955,
+        "nominal_capex_musd": 79.62376426666394,
+        "p05": 27.199304297604098,
+        "p50": 30.414220031715494,
+        "p95": 33.95736112376585,
+        "frac_le_30": 0.4166,
+        "frac_le_45": 1.0,
+        "rank_corr": {
+          "capital_multiplier": 0.294,
+          "energy_multiplier": -0.4601,
+          "surface_price_multiplier": 0.4516,
+          "subsurface_multiplier": 0.2043,
+          "discount_rate": 0.3765,
+          "capacity_factor": -0.3217,
+          "extra_variable_om_usd_mwh": 0.4198
+        }
+      }
+    },
+    "R5C_320c_combined_realcost": {
+      "declared_box": {
+        "nominal_lcoe_usd_mwh": 45.71915260912997,
+        "nominal_mean_net_mw": 47.53223243670756,
+        "nominal_gross_initial_mw": 60.893047694331955,
+        "nominal_capex_musd": 133.81857671461935,
+        "p05": 43.18024632526834,
+        "p50": 51.11543949945853,
+        "p95": 60.382267339855005,
+        "frac_le_30": 0.0,
+        "frac_le_45": 0.10985,
+        "rank_corr": {
+          "capital_multiplier": 0.4344,
+          "energy_multiplier": -0.338,
+          "surface_price_multiplier": 0.4775,
+          "subsurface_multiplier": 0.1067,
+          "discount_rate": 0.576,
+          "capacity_factor": -0.257,
+          "extra_variable_om_usd_mwh": 0.1707
+        }
+      },
+      "spec": {
+        "id": "R5C_320c_combined_realcost",
+        "rock_c": 320.0,
+        "subsurface_musd": 15.0,
+        "surface_usd_gross_kw": 1902.0,
+        "note": "reality-check row at combined stack cost"
+      },
+      "contract_box": {
+        "nominal_lcoe_usd_mwh": 45.71915260912997,
+        "nominal_mean_net_mw": 47.53223243670756,
+        "nominal_gross_initial_mw": 60.893047694331955,
+        "nominal_capex_musd": 133.81857671461935,
+        "p05": 39.52817430369417,
+        "p50": 44.61824407858151,
+        "p95": 50.35559497048371,
+        "frac_le_30": 0.0,
+        "frac_le_45": 0.5431,
+        "rank_corr": {
+          "capital_multiplier": 0.3055,
+          "energy_multiplier": -0.4823,
+          "surface_price_multiplier": 0.5355,
+          "subsurface_multiplier": 0.1324,
+          "discount_rate": 0.3952,
+          "capacity_factor": -0.335,
+          "extra_variable_om_usd_mwh": 0.2583
+        }
+      }
+    },
+    "R6S_500c_today_cost": {
+      "declared_box": {
+        "nominal_lcoe_usd_mwh": 37.1861743442884,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 439.7193156667568,
+        "p05": 35.32560072894417,
+        "p50": 41.62725613171664,
+        "p95": 49.00854322954666,
+        "frac_le_30": 0.0,
+        "frac_le_45": 0.77045,
+        "rank_corr": {
+          "capital_multiplier": 0.4194,
+          "energy_multiplier": -0.3268,
+          "surface_price_multiplier": 0.5039,
+          "subsurface_multiplier": 0.0429,
+          "discount_rate": 0.5713,
+          "capacity_factor": -0.2487,
+          "extra_variable_om_usd_mwh": 0.212
+        }
+      },
+      "spec": {
+        "id": "R6S_500c_today_cost",
+        "rock_c": 500.0,
+        "subsurface_musd": 25.0,
+        "surface_usd_gross_kw": 1800.0,
+        "note": "superhot at today cost class"
+      },
+      "contract_box": {
+        "nominal_lcoe_usd_mwh": 37.1861743442884,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 439.7193156667568,
+        "p05": 32.50778163592065,
+        "p50": 36.608268002057784,
+        "p95": 41.23847173343379,
+        "frac_le_30": 0.0019,
+        "frac_le_45": 0.9994,
+        "rank_corr": {
+          "capital_multiplier": 0.2925,
+          "energy_multiplier": -0.4606,
+          "surface_price_multiplier": 0.5547,
+          "subsurface_multiplier": 0.0647,
+          "discount_rate": 0.3852,
+          "capacity_factor": -0.32,
+          "extra_variable_om_usd_mwh": 0.3219
+        }
+      }
+    },
+    "R6T_500c_e3_target": {
+      "declared_box": {
+        "nominal_lcoe_usd_mwh": 31.11335506070107,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 348.2261344074775,
+        "p05": 29.894492120107635,
+        "p50": 34.95778281845248,
+        "p95": 40.84923657208644,
+        "frac_le_30": 0.05405,
+        "frac_le_45": 0.997,
+        "rank_corr": {
+          "capital_multiplier": 0.4164,
+          "energy_multiplier": -0.324,
+          "surface_price_multiplier": 0.4901,
+          "subsurface_multiplier": 0.0563,
+          "discount_rate": 0.5657,
+          "capacity_factor": -0.2471,
+          "extra_variable_om_usd_mwh": 0.2626
+        }
+      },
+      "spec": {
+        "id": "R6T_500c_e3_target",
+        "rock_c": 500.0,
+        "subsurface_musd": 25.0,
+        "surface_usd_gross_kw": 1400.0,
+        "note": "superhot at E3 target class"
+      },
+      "contract_box": {
+        "nominal_lcoe_usd_mwh": 31.11335506070107,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 348.2261344074775,
+        "p05": 27.60673262324139,
+        "p50": 30.971761760733653,
+        "p95": 34.736677104122954,
+        "frac_le_30": 0.3225,
+        "frac_le_45": 1.0,
+        "rank_corr": {
+          "capital_multiplier": 0.2859,
+          "energy_multiplier": -0.4485,
+          "surface_price_multiplier": 0.5281,
+          "subsurface_multiplier": 0.0763,
+          "discount_rate": 0.3742,
+          "capacity_factor": -0.3124,
+          "extra_variable_om_usd_mwh": 0.3983
+        }
+      }
+    },
+    "R6D_500c_design_2458": {
+      "declared_box": {
+        "nominal_lcoe_usd_mwh": 24.580519716382,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 249.80234466780783,
+        "p05": 24.078626365602766,
+        "p50": 27.799838012236666,
+        "p95": 32.20034883363066,
+        "frac_le_30": 0.8,
+        "frac_le_45": 1.0,
+        "rank_corr": {
+          "capital_multiplier": 0.4083,
+          "energy_multiplier": -0.3212,
+          "surface_price_multiplier": 0.4568,
+          "subsurface_multiplier": 0.0814,
+          "discount_rate": 0.5513,
+          "capacity_factor": -0.2199,
+          "extra_variable_om_usd_mwh": 0.3451
+        }
+      },
+      "spec": {
+        "id": "R6D_500c_design_2458",
+        "rock_c": 500.0,
+        "subsurface_musd": 25.0,
+        "surface_usd_gross_kw": 969.7,
+        "note": "superhot design point solved for the 80%-box rule"
+      },
+      "contract_box": {
+        "nominal_lcoe_usd_mwh": 24.580519716382,
+        "nominal_mean_net_mw": 205.1937228291527,
+        "nominal_gross_initial_mw": 228.73295314819822,
+        "nominal_capex_musd": 249.80234466780783,
+        "p05": 22.25859171335177,
+        "p50": 24.88486706378454,
+        "p95": 27.72586438679084,
+        "frac_le_30": 0.999,
+        "frac_le_45": 1.0,
+        "rank_corr": {
+          "capital_multiplier": 0.2595,
+          "energy_multiplier": -0.4131,
+          "surface_price_multiplier": 0.4795,
+          "subsurface_multiplier": 0.0831,
+          "discount_rate": 0.3611,
+          "capacity_factor": -0.3038,
+          "extra_variable_om_usd_mwh": 0.5275
+        }
+      }
+    }
+  },
+  "design_rule": {
+    "target_nominal_usd_mwh": 24.58,
+    "solved_surface_usd_per_gross_kw": 969.7,
+    "reading": "the nominal design that holds $30 across 80% of the declared box (LADDER-STRESS lever 1) at 500 C / $25m subsurface with real single-flash conversion"
+  },
+  "limits": [
+    "Different project definitions in one model; rows are not additive.",
+    "Superhot rows assume 294 kg/s deliverability at 500 C \u2014 unproven (IDDP-class wells delivered ~50 kg/s).",
+    "The x1.60 USD escalation and the cost stacks are assumption-class.",
+    "Contract box is a commercial structure, not an engineering result."
+  ]
+}

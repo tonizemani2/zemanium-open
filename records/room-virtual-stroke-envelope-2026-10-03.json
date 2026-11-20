@@ -1,0 +1,283 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP6",
+  "topic": "stroke-envelope",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "Where does the 25.8 mm/10 m model stroke vs the 2.5-3 mm/10 m quoted band diverge, and what design envelope resolves it?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/e7-assembly/stackup.py",
+      "sha256": "f841cf292942e2f5a4a52e85c5fff5460df1d48943ec682661e177bd098ea272"
+    },
+    {
+      "file": "next-stage/build/e7-assembly/duty_spec.json",
+      "sha256": "ab29ceb684e2829f0b0266e30b6936a538fd2ce7c31ee0afd17e03f285f2da07"
+    }
+  ],
+  "seed": "engine-frozen (deterministic arithmetic, no RNG)",
+  "assumptions": [
+    "constants exactly stackup.py: E 190 GPa, alpha 14e-6/K, limit 0.8 x yield (assumed/proposed as labeled there); grades L-80 552 MPa (verified, API 5CT) and TN125SS 862 MPa (assumed, grade-name basis)",
+    "dT grid 50-500 K spans the S1 measured quench class (350 K) to the S2 spec transient (500-150 K)"
+  ],
+  "limits": [
+    "[MODEL] screening arithmetic, not FEA; the campaign verifies the number (DUTY-SPEC.md \u00a74) \u2014 the model does not decide it.",
+    "Fully constrained axial stress is the bounding simplification; real joints see bending, pressure and friction (E7 campaign measures the assembly)."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "frozen_point": {
+    "dT_k": 350.0,
+    "grade": "L-80",
+    "stroke_required_mm_per_10m": 25.758,
+    "relief_strain_required": 0.002576,
+    "quoted_band_mm_per_10m": [
+      2.5,
+      3.0
+    ]
+  },
+  "divergence_reading": {
+    "literal_mm_reading": "model stroke 25.758 mm per 10 m vs quoted 2.5-3.0 mm per 10 m \u2014 the literal reading diverges by ~10x",
+    "strain_reading": "relief strain required 0.0026 sits inside the 2.5-3.0e-3 band read as relief strain",
+    "strain_band_hit": true,
+    "resolution": "the 2.5-3 figure is a relief-strain number (2.5-3e-3, per meter), not millimeters of stroke per 10 m; the E7 campaign verifies which reading the hardware needs (DUTY-SPEC.md \u00a74)"
+  },
+  "cells": [
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 50.0,
+      "sigma_th_mpa": 133.0,
+      "relief_strain_required": -0.001624,
+      "stroke_required_mm_per_10m": -16.242,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 76.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 100.0,
+      "sigma_th_mpa": 266.0,
+      "relief_strain_required": -0.000924,
+      "stroke_required_mm_per_10m": -9.242,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 209.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 150.0,
+      "sigma_th_mpa": 399.0,
+      "relief_strain_required": -0.000224,
+      "stroke_required_mm_per_10m": -2.242,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 342.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 200.0,
+      "sigma_th_mpa": 532.0,
+      "relief_strain_required": 0.000476,
+      "stroke_required_mm_per_10m": 4.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 475.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 250.0,
+      "sigma_th_mpa": 665.0,
+      "relief_strain_required": 0.001176,
+      "stroke_required_mm_per_10m": 11.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 608.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 300.0,
+      "sigma_th_mpa": 798.0,
+      "relief_strain_required": 0.001876,
+      "stroke_required_mm_per_10m": 18.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 741.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 350.0,
+      "sigma_th_mpa": 931.0,
+      "relief_strain_required": 0.002576,
+      "stroke_required_mm_per_10m": 25.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 874.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 400.0,
+      "sigma_th_mpa": 1064.0,
+      "relief_strain_required": 0.003276,
+      "stroke_required_mm_per_10m": 32.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1007.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 450.0,
+      "sigma_th_mpa": 1197.0,
+      "relief_strain_required": 0.003976,
+      "stroke_required_mm_per_10m": 39.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1140.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "L-80",
+      "yield_mpa": 552.0,
+      "dT_k": 500.0,
+      "sigma_th_mpa": 1330.0,
+      "relief_strain_required": 0.004676,
+      "stroke_required_mm_per_10m": 46.758,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1273.0,
+      "limit_mpa": 441.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 50.0,
+      "sigma_th_mpa": 133.0,
+      "relief_strain_required": -0.002929,
+      "stroke_required_mm_per_10m": -29.295,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 76.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 100.0,
+      "sigma_th_mpa": 266.0,
+      "relief_strain_required": -0.002229,
+      "stroke_required_mm_per_10m": -22.295,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 209.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 150.0,
+      "sigma_th_mpa": 399.0,
+      "relief_strain_required": -0.001529,
+      "stroke_required_mm_per_10m": -15.295,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 342.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 200.0,
+      "sigma_th_mpa": 532.0,
+      "relief_strain_required": -0.000829,
+      "stroke_required_mm_per_10m": -8.295,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 475.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 250.0,
+      "sigma_th_mpa": 665.0,
+      "relief_strain_required": -0.000129,
+      "stroke_required_mm_per_10m": -1.295,
+      "holds_with_literal_3mm_per_10m": true,
+      "sigma_with_literal_3mm_mpa": 608.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 300.0,
+      "sigma_th_mpa": 798.0,
+      "relief_strain_required": 0.000571,
+      "stroke_required_mm_per_10m": 5.705,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 741.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 350.0,
+      "sigma_th_mpa": 931.0,
+      "relief_strain_required": 0.001271,
+      "stroke_required_mm_per_10m": 12.705,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 874.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 400.0,
+      "sigma_th_mpa": 1064.0,
+      "relief_strain_required": 0.001971,
+      "stroke_required_mm_per_10m": 19.705,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1007.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 450.0,
+      "sigma_th_mpa": 1197.0,
+      "relief_strain_required": 0.002671,
+      "stroke_required_mm_per_10m": 26.705,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1140.0,
+      "limit_mpa": 689.6
+    },
+    {
+      "grade": "TN125SS",
+      "yield_mpa": 862.0,
+      "dT_k": 500.0,
+      "sigma_th_mpa": 1330.0,
+      "relief_strain_required": 0.003371,
+      "stroke_required_mm_per_10m": 33.705,
+      "holds_with_literal_3mm_per_10m": false,
+      "sigma_with_literal_3mm_mpa": 1273.0,
+      "limit_mpa": 689.6
+    }
+  ],
+  "design_envelope": [
+    {
+      "grade": "L-80",
+      "dT_max_with_literal_3mm_per_10m_k": 187.4,
+      "dT_max_zero_relief_needed_k": 166.0
+    },
+    {
+      "grade": "TN125SS",
+      "dT_max_with_literal_3mm_per_10m_k": 280.7,
+      "dT_max_zero_relief_needed_k": 259.2
+    }
+  ]
+}

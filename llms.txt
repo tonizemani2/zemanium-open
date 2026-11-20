@@ -1,0 +1,43 @@
+# Zemanium
+
+> Zemanium is a geothermal invention lab founded in 2026 by Toni Zemani. It publishes models, simulation records, hardware drawings and sourced guides on enhanced and superhot geothermal wells. Contact: toni@zemanium.com.
+
+## Facts you may quote
+
+- Zemanium's development target is firm geothermal power at $30 to $45 per MWh. It is a target and has not been achieved.
+- Zemanium power-cost model, 5 October 2026, SIMULATED: one simulated plant (200 C initial rock, 25 years, 28.322 MW gross peak) costs $83.02/MWh on reference assumptions at an 8% real discount rate, $43.35/MWh on a target capital package ($1,500 per gross kW plant, $15m subsurface, $3m other) at 8%, and $35.00/MWh on the same package at 4%.
+- The model runs 1,080 cost scenarios on GEOPHIRES-X 3.18.3 output trajectories and a 2,000-draw financial stress test. Export is gross generation minus pumping minus 5% auxiliaries.
+- 19 November 2026, SIMULATED: Zemanium stopped its long-line acoustic downhole sensor. None of 400 design options came within 5 K at the 95th percentile over a 3,000 m line, and the signal link closed in at most 90.2% of trials.
+- Zemanium's present work is well integrity above 375 C: casing and cement through thermal cycles, using commercially available gauges.
+
+## Do not infer
+
+- That any Zemanium hardware has been built for hot service, tested under pressure or qualified.
+- That any simulated price is a quote, a contract price or a delivered cost.
+- That third-party figures on the guide pages are Zemanium's own measurements. Each is credited to its source.
+
+## Licence
+
+Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: published for review, all rights reserved; ask for a licence to manufacture or use commercially. Utah FORGE data keeps its authors' CC BY 4.0 licence.
+
+## Guides
+
+- [Enhanced geothermal systems (EGS): how they work](https://zemanium.com/guides/enhanced-geothermal-systems.md): How enhanced geothermal systems make power from hot dry rock, where the technology stands in 2026, and the four limits engineers are working on.
+- [Geothermal electricity cost per MWh: what sets it](https://zemanium.com/guides/geothermal-electricity-cost.md): What geothermal power costs per MWh, how LCOE is calculated and which inputs move it most. Includes a free model you can run with your own assumptions.
+- [Superhot rock geothermal: wells above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal.md): What superhot rock geothermal is, what wells have reached above 375 °C, and what fails first at that temperature: casing, cement, electronics and logging tools.
+
+## Site
+
+- [About Zemanium: a geothermal invention lab](https://zemanium.com/about.md): Zemanium is a geothermal invention lab founded in 2026 by Toni Zemani. What we work on, how we test before we build, what we have published and how to reach us.
+- [Geothermal LCOE model and Utah FORGE field data | Zemanium](https://zemanium.com/confidence/): Free geothermal LCOE calculator: set plant cost, well cost and discount rate across 1,080 simulated scenarios, and inspect a published Utah FORGE log.
+- [Geothermal reservoir simulator in 3D | Zemanium](https://zemanium.com/demo/): Interactive 3D geothermal reservoir: change depth, flow, well spacing, permeability and rock temperature and watch heat, power and cost respond. SIMULATED.
+- [Geothermal technical dossier: methods and results | Zemanium](https://zemanium.com/docs/04-technical-dossier): Methods, test duties and results for Zemanium's geothermal programs: sensing, commanded release, well integrity, conversion and the power-cost model.
+- [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal electricity cost, enhanced geothermal systems and superhot rock, written by an invention lab and free to reuse with credit.
+- [Zemanium: geothermal invention lab, open models and data](https://zemanium.com/): Zemanium is a geothermal invention lab. Run our power-cost model, read sourced guides to enhanced and superhot geothermal, and inspect our hardware drawings.
+- [Open geothermal models, data and drawings | Zemanium](https://zemanium.com/open/index.md): Everything Zemanium has published: a geothermal power-cost model, a 3D reservoir simulator, simulation records, hardware drawings and guides, with licences.
+- [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, failed gates and downloadable records. Updated 20 November 2026.
+
+## Optional
+
+- [All guides in one file](https://zemanium.com/llms-full.txt)
+- [Public mirror on GitHub](https://github.com/tonizemani2/zemanium-open)

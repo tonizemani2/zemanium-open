@@ -1,0 +1,362 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP5",
+  "topic": "record-corpus",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "Does the witnessed-record validator reject every cheat in an adversarial corpus \u2014 and does it pass the compliant record?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/q-platform/record_validator.py",
+      "sha256": "94c226101bf6fb7844a2a21239eab1c221aa1bffb76b4189484bab9b5a9c0aca"
+    },
+    {
+      "file": "next-stage/build/q-platform/record-schema.json",
+      "sha256": "dc2c0fd2ddee22e6f34c1a49c9ddc4b3e1b7f458e8bf3d7baa5882c14e5c851a"
+    },
+    {
+      "file": "next-stage/qualification_platform.md",
+      "sha256": "4396678a9860b0db47536ffcce67c3eeb5a183d5b6e03dc6e7932244e5f8756c"
+    }
+  ],
+  "seed": "engine-frozen (no RNG in judge_record)",
+  "assumptions": [
+    "every cheat is one mutation of the compliant example record \u2014 the corpus proves the named contract catches the named cheat, nothing more"
+  ],
+  "limits": [
+    "The validator proves record integrity, not truth: a fabricated but internally consistent measurement with an independent witness passes \u2014 the witness, the raw-data hash and the lab are the control (IEEE 323 \u00a74.4).",
+    "Schema + platform laws only; no physics is validated by any record format."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "positive_control": "V5-0",
+  "corpus": [
+    {
+      "id": "V5-0",
+      "cheat": "positive control: the compliant example record",
+      "expected": {
+        "verdict": "PASS"
+      },
+      "observed_verdict": "PASS",
+      "observed_rejects": {},
+      "breaches": []
+    },
+    {
+      "id": "V5-1",
+      "cheat": "life claim 25x beyond tested cycles without the four-part rule",
+      "expected": {
+        "verdict": "REJECT",
+        "C6-four-part-extrapolation": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C2-label-law": "REJECT",
+        "C6-four-part-extrapolation": "REJECT"
+      },
+      "breaches": [
+        "C2-label-law: simulated record carries a life claim \u2014 analysis alone cannot demonstrate qualification (IEEE 323)",
+        "C6-four-part-extrapolation: extrapolation condition (1) missing: validated degradation model",
+        "C6-four-part-extrapolation: extrapolation condition (2) missing: measured degradation at >=2 temperatures",
+        "C6-four-part-extrapolation: extrapolation condition (3) missing: mechanism-consistent degradation signature",
+        "C6-four-part-extrapolation: extrapolation condition (3) missing: teardown confirmation of the same failure mode",
+        "C6-four-part-extrapolation: extrapolation condition (4) missing: declared margin"
+      ],
+      "redesign_levers": [
+        "life claim void; downgrade to tested duty-cycle rating or complete the four-part rule (Q-F2)",
+        "record void; re-run under a declared label (Q label law)"
+      ]
+    },
+    {
+      "id": "V5-2",
+      "cheat": "claim beyond tested x margin",
+      "expected": {
+        "verdict": "REJECT",
+        "C7-claim-bound": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C6-four-part-extrapolation": "REJECT",
+        "C7-claim-bound": "REJECT"
+      },
+      "breaches": [
+        "C6-four-part-extrapolation: extrapolation condition (1) missing: validated degradation model",
+        "C6-four-part-extrapolation: extrapolation condition (2) missing: measured degradation at >=2 temperatures",
+        "C6-four-part-extrapolation: extrapolation condition (3) missing: mechanism-consistent degradation signature",
+        "C6-four-part-extrapolation: extrapolation condition (3) missing: teardown confirmation of the same failure mode",
+        "C6-four-part-extrapolation: extrapolation condition (4) missing: declared margin",
+        "C7-claim-bound: claimed_cycles 150 exceeds tested_cycles 100 x margin_factor 1.0 = 100 (E7-F6)"
+      ],
+      "redesign_levers": [
+        "life claim void; downgrade to tested duty-cycle rating or complete the four-part rule (Q-F2)",
+        "record void and re-run (E7-F6)"
+      ]
+    },
+    {
+      "id": "V5-3",
+      "cheat": "margin factor below 1.0 shrinking tested duty",
+      "expected": {
+        "verdict": "REJECT",
+        "C7-claim-bound": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C7-claim-bound": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.claim.margin_factor: 0.5 below minimum 1.0",
+        "C7-claim-bound: margin_factor 0.5 below 1.0 \u2014 no validated margin can reduce tested duty"
+      ],
+      "redesign_levers": [
+        "record void and re-run (E7-F6)"
+      ]
+    },
+    {
+      "id": "V5-4",
+      "cheat": "extrapolation declared but no teardown confirmation",
+      "expected": {
+        "verdict": "REJECT",
+        "C6-four-part-extrapolation": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C2-label-law": "REJECT",
+        "C6-four-part-extrapolation": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.claim.accelerated_life: missing required key 'declared_margin'",
+        "C2-label-law: simulated record carries a life claim \u2014 analysis alone cannot demonstrate qualification (IEEE 323)",
+        "C6-four-part-extrapolation: extrapolation condition (3) missing: teardown confirmation of the same failure mode",
+        "C6-four-part-extrapolation: life claim without teardown \u2014 REJECT (qualification_platform.md \u00a73)",
+        "C6-four-part-extrapolation: extrapolation condition (4) missing: declared margin"
+      ],
+      "redesign_levers": [
+        "life claim void; downgrade to tested duty-cycle rating or complete the four-part rule (Q-F2)",
+        "record void; re-run under a declared label (Q label law)"
+      ]
+    },
+    {
+      "id": "V5-5",
+      "cheat": "sustained-hours summary inflated past the hold hours",
+      "expected": {
+        "verdict": "REJECT",
+        "C5-no-duty-laundering": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C5-no-duty-laundering": "REJECT"
+      },
+      "breaches": [
+        "C5-no-duty-laundering: sustained_hours_summary 520 exceeds summed hold hours 500 \u2014 duty laundering"
+      ],
+      "redesign_levers": [
+        "record void; sustained duty must be measured as sustained (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "id": "V5-6",
+      "cheat": "transient peak counted as sustained duty",
+      "expected": {
+        "verdict": "REJECT",
+        "C5-no-duty-laundering": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C5-no-duty-laundering": "REJECT"
+      },
+      "breaches": [
+        "C5-no-duty-laundering: duty entry 3: momentary/transient duty counted as sustained \u2014 duty laundering",
+        "C5-no-duty-laundering: sustained_hours_summary 502 exceeds summed hold hours 500 \u2014 duty laundering"
+      ],
+      "redesign_levers": [
+        "record void; sustained duty must be measured as sustained (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "id": "V5-7",
+      "cheat": "record label outside the contract vocabulary",
+      "expected": {
+        "verdict": "REJECT",
+        "C2-label-law": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C2-label-law": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.label: 'SIMULATED' not in enum ['measured', 'simulated', 'assumed', 'proposed', 'unknown', 'vendor-stated']",
+        "C2-label-law: record label 'SIMULATED' not in contract vocabulary"
+      ],
+      "redesign_levers": [
+        "record void; re-run under a declared label (Q label law)"
+      ]
+    },
+    {
+      "id": "V5-8",
+      "cheat": "simulated record merged into a measured table",
+      "expected": {
+        "verdict": "REJECT",
+        "C2-label-law": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C2-label-law": "REJECT"
+      },
+      "breaches": [
+        "C2-label-law: simulated record merged into a measured table (label law)"
+      ],
+      "redesign_levers": [
+        "record void; re-run under a declared label (Q label law)"
+      ]
+    },
+    {
+      "id": "V5-9",
+      "cheat": "witness block emptied",
+      "expected": {
+        "verdict": "REJECT",
+        "C3-witness": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C3-witness": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.witness: missing required key 'name'",
+        "C1-schema-valid: $.witness: missing required key 'organization'",
+        "C1-schema-valid: $.witness: missing required key 'independent'",
+        "C3-witness: witness name missing",
+        "C3-witness: witness organization missing",
+        "C3-witness: witness not independent of the qualifier (IEEE 323 \u00a74.4)"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-10",
+      "cheat": "witness not independent of the qualifier",
+      "expected": {
+        "verdict": "REJECT",
+        "C3-witness": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C3-witness": "REJECT"
+      },
+      "breaches": [
+        "C3-witness: witness not independent of the qualifier (IEEE 323 \u00a74.4)"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-11",
+      "cheat": "duty temperature without basis",
+      "expected": {
+        "verdict": "REJECT",
+        "C4-duty-basis": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C4-duty-basis": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.duty_state.entries[0].basis: string shorter than minLength 1",
+        "C4-duty-basis: duty entry 0: temperature without basis (duty-basis law)"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-12",
+      "cheat": "no raw-data references",
+      "expected": {
+        "verdict": "REJECT",
+        "C8-raw-data": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C8-raw-data": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.raw_data_refs: 0 items below minItems 1",
+        "C8-raw-data: no raw-data references \u2014 record not independently verifiable (Q-F5)"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-13",
+      "cheat": "malformed raw-data hash",
+      "expected": {
+        "verdict": "REJECT",
+        "C8-raw-data": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C8-raw-data": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.raw_data_refs[0].sha256: string does not match pattern '^[0-9a-f]{64}$'",
+        "C8-raw-data: raw-data ref 0: missing or malformed sha256"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-14",
+      "cheat": "no calibration certificates",
+      "expected": {
+        "verdict": "REJECT",
+        "C9-calibration": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C1-schema-valid": "REJECT",
+        "C9-calibration": "REJECT"
+      },
+      "breaches": [
+        "C1-schema-valid: $.calibration: 0 items below minItems 1",
+        "C9-calibration: no calibration certificates \u2014 record not qualified"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V5-15",
+      "cheat": "abnormal teardown without failure attribution",
+      "expected": {
+        "verdict": "REJECT",
+        "C10-teardown-attribution": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_rejects": {
+        "C10-teardown-attribution": "REJECT"
+      },
+      "breaches": [
+        "C10-teardown-attribution: abnormal teardown without failure attribution (leak-mode taxonomy) \u2014 record incomplete"
+      ],
+      "redesign_levers": []
+    }
+  ],
+  "cheats_rejected": 15,
+  "contracts_judged": [
+    "C1-schema-valid",
+    "C2-label-law",
+    "C3-witness",
+    "C4-duty-basis",
+    "C5-no-duty-laundering",
+    "C6-four-part-extrapolation",
+    "C7-claim-bound",
+    "C8-raw-data",
+    "C9-calibration",
+    "C10-teardown-attribution"
+  ],
+  "validator_gaps": [
+    "a fabricated but consistent measurement with an independent witness passes",
+    "the record format cannot judge whether the declared duty matches the field"
+  ]
+}

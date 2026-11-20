@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "Zemanium open geothermal research: guides, simulation records and a power-cost model"
+date-released: "2026-11-20"
+type: dataset
+url: "https://zemanium.com/open/"
+repository-code: "https://github.com/tonizemani2/zemanium-open"
+authors:
+  - family-names: Zemani
+    given-names: Toni
+abstract: >-
+  Sourced guides to geothermal electricity cost, enhanced geothermal systems
+  and superhot rock; eight simulation records in JSON; and a browser model of
+  the levelized cost of electricity of a geothermal plant across 1,080
+  scenarios. All model output is labelled SIMULATED.
+keywords:
+  - geothermal
+  - enhanced geothermal systems
+  - superhot rock
+  - levelized cost of electricity
+  - well integrity
+license: CC-BY-4.0

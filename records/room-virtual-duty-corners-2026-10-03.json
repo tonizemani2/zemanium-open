@@ -1,0 +1,410 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP7",
+  "topic": "duty-corners",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "What do the frozen gates do at duty-class corners nobody has run \u2014 DC-4 chemistry/quench corners and the DC-1 keystone boundary?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/e7-assembly/assembly_gate.py",
+      "sha256": "1c05c50f0413f6fa7f038d2948137010de79363a13ba8f71846f2dafe9791650"
+    },
+    {
+      "file": "next-stage/build/e9-loop/loop_gate.py",
+      "sha256": "a20e102d82ec3c4cc61785ffc188c26a5de48feab6bec6e6b7b7319764c98efe"
+    },
+    {
+      "file": "next-stage/build/q-platform/record_validator.py",
+      "sha256": "94c226101bf6fb7844a2a21239eab1c221aa1bffb76b4189484bab9b5a9c0aca"
+    },
+    {
+      "file": "next-stage/build/e7-assembly/duty_spec.json",
+      "sha256": "ab29ceb684e2829f0b0266e30b6936a538fd2ce7c31ee0afd17e03f285f2da07"
+    },
+    {
+      "file": "next-stage/build/e9-loop/task_set.json",
+      "sha256": "90e80211828a2d7db276bcc57b6ca55a95445478e8d5d10eb3564d65b001dff7"
+    },
+    {
+      "file": "next-stage/build/q-platform/duty_classes.json",
+      "sha256": "87bb6f0ee1da1f1647eab13f901cb4a4ea2e2f4910e307457b3aa6a39e3afd6d"
+    }
+  ],
+  "seed": "engine-frozen (no RNG in the gate checkers)",
+  "assumptions": [
+    "corner campaigns are synthetic duty declarations (label simulated/proposed) \u2014 the sweep proves decision-rule behavior at corners, it predicts no outcome",
+    "corners: hot leg 500 C (S2 spec) vs 535 C (S1 measured envelope, W1B-015), quench 5 vs 25 K/min (proposed ramp vs bounding class), the three frozen chemistry classes (acid condensate HCl/HF, CO2, H2S)"
+  ],
+  "limits": [
+    "Frozen thresholds are corner-invariant by construction; what corners change is the physics the campaign must survive \u2014 that is the physical campaign's job, with its own frozen predictions (P-rows).",
+    "Zero measured duty hours: nobody has run any of these corners (S6)."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "dc4_corners": [
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "acid_condensate_HCl_HF"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "CO2"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "H2S"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "acid_condensate_HCl_HF"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "CO2"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 500.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "H2S"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "acid_condensate_HCl_HF"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "CO2"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 5.0,
+        "chemistry_class": "H2S"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "acid_condensate_HCl_HF"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "CO2"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    },
+    {
+      "corner": {
+        "hot_c": 535.0,
+        "quench_k_per_min": 25.0,
+        "chemistry_class": "H2S"
+      },
+      "compliant_verdict": "PROCEED",
+      "laundered_verdict": "REJECT_INPUT",
+      "laundered_breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ]
+    }
+  ],
+  "dc4_corner_coverage_for_the_campaign": [
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "acid_condensate_HCl_HF",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "CO2",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "H2S",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "acid_condensate_HCl_HF",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "CO2",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 500.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "H2S",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "acid_condensate_HCl_HF",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "CO2",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 5.0,
+      "chemistry_class": "H2S",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "acid_condensate_HCl_HF",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "CO2",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "hot_c": 535.0,
+      "quench_k_per_min": 25.0,
+      "chemistry_class": "H2S",
+      "duty_basis_required": "(basis, duty state, hours) per DUTY-BASIS.md",
+      "checkpoints_required": [
+        1,
+        10,
+        25,
+        50,
+        75,
+        100
+      ]
+    }
+  ],
+  "dc1_keystone_boundary": {
+    "gate": "500 h @ 450 \u00b0C, \u00b15 \u00b0C held (duty_classes.json DC-1; P-E0-01 frozen prediction)",
+    "cases": [
+      {
+        "case": "error 4.99 C at the \u00b15 C gate",
+        "l5": "ok",
+        "verdict": "PROCEED"
+      },
+      {
+        "case": "error 5.01 C past the gate",
+        "l5": "BREACH",
+        "verdict": "DO_NOT_PROCEED"
+      },
+      {
+        "case": "499 h window, one hour short of the keystone",
+        "l5": "BREACH",
+        "verdict": "DO_NOT_PROCEED"
+      },
+      {
+        "case": "drift/fouling correction off",
+        "l5": "BREACH",
+        "verdict": "DO_NOT_PROCEED"
+      },
+      {
+        "case": "setpoint 449 C off the keystone point",
+        "l5": "BREACH",
+        "verdict": "DO_NOT_PROCEED"
+      }
+    ]
+  },
+  "dc1_record_at_corner": {
+    "verdict": "PASS",
+    "contracts": {
+      "C1-schema-valid": "ok",
+      "C2-label-law": "ok",
+      "C3-witness": "ok",
+      "C4-duty-basis": "ok",
+      "C5-no-duty-laundering": "ok",
+      "C6-four-part-extrapolation": "ok",
+      "C7-claim-bound": "ok",
+      "C8-raw-data": "ok",
+      "C9-calibration": "ok",
+      "C10-teardown-attribution": "ok"
+    }
+  }
+}

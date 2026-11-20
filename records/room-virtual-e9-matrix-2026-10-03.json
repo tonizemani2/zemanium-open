@@ -1,0 +1,389 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP3",
+  "topic": "e9-matrix",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "How sensitive is the E9 loop verdict to the declared safe-state deadlines, and does the gate refuse every silent-failure path?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/e9-loop/loop_gate.py",
+      "sha256": "a20e102d82ec3c4cc61785ffc188c26a5de48feab6bec6e6b7b7319764c98efe"
+    },
+    {
+      "file": "next-stage/build/e9-loop/task_set.json",
+      "sha256": "90e80211828a2d7db276bcc57b6ca55a95445478e8d5d10eb3564d65b001dff7"
+    }
+  ],
+  "seed": "engine-frozen (no RNG in judge_run)",
+  "assumptions": [
+    "runs are synthetic constructions (label simulated) exercising the gate's pass/breach paths \u2014 no bench has run",
+    "frozen deadlines are exactly task_set.json safe_state_times (30/5/30/10 s); the multiplier study shows the verdict rides on those frozen values"
+  ],
+  "limits": [
+    "The gate judges recorded evidence against the frozen task-set values only; no channel behavior in service is predicted (W2D-014).",
+    "Deadline values are pre-registration choices \u2014 changing them requires a new dated record (Stage B law), which the multiplier study makes visible."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "frozen_safe_state_deadlines_s": {
+    "sensor_drift": 30,
+    "fiber_break": 5,
+    "comms_loss": 30,
+    "stuck_actuator": 10
+  },
+  "scenarios": [
+    {
+      "id": "V3-1",
+      "scenario": "all faults reach their safe states inside the frozen deadlines",
+      "expected_verdict": "PROCEED",
+      "expected_contracts": {},
+      "observed_verdict": "PROCEED",
+      "observed_contracts": {},
+      "breaches": [],
+      "redesign_levers": []
+    },
+    {
+      "id": "V3-2",
+      "scenario": "sensor_drift safe state at 45 s against the frozen 30 s deadline",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "L3-safe-state-deadline": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "L3-safe-state-deadline": "BREACH"
+      },
+      "breaches": [
+        "L3-safe-state-deadline: sensor_drift: safe state reached in 45.0s > deadline 30s"
+      ],
+      "redesign_levers": [
+        "redesign; the failure map is published either way (E9 \u00a76)"
+      ]
+    },
+    {
+      "id": "V3-3",
+      "scenario": "fiber_break undetected (silent failure)",
+      "expected_verdict": "REJECT",
+      "expected_contracts": {
+        "L4-no-silent-failure": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_contracts": {
+        "L4-no-silent-failure": "REJECT"
+      },
+      "breaches": [
+        "L4-no-silent-failure: fiber_break: undetected \u2014 silent failure"
+      ],
+      "redesign_levers": [
+        "redesign; the failure map is published either way (E9 \u00a76)"
+      ]
+    },
+    {
+      "id": "V3-4",
+      "scenario": "comms_loss declared safe state never reached",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "L2-safe-state-reached": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "L2-safe-state-reached": "BREACH"
+      },
+      "breaches": [
+        "L2-safe-state-reached: comms_loss: declared safe state not reached"
+      ],
+      "redesign_levers": [
+        "redesign; the failure map is published either way (E9 \u00a76)"
+      ]
+    },
+    {
+      "id": "V3-5",
+      "scenario": "stuck_actuator never injected (coverage)",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "L7-fault-coverage": "INCOMPLETE"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "L7-fault-coverage": "INCOMPLETE"
+      },
+      "breaches": [
+        "L7-fault-coverage: faults not injected: ['stuck_actuator']"
+      ],
+      "redesign_levers": [
+        "record incomplete; inject every declared fault (E9-F2)"
+      ]
+    },
+    {
+      "id": "V3-6",
+      "scenario": "active downhole electronics declared in the hot zone (E9-F4)",
+      "expected_verdict": "REJECT",
+      "expected_contracts": {
+        "L6-duty-law-e9f4": "REJECT"
+      },
+      "observed_verdict": "REJECT",
+      "observed_contracts": {
+        "L6-duty-law-e9f4": "REJECT"
+      },
+      "breaches": [
+        "L6-duty-law-e9f4: channel mud_pulsed_tool: active downhole electronics in the hot zone \u2014 record void (E9-F4)"
+      ],
+      "redesign_levers": [
+        "the record is void (E9-F4)"
+      ]
+    },
+    {
+      "id": "V3-7",
+      "scenario": "run label outside the contract vocabulary",
+      "expected_verdict": "REJECT_INPUT",
+      "expected_contracts": {
+        "L8-input-labeled": "REJECT"
+      },
+      "observed_verdict": "REJECT_INPUT",
+      "observed_contracts": {
+        "L1-completion-vs-baseline": "not-judged",
+        "L2-safe-state-reached": "not-judged",
+        "L3-safe-state-deadline": "not-judged",
+        "L4-no-silent-failure": "not-judged",
+        "L5-accuracy-e9f3": "not-judged",
+        "L6-duty-law-e9f4": "not-judged",
+        "L7-fault-coverage": "not-judged",
+        "L8-input-labeled": "REJECT"
+      },
+      "breaches": [
+        "L8-input-labeled: run label 'sim' missing or non-contract \u2014 refusing record"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V3-8",
+      "scenario": "6.2 C max error against the \u00b15 C E9-F3 gate",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "L5-accuracy-e9f3": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "L5-accuracy-e9f3": "BREACH"
+      },
+      "breaches": [
+        "L5-accuracy-e9f3: max_abs_error_c 6.2 exceeds \u00b15 \u00b0C gate"
+      ],
+      "redesign_levers": [
+        "the sensing claim drops to monitoring-grade and H9 fails (E9 \u00a76)"
+      ]
+    },
+    {
+      "id": "V3-9",
+      "scenario": "loop completion below the existing-control baseline (E9-F1)",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "L1-completion-vs-baseline": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "L1-completion-vs-baseline": "BREACH"
+      },
+      "breaches": [
+        "L1-completion-vs-baseline: T2: loop completion 0.85 below baseline 0.9"
+      ],
+      "redesign_levers": [
+        "the architecture adds no control value; sell instruments only (E9 \u00a76)"
+      ]
+    }
+  ],
+  "deadline_sensitivity": [
+    {
+      "fault": "sensor_drift",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 15.0,
+      "ratio_to_deadline": 0.5,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "sensor_drift",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 27.0,
+      "ratio_to_deadline": 0.9,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "sensor_drift",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 30.0,
+      "ratio_to_deadline": 1.0,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "sensor_drift",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 30.3,
+      "ratio_to_deadline": 1.01,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "sensor_drift",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 45.0,
+      "ratio_to_deadline": 1.5,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "fiber_break",
+      "frozen_deadline_s": 5,
+      "safe_state_time_s": 2.5,
+      "ratio_to_deadline": 0.5,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "fiber_break",
+      "frozen_deadline_s": 5,
+      "safe_state_time_s": 4.5,
+      "ratio_to_deadline": 0.9,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "fiber_break",
+      "frozen_deadline_s": 5,
+      "safe_state_time_s": 5.0,
+      "ratio_to_deadline": 1.0,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "fiber_break",
+      "frozen_deadline_s": 5,
+      "safe_state_time_s": 5.05,
+      "ratio_to_deadline": 1.01,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "fiber_break",
+      "frozen_deadline_s": 5,
+      "safe_state_time_s": 7.5,
+      "ratio_to_deadline": 1.5,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "comms_loss",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 15.0,
+      "ratio_to_deadline": 0.5,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "comms_loss",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 27.0,
+      "ratio_to_deadline": 0.9,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "comms_loss",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 30.0,
+      "ratio_to_deadline": 1.0,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "comms_loss",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 30.3,
+      "ratio_to_deadline": 1.01,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "comms_loss",
+      "frozen_deadline_s": 30,
+      "safe_state_time_s": 45.0,
+      "ratio_to_deadline": 1.5,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "stuck_actuator",
+      "frozen_deadline_s": 10,
+      "safe_state_time_s": 5.0,
+      "ratio_to_deadline": 0.5,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "stuck_actuator",
+      "frozen_deadline_s": 10,
+      "safe_state_time_s": 9.0,
+      "ratio_to_deadline": 0.9,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "stuck_actuator",
+      "frozen_deadline_s": 10,
+      "safe_state_time_s": 10.0,
+      "ratio_to_deadline": 1.0,
+      "l3": "ok",
+      "verdict": "PROCEED"
+    },
+    {
+      "fault": "stuck_actuator",
+      "frozen_deadline_s": 10,
+      "safe_state_time_s": 10.1,
+      "ratio_to_deadline": 1.01,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    },
+    {
+      "fault": "stuck_actuator",
+      "frozen_deadline_s": 10,
+      "safe_state_time_s": 15.0,
+      "ratio_to_deadline": 1.5,
+      "l3": "BREACH",
+      "verdict": "DO_NOT_PROCEED"
+    }
+  ],
+  "frozen_deadline_multiplier_study": [
+    {
+      "deadline_multiplier": 0.5,
+      "verdict": "DO_NOT_PROCEED",
+      "l3": "BREACH"
+    },
+    {
+      "deadline_multiplier": 1.0,
+      "verdict": "PROCEED",
+      "l3": "ok"
+    },
+    {
+      "deadline_multiplier": 2.0,
+      "verdict": "PROCEED",
+      "l3": "ok"
+    }
+  ],
+  "contracts_judged": [
+    "L1-completion-vs-baseline",
+    "L2-safe-state-reached",
+    "L3-safe-state-deadline",
+    "L4-no-silent-failure",
+    "L5-accuracy-e9f3",
+    "L6-duty-law-e9f4",
+    "L7-fault-coverage",
+    "L8-input-labeled"
+  ]
+}

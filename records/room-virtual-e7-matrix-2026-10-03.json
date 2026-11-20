@@ -1,0 +1,344 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP2",
+  "topic": "e7-matrix",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "What can the E7 assembly gate catch, and what is outside its reach, across the campaign failure modes?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/e7-assembly/assembly_gate.py",
+      "sha256": "1c05c50f0413f6fa7f038d2948137010de79363a13ba8f71846f2dafe9791650"
+    },
+    {
+      "file": "next-stage/build/e7-assembly/duty_spec.json",
+      "sha256": "ab29ceb684e2829f0b0266e30b6936a538fd2ce7c31ee0afd17e03f285f2da07"
+    }
+  ],
+  "seed": "engine-frozen (no RNG in judge_campaign)",
+  "assumptions": [
+    "campaigns are synthetic constructions (label simulated) exercising the gate's pass/breach paths \u2014 no physical run, no outcome prediction",
+    "frozen thresholds are exactly duty_spec.json (leak 0.5 ml/min, growth 0.1 ml/min, strength 0.90, retained stroke 0.90, zero lockup, cost ratio 1.0)"
+  ],
+  "limits": [
+    "The gate judges recorded numbers against frozen thresholds; it cannot detect a wrong-but-consistent measurement \u2014 witness independence (Q-platform) and raw-data hashes are the control for that.",
+    "Gate coverage is not campaign coverage: six checkpoints bound 100 cycles, the campaign defines what the rating is worth, not field life (E7-F6)."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "scenarios": [
+    {
+      "id": "V2-1",
+      "scenario": "all specimens within every frozen gate",
+      "expected_verdict": "PROCEED",
+      "expected_contracts": {},
+      "observed_verdict": "PROCEED",
+      "observed_contracts": {},
+      "breaches": [],
+      "redesign_levers": []
+    },
+    {
+      "id": "V2-2",
+      "scenario": "one checkpoint leak above 0.5 ml/min",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A3-E7-F1-leak-gate": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A3-E7-F1-leak-gate": "BREACH"
+      },
+      "breaches": [
+        "A3-E7-F1-leak-gate: S-A \u2014 checkpoint cycle 50: leak 0.52 ml/min above leak_max_ml_min 0.5"
+      ],
+      "redesign_levers": [
+        "stack redesign (E7 \u00a76); two consecutive breaches \u2192 stop"
+      ]
+    },
+    {
+      "id": "V2-3",
+      "scenario": "leak growth beyond the 0.1 ml/min band at consecutive checkpoints (stop rule)",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A4-E7-F1-growth-and-stop": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A4-E7-F1-growth-and-stop": "BREACH"
+      },
+      "breaches": [
+        "A4-E7-F1-growth-and-stop: S-A \u2014 checkpoint cycle 25: leak growth 0.110 ml/min beyond growth_band_ml_min 0.1; checkpoint cycle 50: leak growth 0.150 ml/min beyond growth_band_ml_min 0.1; two consecutive breached checkpoints \u2014 STOP (E7 \u00a76)"
+      ],
+      "redesign_levers": [
+        "stack redesign (E7 \u00a76); two consecutive breaches \u2192 stop"
+      ]
+    },
+    {
+      "id": "V2-4",
+      "scenario": "one lockup event",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A7-E7-F3-zero-lockup": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A7-E7-F3-zero-lockup": "BREACH"
+      },
+      "breaches": [
+        "A7-E7-F3-zero-lockup: S-A \u2014 1 lockup event(s) above max_lockup_events 0"
+      ],
+      "redesign_levers": [
+        "the joint is not the lever (E7 \u00a76)"
+      ]
+    },
+    {
+      "id": "V2-5",
+      "scenario": "strength retention 0.85 below the 0.90 minimum",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A5-E7-F2-strength-retention": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A5-E7-F2-strength-retention": "BREACH"
+      },
+      "breaches": [
+        "A5-E7-F2-strength-retention: S-A \u2014 strength_retention 0.85 below min_strength_retention 0.9"
+      ],
+      "redesign_levers": [
+        "the assembly does not qualify; the answer is operational transient management (E7 \u00a76)"
+      ]
+    },
+    {
+      "id": "V2-6",
+      "scenario": "520 h claimed at duty against 500 h of hold (duty laundering)",
+      "expected_verdict": "REJECT_INPUT",
+      "expected_contracts": {
+        "A2-no-duty-laundering": "REJECT"
+      },
+      "observed_verdict": "REJECT_INPUT",
+      "observed_contracts": {
+        "A2-no-duty-laundering": "REJECT",
+        "A3-E7-F1-leak-gate": "not-judged",
+        "A4-E7-F1-growth-and-stop": "not-judged",
+        "A5-E7-F2-strength-retention": "not-judged",
+        "A6-E7-F3-retained-stroke": "not-judged",
+        "A7-E7-F3-zero-lockup": "not-judged",
+        "A8-E7-F5-fair-comparison": "not-judged",
+        "A9-checkpoint-coverage": "not-judged",
+        "A10-teardown-attribution": "not-judged",
+        "A11-E7-F6-life-claim-bound": "not-judged"
+      },
+      "breaches": [
+        "A2-no-duty-laundering: specimen S-A: continuous_hours_at_duty 520 exceeds summed hold hours 500 \u2014 duty laundering, record refused"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V2-7",
+      "scenario": "momentary quench peak recorded as continuous (duty laundering)",
+      "expected_verdict": "REJECT_INPUT",
+      "expected_contracts": {
+        "A2-no-duty-laundering": "REJECT"
+      },
+      "observed_verdict": "REJECT_INPUT",
+      "observed_contracts": {
+        "A2-no-duty-laundering": "REJECT",
+        "A3-E7-F1-leak-gate": "not-judged",
+        "A4-E7-F1-growth-and-stop": "not-judged",
+        "A5-E7-F2-strength-retention": "not-judged",
+        "A6-E7-F3-retained-stroke": "not-judged",
+        "A7-E7-F3-zero-lockup": "not-judged",
+        "A8-E7-F5-fair-comparison": "not-judged",
+        "A9-checkpoint-coverage": "not-judged",
+        "A10-teardown-attribution": "not-judged",
+        "A11-E7-F6-life-claim-bound": "not-judged"
+      },
+      "breaches": [
+        "A2-no-duty-laundering: duty state 2: momentary peak recorded as continuous \u2014 duty laundering, record refused (DUTY-BASIS.md)"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V2-8",
+      "scenario": "unlabeled specimen",
+      "expected_verdict": "REJECT_INPUT",
+      "expected_contracts": {
+        "A1-input-labeled": "REJECT"
+      },
+      "observed_verdict": "REJECT_INPUT",
+      "observed_contracts": {
+        "A1-input-labeled": "REJECT",
+        "A3-E7-F1-leak-gate": "not-judged",
+        "A4-E7-F1-growth-and-stop": "not-judged",
+        "A5-E7-F2-strength-retention": "not-judged",
+        "A6-E7-F3-retained-stroke": "not-judged",
+        "A7-E7-F3-zero-lockup": "not-judged",
+        "A8-E7-F5-fair-comparison": "not-judged",
+        "A9-checkpoint-coverage": "not-judged",
+        "A10-teardown-attribution": "not-judged",
+        "A11-E7-F6-life-claim-bound": "not-judged"
+      },
+      "breaches": [
+        "A1-input-labeled: specimen S-A: unlabeled \u2014 refusing record"
+      ],
+      "redesign_levers": []
+    },
+    {
+      "id": "V2-9",
+      "scenario": "life claim 2500 cycles from 100 tested at margin 25 (E7-F6 bound)",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A11-E7-F6-life-claim-bound": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A11-E7-F6-life-claim-bound": "BREACH"
+      },
+      "breaches": [
+        "A11-E7-F6-life-claim-bound: S-A \u2014 life_claim extrapolation without the four-part rule \u2014 record void (E7-F6)"
+      ],
+      "redesign_levers": [
+        "the record is void and re-run (E7-F6)"
+      ]
+    },
+    {
+      "id": "V2-10",
+      "scenario": "cost per qualified cycle above the baseline ratio",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A8-E7-F5-fair-comparison": "BREACH"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A8-E7-F5-fair-comparison": "BREACH"
+      },
+      "breaches": [
+        "A8-E7-F5-fair-comparison: cost_per_qualified_cycle ratio 1.075 above max_ratio_vs_baseline 1.0"
+      ],
+      "redesign_levers": [
+        "buy the baseline and sell the rating service only (E7 \u00a76)"
+      ]
+    },
+    {
+      "id": "V2-11",
+      "scenario": "cycle-25 checkpoint missing (coverage)",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A9-checkpoint-coverage": "INCOMPLETE"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A9-checkpoint-coverage": "INCOMPLETE"
+      },
+      "breaches": [
+        "A9-checkpoint-coverage: S-A \u2014 missing checkpoints at cycles [25] (E7-F1 coverage)"
+      ],
+      "redesign_levers": [
+        "record incomplete; re-run the missing checkpoints (E7-F1)"
+      ]
+    },
+    {
+      "id": "V2-12",
+      "scenario": "abnormal teardown without failure attribution",
+      "expected_verdict": "DO_NOT_PROCEED",
+      "expected_contracts": {
+        "A10-teardown-attribution": "INCOMPLETE"
+      },
+      "observed_verdict": "DO_NOT_PROCEED",
+      "observed_contracts": {
+        "A10-teardown-attribution": "INCOMPLETE"
+      },
+      "breaches": [
+        "A10-teardown-attribution: S-A \u2014 abnormal teardown without failure attribution"
+      ],
+      "redesign_levers": [
+        "record incomplete; complete the leak-mode taxonomy attribution (E5 inheritance)"
+      ]
+    }
+  ],
+  "coverage_matrix": {
+    "A3-E7-F1-leak-gate": [
+      "V2-2",
+      "V2-6",
+      "V2-7",
+      "V2-8"
+    ],
+    "A4-E7-F1-growth-and-stop": [
+      "V2-3",
+      "V2-6",
+      "V2-7",
+      "V2-8"
+    ],
+    "A7-E7-F3-zero-lockup": [
+      "V2-4",
+      "V2-6",
+      "V2-7",
+      "V2-8"
+    ],
+    "A5-E7-F2-strength-retention": [
+      "V2-5",
+      "V2-6",
+      "V2-7",
+      "V2-8"
+    ],
+    "A2-no-duty-laundering": [
+      "V2-6",
+      "V2-7"
+    ],
+    "A6-E7-F3-retained-stroke": [
+      "V2-6",
+      "V2-7",
+      "V2-8"
+    ],
+    "A8-E7-F5-fair-comparison": [
+      "V2-6",
+      "V2-7",
+      "V2-8",
+      "V2-10"
+    ],
+    "A9-checkpoint-coverage": [
+      "V2-6",
+      "V2-7",
+      "V2-8",
+      "V2-11"
+    ],
+    "A10-teardown-attribution": [
+      "V2-6",
+      "V2-7",
+      "V2-8",
+      "V2-12"
+    ],
+    "A11-E7-F6-life-claim-bound": [
+      "V2-6",
+      "V2-7",
+      "V2-8",
+      "V2-9"
+    ],
+    "A1-input-labeled": [
+      "V2-8"
+    ]
+  },
+  "contracts_judged": [
+    "A1-input-labeled",
+    "A2-no-duty-laundering",
+    "A3-E7-F1-leak-gate",
+    "A4-E7-F1-growth-and-stop",
+    "A5-E7-F2-strength-retention",
+    "A6-E7-F3-retained-stroke",
+    "A7-E7-F3-zero-lockup",
+    "A8-E7-F5-fair-comparison",
+    "A9-checkpoint-coverage",
+    "A10-teardown-attribution",
+    "A11-E7-F6-life-claim-bound"
+  ],
+  "what_the_gate_cannot_catch": [
+    "fabricated but internally consistent measurements (witness + raw-data hashes are the control)",
+    "physics between checkpoints (six checkpoints over 100 cycles)",
+    "field life beyond the tested cycles x validated margin (E7-F6 law)"
+  ]
+}

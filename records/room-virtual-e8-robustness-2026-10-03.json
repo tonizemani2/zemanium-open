@@ -1,0 +1,213 @@
+{
+  "record_type": "room_virtual_push",
+  "push": "VP4",
+  "topic": "e8-robustness",
+  "date": "2026-10-03",
+  "label": "SIMULATED",
+  "question": "Is the E8 INDETERMINATE verdict robust, or an artifact of the assumed input ranges?",
+  "judged_by": [
+    {
+      "file": "next-stage/build/e8-cost-case/well_cost_case.py",
+      "sha256": "d550c2435cdf340e51c85db84e0c6bb632fb0eae0ec616bd00b7e9b7cc186781"
+    },
+    {
+      "file": "next-stage/build/e8-cost-case/INPUTS.md",
+      "sha256": "033f9d7c750f5ec576a718de2b314eb3ac0c15b1283dc6bd1696c68d60111b3b"
+    }
+  ],
+  "seed": 20261002,
+  "assumptions": [
+    "wider variant widens every declared range by \u00b125% of its span (assumption-class perturbation, labels and sources carried over unchanged)",
+    "leave-one-anchor-out replaces one measured/ceiling anchor with an assumed band of its own surrounding evidence; the engine's labels/sources are replaced with the variant note",
+    "2000 draws per variant, engine seed 20261002 \u2014 deterministic (W2)"
+  ],
+  "limits": [
+    "Every variant is still desk arithmetic over assumption ranges on a 6,000 m S2 spec well that nobody has drilled; zero measured duty hours (S6).",
+    "STABLE would name a limiter under declared ranges only \u2014 not a cost promise; the RFQ (HUMAN-QUEUE item 9) is the measurement that moves these numbers."
+  ],
+  "house_rules": [
+    "pump/treatment electricity stays separate from recovered output",
+    "redistributed flow is never counted as new heat",
+    "box fractions are never probabilities (CLAIM-TRACE S1)",
+    "analysis alone is not qualification \u2014 zero measured duty hours (IEEE Std 323)"
+  ],
+  "stability_threshold": 0.9,
+  "variants": [
+    {
+      "id": "V4-0",
+      "variant": "desk baseline (engine defaults, engine seed 20261002)",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.649,
+      "ranking": [
+        "losses",
+        "trips",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.0,
+        "cuttings": 0.019,
+        "losses": 0.649,
+        "trips": 0.3315,
+        "energy": 0.0005
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    },
+    {
+      "id": "V4-1",
+      "variant": "all declared ranges widened \u00b125% of span",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.532,
+      "ranking": [
+        "losses",
+        "trips",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.0025,
+        "cuttings": 0.0855,
+        "losses": 0.532,
+        "trips": 0.361,
+        "energy": 0.019
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    },
+    {
+      "id": "V4-2",
+      "variant": "weight perturbation 0.20 -> 0.35",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.631,
+      "ranking": [
+        "losses",
+        "trips",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.0005,
+        "cuttings": 0.034,
+        "losses": 0.631,
+        "trips": 0.331,
+        "energy": 0.0035
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    },
+    {
+      "id": "V4-3",
+      "variant": "leave bit_on_bottom anchor out (W1B-031 ~50%)",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.6175,
+      "ranking": [
+        "losses",
+        "trips",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.0005,
+        "cuttings": 0.0395,
+        "losses": 0.6175,
+        "trips": 0.342,
+        "energy": 0.0005
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    },
+    {
+      "id": "V4-4",
+      "variant": "leave loss_event_hours anchor out (W1B-024 197 h)",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.665,
+      "ranking": [
+        "trips",
+        "losses",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.005,
+        "cuttings": 0.081,
+        "losses": 0.2385,
+        "trips": 0.665,
+        "energy": 0.0105
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    },
+    {
+      "id": "V4-5",
+      "variant": "leave fishing-fraction ceiling out (W1B-031 20%)",
+      "verdict": "INDETERMINATE",
+      "top_term": null,
+      "top_share": 0.524,
+      "ranking": [
+        "trips",
+        "losses",
+        "cuttings",
+        "energy",
+        "steering"
+      ],
+      "process_top_shares": {
+        "steering": 0.0,
+        "cuttings": 0.0135,
+        "losses": 0.4625,
+        "trips": 0.524,
+        "energy": 0.0
+      },
+      "contracts": {
+        "W1-declared-inputs": "ok",
+        "W2-deterministic": "ok",
+        "W3-e8f1-stability": "ok",
+        "W4-indeterminate": "ok",
+        "W5-no-invented-maturity": "ok"
+      }
+    }
+  ],
+  "reading": "INDETERMINATE is robust across the declared variants: no variant names a stable top limiter at the 0.90 threshold \u2014 the case cannot name a lever, and we stop claiming one (E8-F1)",
+  "contracts_judged": [
+    "W1-declared-inputs",
+    "W2-deterministic",
+    "W3-e8f1-stability",
+    "W4-indeterminate",
+    "W5-no-invented-maturity"
+  ]
+}

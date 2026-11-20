@@ -1,0 +1,550 @@
+About
+
+# About Zemanium.
+
+Zemanium is a geothermal invention lab. We design the instruments, well hardware and models that hot wells need, test them in simulation against rules we fix beforehand, and publish what comes out.
+
+01 / Facts
+
+## The basics.
+
+| Name | Zemanium (zeh-MAY-nee-um) |
+|---|---|
+| Founded | 2026 |
+| Founder | Toni Zemani |
+| Field | Enhanced and superhot geothermal: well integrity, flow control, sensing, power conversion and cost modelling |
+| Stage | Research and design. Simulation campaigns, models and drawings are published; physical test campaigns come next |
+| Contact | [toni@zemanium.com](mailto:toni@zemanium.com) |
+| Website | https://zemanium.com/ |
+
+02 / Mission
+
+## Make Earth's heat the world's power.
+
+Our mission is to make geothermal the world's dominant energy source. Heat under our feet is available day and night in every country, and the obstacle is cost. We work on the equipment that decides that cost: wells that survive, flow that reaches the hot rock, instruments that keep working, and plants that convert more of the heat.
+
+Our development target is firm geothermal power at $30 to $45 per megawatt-hour. It is a target and has not been achieved. The [cost guide](https://zemanium.com/guides/geothermal-electricity-cost) shows what a plant has to cost to get there.
+
+03 / Method
+
+## How we work.
+
+1. Every invention goes through a simulated test campaign before any metal is cut. We write down the mechanism, the equations, the pass and fail rules and the conditions that would prove us wrong, and then we run it.
+2. The rules that judge a simulation are the rules that will judge the bench test.
+3. Every number carries a label: measured, vendor-stated, SIMULATED, assumption. A simulated result is never called a qualification.
+4. When a design fails its test we publish the failure and say what it changes.
+
+04 / Record
+
+## The record so far.
+
+| Date | What | Where |
+|---|---|---|
+| 5 October 2026 | Power-cost model: 1,080 scenarios, with the failing cases shown | [Live model](https://zemanium.com/confidence/) |
+| 5 October 2026 | Release demonstrator drawings and a commanded-release model that passes its full test in 6 of 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
+| 8 October 2026 | Sensor readout software: maximum temperature error cut from 131.178 K to 1.240 K on the same simulated signals | [Research](https://zemanium.com/room/#sensing) |
+| 19 November 2026 | Long-line acoustic sensor stopped. None of 400 design options came within 5 K over a 3,000 m line in simulation | [Research](https://zemanium.com/room/#sensing) |
+| 20 November 2026 | Three sourced guides and this open catalogue | [Guides](https://zemanium.com/guides/), [Open data](https://zemanium.com/open/) |
+
+All model results are SIMULATED.
+
+05 / Contact
+
+## Get in touch.
+
+We are looking for engineers to lead physical test campaigns, operators and manufacturers with a hot-well problem, and investors who back hardware. Write to [toni@zemanium.com](mailto:toni@zemanium.com) and say what you need to decide. The [open research page](https://zemanium.com/open/#work) lists the kinds of work we take on.
+
+---
+Source: https://zemanium.com/about
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 20 November 2026
+
+# Enhanced geothermal systems: how they work and what limits them.
+
+An enhanced geothermal system (EGS) makes a geothermal reservoir where nature left hot rock without enough water or cracks. Engineers drill into the rock, open fractures in it, and circulate water through them to carry the heat to a power plant.
+
+Figures from companies are their own statements. Figures marked SIMULATED come from Zemanium's models. The field data we show from Utah FORGE was measured and published by others.
+
+01 / In brief
+
+## The short answer.
+
+- Conventional geothermal needs heat, water and permeable rock in the same place. EGS needs only the heat and supplies the other two.
+- Fervo Energy's Cape Station in Utah produced first power on 24 September 2026 from a unit of about 33 MW, by the company's account.
+- Today's equipment keeps EGS to about 220 °C and about 10 megawatts of electricity per production well, according to ARPA-E.
+- The open engineering problems are keeping the reservoir hot for decades, spreading flow evenly through the fractures, building wells that survive, and cost.
+
+02 / Mechanism
+
+## How an enhanced geothermal system works.
+
+1. Drill an injection well into hot, mostly dry rock. Modern projects turn the well horizontal at depth, as shale drillers do.
+2. Pump water down under controlled pressure. It opens new fractures and reopens old ones, which gives the rock the permeability it lacked.
+3. Drill a production well through the fractured zone, parallel to the first.
+4. Circulate water from one well to the other. It heats up as it crosses the fractures.
+5. Bring the hot water to the surface, pass its heat to a power plant, and inject the cooled water again.
+
+The water runs in a loop, so the plant delivers power around the clock in any weather. The US Department of Energy also counts two related approaches as next-generation geothermal. Closed-loop systems circulate fluid through sealed pipes in the rock and use no fractures. [Superhot systems](https://zemanium.com/guides/superhot-rock-geothermal) go after rock above 375 °C.
+
+03 / Status
+
+## Where the technology stands in 2026.
+
+| Milestone | Figure | Basis |
+|---|---|---|
+| First power at Cape Station, Utah | 24 September 2026, first unit about 33 MW; first phase planned at about 100 MW | company statement |
+| Production well test at Cape Station | about 195 °C, 8 to 10 MW of electricity sustained per production well, flow of 107 kg/s over 30 days | operator preprint |
+| Drilling speed, Sawtooth 7 well | 19,448 ft measured depth with a 7,500 ft lateral in 21 days, in rock at about 238 °C | company statement, July 2026 |
+| Newberry, Oregon | a well at 331 °C in October 2025 | press report of company statement |
+| Public research site | Utah FORGE, funded by the Department of Energy, publishes its well and stimulation data | Department of Energy |
+
+Earlier Department of Energy demonstrations ran at Newberry Volcano, The Geysers, Brady, Desert Peak and Raft River.
+
+04 / Limits
+
+## Four limits engineers are working on.
+
+### Thermal decline
+
+Injected water is cold. It cools the fracture faces first and the rock behind them more slowly. If most of the flow takes a few short paths, those paths cool within years and the produced temperature drops. How much fracture area the water touches decides how long a well pair lasts. ARPA-E's goal for superhot reservoirs is heat extraction for at least ten years without significant decline.
+
+### Uneven flow
+
+Fractures do not share flow equally. In one published Utah FORGE production log, the interpretation could not resolve how inflow was distributed below 9,240 ft and reported it as a single aggregate. You can [inspect that profile](https://zemanium.com/confidence/#field) in our field replay. The Department of Energy funds work on reversible ways to change fracture permeability for this reason.
+
+### Wells that survive
+
+Casing and cement expand when the well heats and contract when cold water goes down. The Department of Energy says the tools sold for checking cement and casing suit the hot end of oil and gas but are generally inadequate for hotter geothermal wells. Casing and cementing make up 30% to 40% or more of a well's cost.
+
+### Cost
+
+The Department of Energy target is $45 per megawatt-hour by 2035. Our guide to [geothermal electricity cost](https://zemanium.com/guides/geothermal-electricity-cost) shows which inputs move that number.
+
+05 / Tools
+
+## Public data and tools.
+
+- [Reservoir explorer](https://zemanium.com/demo/): a 3D model where you change flow, well spacing and rock temperature and watch thermal decline and pumping respond. SIMULATED, illustrative.
+- [Utah FORGE field replay](https://zemanium.com/confidence/#field): 518 rows of a published production-log interpretation by SLB and the University of Utah, with attribution and the gaps left visible. CC BY 4.0, DOI 10.15121/2473673.
+- [Power-cost model](https://zemanium.com/confidence/): the cost per megawatt-hour of a simulated EGS plant under your assumptions.
+
+We build models and hardware for this problem and review forecasts for others. Write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+06 / Questions
+
+## Common questions.
+
+### What does EGS stand for?
+
+Enhanced geothermal system. It is a geothermal reservoir made by engineering: wells are drilled into hot rock, fractures are opened to let water through, and the water carries heat to a power plant.
+
+### How is EGS different from conventional geothermal?
+
+A conventional geothermal plant sits on a natural hydrothermal system, where hot rock, water and permeability already exist together. An enhanced geothermal system starts with hot rock only and adds the water and the permeability, so it can be built in many more places.
+
+### Does enhanced geothermal use fracking?
+
+It uses hydraulic stimulation. Water is injected under controlled pressure to create new fractures and reopen existing ones in hot rock. The aim is permeability for circulating water, and no oil or gas is produced.
+
+### How deep are enhanced geothermal wells?
+
+Current commercial wells are several kilometres long. Fervo Energy's Sawtooth 7 well in Utah reached 19,448 feet of measured depth, about 5.9 km, including a 7,500 foot horizontal section.
+
+### How hot is the rock in an enhanced geothermal system?
+
+Fervo Energy reports producing at about 195 °C and drilling into rock near 238 °C. ARPA-E puts the limit of today's commercial equipment at about 220 °C. Superhot projects target rock above 375 °C.
+
+### How long does an enhanced geothermal reservoir last?
+
+It depends on how much fracture area the circulating water touches. Wide, even sweep keeps the produced temperature up for decades, and concentrated flow cools the rock early. Our economic model assumes 25 years.
+
+07 / Sources
+
+## Sources.
+
+1. US Department of Energy, Office of Geothermal, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems), updated 20 August 2026.
+2. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026.
+3. Fervo Energy, [first power at Cape Station](https://fervoenergy.com/fervo-energy-achieves-first-power-at-cape-station-a-landmark-moment-for-the-future-of-enhanced-geothermal-systems/), September 2026. Company statement.
+4. Fervo Energy authors, [Cape Station production test preprint](https://eartharxiv.org/repository/object/7665/download/14559/), EarthArXiv.
+5. Fervo Energy, [third-generation well design release](https://fervoenergy.gcs-web.com/news-releases/news-release-details/fervo-energy-learning-curve-continues-3rd-generation-well-design), 8 July 2026. Company statement.
+6. TechCrunch, [Mazama Energy has a solution for geothermal's biggest drilling problem](https://techcrunch.com/2026/11/16/mazama-energy-has-a-solution-for-geothermals-biggest-drilling-problem), 16 November 2026.
+7. SLB and University of Utah for Utah FORGE, production log interpretation, Geothermal Data Repository submission 1668, [doi:10.15121/2473673](https://doi.org/10.15121/2473673), CC BY 4.0.
+8. US Department of Energy, [Enhanced Geothermal Shot announcement](https://www.energy.gov/articles/doe-launches-new-energy-earthshot-slash-cost-geothermal-power), 8 September 2022.
+
+Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Enhanced geothermal systems: how they work and what limits them", Zemanium, 20 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/enhanced-geothermal-systems
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 20 November 2026
+
+# What geothermal electricity costs, and what sets the price.
+
+A geothermal plant is paid for almost entirely before it produces anything. The cost of each megawatt-hour then depends on four things: what the wells cost, how much power each well delivers, how long that output lasts, and the interest rate on the money.
+
+Numbers marked SIMULATED come from our own model and are scenarios built on assumptions. They are requirements for a design, and no plant has been built to them. Numbers from other organisations are quoted with their source.
+
+01 / In brief
+
+## The short answer.
+
+- The US Department of Energy wants enhanced geothermal power at $45 per megawatt-hour by 2035. It describes that as a cut of about 90% from where the technology stood in 2022.
+- ARPA-E's SUPERHOT program aims lower for wells above 375 °C: under $30 per megawatt-hour by 2040.
+- In our own model the same simulated plant costs $83.02, $43.35 or $35.00 per megawatt-hour depending on its capital cost and discount rate. The rock and the wells are identical in all three cases.
+- Zemanium's development target is $30 to $45 per megawatt-hour. It is what our hardware program is designed toward and has not been achieved.
+
+02 / Method
+
+## How LCOE is calculated.
+
+The levelized cost of electricity (LCOE) is the price per megawatt-hour at which a plant pays back everything spent on it over its life, including the return its lenders and owners expect. It divides discounted lifetime cost by discounted lifetime output:
+
+`LCOE = sum of (cost in year t / (1 + r)^t) / sum of (electricity exported in year t / (1 + r)^t)`
+
+Here `r` is the discount rate and `t` runs from construction to the last operating year. For geothermal the largest costs fall in year zero: drilling, completing the wells and building the power plant. Fuel is free. That makes the answer sensitive to the discount rate and to how long the wells keep their output.
+
+Use exported electricity in the denominator. A geothermal plant spends some of its own output on pumps and auxiliaries, and an LCOE computed on gross generation flatters the plant. Our model exports gross generation minus pumping minus 5% of gross for auxiliaries.
+
+03 / Targets
+
+## Published cost targets.
+
+| Who | Target | By | Applies to |
+|---|---|---|---|
+| US Department of Energy, Enhanced Geothermal Shot | $45/MWh | 2035 | enhanced geothermal systems |
+| ARPA-E, SUPERHOT program | under $30/MWh | 2040 | reservoirs above 375 °C and 22 MPa, 10 to 20 GW |
+| Zemanium | $30 to $45/MWh | development target, no date claimed | our hardware and well program |
+
+The analysis behind the Department of Energy figure put developed deep enhanced geothermal at $45.60 per megawatt-hour in 2035, rounded to $45. All three rows are goals.
+
+04 / Worked example
+
+## One simulated plant, three prices.
+
+Our power-cost model holds the physics fixed and changes only the money. The reservoir starts at 200 °C, runs for 25 simulated years, and feeds a plant sized to its peak output of 28.322 MW gross.
+
+| Case | Capital assumptions | Real discount rate | LCOE |
+|---|---|---|---|
+| Reference | reference plant and well costs | 8% | $83.02/MWh |
+| Target package | $1,500 per gross kW plant, $15m subsurface, $3m other | 8% | $43.35/MWh |
+| Target package, cheaper money | same | 4% | $35.00/MWh |
+
+SIMULATED · assumption scenarios · 5 October 2026
+
+Halving the cost of capital takes $8.35 off each megawatt-hour without touching a single piece of equipment. Getting from $83.02 to $43.35 needs the plant and the wells to cost roughly what the target package says. No supplier has quoted those prices. They tell us what our hardware has to achieve.
+
+The model runs 1,080 cost scenarios on output trajectories from GEOPHIRES-X 3.18.3, the open source simulator from NREL. It charges 2% of installed capital a year for operations, make-up water and $8 per exported megawatt-hour, books a $5m event in year 12 and $2m in year 25, and assumes the plant runs 90% of the time. A stress test draws 2,000 combinations of discount rate (4% to 12%), capital overrun (0.8 to 1.2 times) and a mid-life replacement of up to $10m.
+
+05 / Drivers
+
+## What moves the cost.
+
+### Wells
+
+The Department of Energy calls lower well construction cost a requirement for expanding enhanced geothermal, and puts casing and cementing alone at 30% to 40% or more of what a well costs. Drilling time is falling: Fervo Energy reports reaching 19,448 feet of measured depth in 21 days on its Sawtooth 7 well in July 2026.
+
+### Power per well
+
+A well that produces twice the power halves the drilling bill per megawatt. ARPA-E says today's equipment limits enhanced geothermal to about 220 °C and about 10 megawatts of electricity per production well, and that wells above 375 °C could reach 30 to 50. That gap is why developers want [superhot rock](https://zemanium.com/guides/superhot-rock-geothermal).
+
+### How long the output lasts
+
+Cold water injected into hot rock cools the rock it touches. If the water sweeps a small volume, the produced temperature falls early and every later year earns less. Our model includes a case that fails this way: with the reservoir volume cut from 1 cubic kilometre to 0.014, the plant ends up importing power, and we publish no price for it.
+
+### Cost of capital
+
+Because nearly all spending comes first, the discount rate acts on the whole bill. The example above moves 19% between 8% and 4%.
+
+### The plant on the surface
+
+Hotter fluid converts a larger share of its heat to electricity, so a 200 °C plant needs more equipment per kilowatt than a hotter one. The model lets you set installed plant cost from $1,500 to $4,500 per gross kilowatt.
+
+06 / Tool
+
+## Run the model yourself.
+
+The [power-cost model](https://zemanium.com/confidence/) runs in your browser with no account. Set the plant cost, subsurface cost, discount rate and a target price, and it returns the LCOE and the capital the design can afford. It also shows the cases that fail. The 3D [reservoir explorer](https://zemanium.com/demo/) shows how flow, well spacing and rock temperature change thermal decline and pumping.
+
+If you want this analysis for a specific project, or an independent review of a forecast, write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+07 / Questions
+
+## Common questions.
+
+### Is geothermal energy expensive?
+
+It is expensive to build and cheap to run. Almost all of the cost is drilling and plant construction paid up front, so the price per megawatt-hour depends on well cost, output per well, how long that output lasts and the interest rate. The US Department of Energy target for enhanced geothermal is $45 per megawatt-hour by 2035.
+
+### How is the LCOE of a geothermal plant calculated?
+
+Add up every cost over the plant's life, discount each year's cost back to today, and divide by the discounted electricity exported over the same years. Subtract pumping and auxiliary power from generation first, because the plant consumes them itself.
+
+### How much does a geothermal well cost?
+
+It depends on depth, rock and temperature, and few operators publish their costs. The US Department of Energy says casing and cementing make up 30% to 40% or more of a well's cost. Our model treats the whole subsurface scope as an allowance of $15m, $25m or $37m per case. Those are assumptions for comparison, and no contractor has quoted them.
+
+### Is there a free geothermal LCOE calculator?
+
+Yes. The Zemanium power-cost model at zemanium.com/confidence runs in a browser and needs no account. For full reservoir and plant simulation, GEOPHIRES-X is open source.
+
+### Why does the discount rate matter so much for geothermal?
+
+Nearly all the money is spent before the first megawatt-hour is sold, so the financing cost applies to almost the whole budget. In our simulated example the same plant costs $43.35 per megawatt-hour at an 8% real discount rate and $35.00 at 4%.
+
+08 / Sources
+
+## Sources.
+
+1. US Department of Energy, [DOE launches new Energy Earthshot to slash the cost of geothermal power](https://www.energy.gov/articles/doe-launches-new-energy-earthshot-slash-cost-geothermal-power), 8 September 2022.
+2. US Department of Energy, [Energy Earthshots initiative report](https://www.energy.gov/sites/default/files/2025-01/doe-energyearthshots-initiativereport.pdf), January 2025 ($45.60/MWh basis).
+3. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026.
+4. US Department of Energy, Office of Geothermal, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems), updated 20 August 2026 (casing and cementing share of well cost).
+5. Fervo Energy, [third-generation well design release](https://fervoenergy.gcs-web.com/news-releases/news-release-details/fervo-energy-learning-curve-continues-3rd-generation-well-design), 8 July 2026. Company statement.
+6. Zemanium, [power-cost model](https://zemanium.com/confidence/), 5 October 2026. SIMULATED.
+7. NREL, [GEOPHIRES-X](https://github.com/NREL/GEOPHIRES-X), version 3.18.3.
+
+Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "What geothermal electricity costs, and what sets the price", Zemanium, 20 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-electricity-cost
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 20 November 2026
+
+# Superhot rock geothermal: what happens above 375 °C.
+
+Superhot rock geothermal means producing heat from rock hotter than about 375 °C at pressures above 22 MPa. Water there is supercritical, and the US Department of Energy says it can deliver several times the power density of cooler rock. Two research wells in Iceland have met fluid hotter than 400 °C, and both were damaged.
+
+Every figure below is quoted from the source listed beside it. Targets are labelled as targets.
+
+01 / In brief
+
+## The short answer.
+
+- The threshold is the critical point of water, about 374 °C and 22.1 MPa. ARPA-E and the US Department of Energy both define superhot as above 375 °C.
+- ARPA-E expects a superhot well to produce up to 30 to 50 megawatts of electricity, against about 10 for an enhanced geothermal well today.
+- Iceland's IDDP-1 well flowed steam at 450 °C and suffered acid corrosion and silica erosion. IDDP-2 logged 426 °C at about 4,550 m and its casing was damaged.
+- Wells fail through their steel, cement and instruments. Casing breaks when the well is heated and cooled, and electronics stop working near 225 °C.
+
+02 / Motive
+
+## Why go hotter.
+
+Each well is expensive, so power per well drives the price of electricity. ARPA-E says current equipment holds enhanced geothermal to about 220 °C and about 10 megawatts of electricity per production well, and that superhot reservoirs could raise this to 30 to 50. Its SUPERHOT program aims at 10 to 20 GW of baseload power at under $30 per megawatt-hour by 2040.
+
+Other estimates of output per well exist. A 2022 study by LucidCatalyst and HERO for the Clean Air Task Force modelled 17 to 29 MW per production well at 55 kg/s. Iceland's power company Orkuveitan is targeting 20 to 50 MW from one well in the IDDP-3 project, and says it has not demonstrated that figure. Conventional wells there make 2 to 7 MW.
+
+03 / Record
+
+## Wells drilled so far.
+
+| Well | What was measured | What went wrong |
+|---|---|---|
+| IDDP-1, Krafla, Iceland | superheated steam at 450 °C and 140 bar at the wellhead | condensed steam carried hydrochloric and hydrofluoric acid; silica eroded surface equipment when wellhead pressure fell below 80 bar; repeated shutdowns increased corrosion |
+| IDDP-2, Reykjanes, Iceland | 426 °C at 340 bar logged at about 4,550 m; about 600 °C inferred at the bottom | production casing damaged between 2,307 and 2,380 m, presumably by cyclic heating and cooling |
+| Newberry, Oregon (Mazama Energy) | 331 °C in October 2025; a later well above 700 °F | none reported |
+
+At IDDP-2 the logging tools stayed below 65 °C in rock hotter than 400 to 500 °C for as long as cold water circulated. The production casing was damaged all the same, presumably by repeated heating and cooling.
+
+Next in line: IDDP-3 in Iceland is planned in four stages from late 2026 to 2028. Quaise Energy's Project Obsidian in Oregon targets a well above 400 °C and first power in 2030. Quaise drills with millimetre waves and had completed a 118 m hole in granite by July 2025.
+
+04 / Limits
+
+## What fails first.
+
+| Component | Published limit | Source |
+|---|---|---|
+| Casing and couplings | most well failures in a review of 20 high-temperature wells came from thermal stress during quenching or the start of production | Kruszewski and Wittig, 2018 |
+| Portland cement with 35% to 40% silica flour | proven where produced fluid stays below 350 °C | Kruszewski and Wittig, 2018 |
+| Downhole electronics in service | about 210 to 225 °C | Hephae, 2026; IMAPS HiTEC, 2016 |
+| Temperature logging tools | 350 °C for four hours | Kruszewski and Wittig, 2018 |
+| Polyimide-coated optical fibre | 300 °C continuously, 350 °C briefly | manufacturer's statement (Exail) |
+| Silicon carbide circuits, in the laboratory | one year at 500 °C in air | NASA Glenn, 2018 |
+| Casing connection test standard ISO/TS 12835:2022 | written for wells that cycle from well below 180 °C up to maxima of 180 °C to 350 °C or above; covers connections only | ISO |
+
+ARPA-E's program description says conventional steel casing and Portland cement are inadequate for superhot wells, and that well materials have to survive high temperature, rapid temperature change and corrosive fluid for 15 years or more.
+
+05 / Funding
+
+## Who is funding it.
+
+- ARPA-E SUPERHOT announced eight awards on 12 November 2026: Blade Energy Partners ($6.3m), Lawrence Livermore ($5.5m), Los Alamos ($3.5m), University of Oklahoma ($3.1m), Oak Ridge ($3.0m), University of Southern California ($3.0m), XGS Energy ($3.0m) and Pacific Northwest National Laboratory ($2.6m).
+- The US Department of Energy is funding a superhot EGS demonstration above 375 °C on the western flank of Newberry Volcano in Oregon.
+- Japan's NEDO plans five 100 MW class supercritical geothermal plants around 2040 to 2050 and estimates the resource at 11 GW.
+- The European SHiFT consortium received €10m from Horizon Europe for technology above 400 °C.
+- Mazama Energy raised $135m in September 2026. Quaise Energy closed a Series B of $180m in August 2026.
+
+06 / Zemanium
+
+## What we are working on.
+
+Our work is on the well itself: how casing and cement behave through heating and cooling cycles above 375 °C, and how to record a test so that someone outside the company can check it. We use gauges that can be bought today. In November 2026 we stopped our own long-line acoustic sensor after it failed a simulation gate we had set in advance; the [record is on the research page](https://zemanium.com/room/#sensing).
+
+If you operate, design or finance hot wells and want to compare notes, write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+07 / Questions
+
+## Common questions.
+
+### What is superhot rock geothermal?
+
+It is geothermal energy from rock hotter than about 375 °C at pressure above 22 MPa, where water becomes supercritical. A well in those conditions can carry several times the energy of a conventional geothermal well.
+
+### How hot is superhot rock?
+
+Above 375 °C by the definitions of ARPA-E and the US Department of Energy. Iceland's IDDP-1 produced steam at 450 °C, and IDDP-2 logged 426 °C with about 600 °C inferred at the bottom of the well.
+
+### Has anyone produced power from superhot rock?
+
+No commercial plant runs on superhot rock yet. IDDP-1 flowed steam at 450 °C and IDDP-2 logged 426 °C at 340 bar, and both wells were damaged. Quaise Energy targets first power in Oregon in 2030, and Japan's NEDO plans plants around 2040 to 2050.
+
+### What is the IDDP?
+
+The Iceland Deep Drilling Project, a research programme run by Icelandic energy companies to drill into supercritical geothermal zones. IDDP-1 was drilled at Krafla, IDDP-2 at Reykjanes, and IDDP-3 is planned from late 2026.
+
+### Why do superhot wells fail?
+
+Mostly from thermal cycling. Steel casing expands when the well heats and contracts when cold water is pumped in, and the stress breaks casing and couplings. A 2018 review of 20 high-temperature wells found that most failures came from thermal stress during quenching or the start of production.
+
+### How much power can one superhot well produce?
+
+ARPA-E expects up to 30 to 50 megawatts of electricity per well, compared with about 10 megawatts for an enhanced geothermal well at 220 °C. That output has not been demonstrated.
+
+08 / Sources
+
+## Sources.
+
+1. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026; [project descriptions](https://arpa-e.energy.gov/sites/default/files/2026-11/SUPERHOT_Project_Descriptions_v2.pdf), November 2026.
+2. US Department of Energy, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems) and [EGS pilot demonstrations](https://www.energy.gov/hgeo/geothermal/egs-pilot-demonstrations).
+3. Friðleifsson and others, IDDP-2 at Reykjanes, Proceedings World Geothermal Congress 2020+1, paper 31002.
+4. Ilic and others, IDDP-1 fluid handling, Proceedings World Geothermal Congress 2020+1.
+5. Kruszewski and Wittig, "Review of failure modes in supercritical geothermal drilling projects", [Geothermal Energy 6:28](https://doi.org/10.1186/s40517-018-0113-4), 2018.
+6. LucidCatalyst and HERO for the Clean Air Task Force, superhot rock techno-economic study, November 2022.
+7. ThinkGeoEnergy, report of an Orkuveitan interview on IDDP-3, 10 September 2026.
+8. TechCrunch, [Mazama Energy](https://techcrunch.com/2026/11/16/mazama-energy-has-a-solution-for-geothermals-biggest-drilling-problem), 16 November 2026.
+9. Quaise Energy, [Looking back on 2025](https://www.quaise.com/news/looking-back-on-2025) and Project Obsidian release, 22 September 2026. Company statements.
+10. NEDO, supercritical geothermal project P21001, updated 9 July 2024.
+11. NASA Glenn Research Center, silicon carbide integrated circuits at 500 °C, HiTEC 2018.
+12. Hephae Energy Technology, [news](https://www.hephaeet.com/news-2-2/), September 2026; Exail, [harsh environment fibres](https://www.exail.com/product-range/harsh-environments-fibers).
+13. ISO/TS 12835:2022, Qualification of casing connections for thermal wells.
+
+Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Superhot rock geothermal: what happens above 375 °C", Zemanium, 20 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/superhot-rock-geothermal
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Open research · updated 20 November 2026
+
+# Open models, records and drawings.
+
+This page lists everything Zemanium has published, what each item is, and what you may do with it. Use it, check it, and tell us where it is wrong.
+
+Model output is labelled SIMULATED, and field data is credited to the parties who measured it. Runs that failed are published next to runs that passed.
+
+01 / Models
+
+## Models you can run.
+
+| Item | What it does | Basis |
+|---|---|---|
+| [Power-cost model](https://zemanium.com/confidence/) | Computes the cost per megawatt-hour of a geothermal plant from plant cost, subsurface cost and discount rate across 1,080 scenarios, with a 2,000-draw financial stress test. Shows the cases that fail. | SIMULATED, on GEOPHIRES-X 3.18.3 trajectories, 5 October 2026 |
+| [Reservoir explorer](https://zemanium.com/demo/) | A 3D reservoir where you change flow, well spacing, permeability and rock temperature and see thermal decline, power and pumping. | SIMULATED, illustrative, earlier design assumptions |
+| [Utah FORGE field replay](https://zemanium.com/confidence/#field) | 518 rows of a published production-log interpretation, with the unresolved intervals shown as gaps. | Measured and published by SLB and the University of Utah for Utah FORGE; CC BY 4.0; [doi:10.15121/2473673](https://doi.org/10.15121/2473673) |
+
+02 / Records
+
+## Simulation records.
+
+Each file holds the inputs, assumptions, results and source hashes of one simulation campaign, in JSON. The four dated 3 October with "earlier" in their description used checkers we later revised; the [technical dossier](https://zemanium.com/docs/04-technical-dossier#records) gives the current results.
+
+- [Temperature and cost ladder with declared stress boxes](https://zemanium.com/room/records/ladder-reinforced-2026-10-02.json), 2 October 2026
+- [Flow and completion hydraulics sweep](https://zemanium.com/room/records/room-virtual-deliverability-2026-10-03.json), 3 October 2026
+- [Thermal stroke screening and unit divergence](https://zemanium.com/room/records/room-virtual-stroke-envelope-2026-10-03.json), 3 October 2026
+- [Drilling cost ranking sensitivity](https://zemanium.com/room/records/room-virtual-e8-robustness-2026-10-03.json), 3 October 2026
+- [Earlier assembly gate failure matrix](https://zemanium.com/room/records/room-virtual-e7-matrix-2026-10-03.json), 3 October 2026
+- [Earlier control loop fault matrix](https://zemanium.com/room/records/room-virtual-e9-matrix-2026-10-03.json), 3 October 2026
+- [Earlier record validator adversarial corpus](https://zemanium.com/room/records/room-virtual-record-corpus-2026-10-03.json), 3 October 2026
+- [Earlier duty corner checker exercise](https://zemanium.com/room/records/room-virtual-duty-corners-2026-10-03.json), 3 October 2026
+
+[The source trace](https://zemanium.com/room/records/TRACE.md) maps every number on the research page to the record it came from.
+
+03 / Hardware
+
+## Hardware drawings.
+
+These are development drawings of engineering geometry. Release for hot service is decided by physical test campaigns at the matching duty.
+
+- [SL-D01-A release demonstrator, dimensioned build sheet](https://zemanium.com/assets/hardware/SL-D01-A-build-sheet.svg). Room temperature, 56 mm of gate travel.
+- [Release demonstrator, exploded view](https://zemanium.com/assets/hardware/shiftlatch-demo_exploded.svg), with [held](https://zemanium.com/assets/hardware/shiftlatch-demo_held.svg) and [released](https://zemanium.com/assets/hardware/shiftlatch-demo_released.svg) states.
+- [E7-SPC-B specimen kit, build sheet](https://zemanium.com/assets/hardware/E7-SPC-B-kit-build-sheet.svg).
+- [Sliding seal cassette, cutaway](https://zemanium.com/assets/hardware/thermoslip-cassette-cutaway.svg).
+- [Thermal test bench, general arrangement](https://zemanium.com/assets/hardware/heatmux-thermal_verification_general-arrangement-preview.png).
+
+The [research page](https://zemanium.com/room/#machines) shows each drawing with its development record.
+
+04 / Writing
+
+## Guides and reference.
+
+- [What geothermal electricity costs, and what sets the price](https://zemanium.com/guides/geothermal-electricity-cost)
+- [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems)
+- [Superhot rock geothermal: what happens above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal)
+- [Technical dossier](https://zemanium.com/docs/04-technical-dossier): methods, test duties and results for each program
+
+05 / Licence
+
+## What you may do with it.
+
+| Material | Licence | In practice |
+|---|---|---|
+| Guides, page text, charts and simulation records | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, quote, translate and build on it, commercially or otherwise, if you credit Zemanium and link the page. |
+| Code in the pages and models | [MIT](https://opensource.org/license/mit) | Use it in your own software and keep the copyright notice. |
+| Hardware drawings | Published for review, all rights reserved | Read them, check them, cite them. To manufacture from them or use them commercially, ask us for a licence. |
+| Utah FORGE data | CC BY 4.0, from its authors | Credit SLB, the University of Utah and Utah FORGE as the source record does. |
+| The Zemanium name and logo | Not licensed | Use the name to refer to us. |
+
+Copyright 2026 Toni Zemani.
+
+06 / Citation
+
+## How to cite.
+
+For a guide: Toni Zemani, title of the guide, Zemanium, date shown on the page, and its address. For a model or record: Zemanium, name of the item, its date, its address, and the label it carries (SIMULATED).
+
+Example: Zemanium, "Power-cost model", 5 October 2026, https://zemanium.com/confidence/. SIMULATED.
+
+07 / Agents
+
+## For software agents.
+
+[llms.txt](https://zemanium.com/llms.txt) lists every page with a one-line description. [llms-full.txt](https://zemanium.com/llms-full.txt) holds the guides in one Markdown file. Each guide also has a Markdown copy at its own address with `.md` added. The [sitemap](https://zemanium.com/sitemap.xml) lists canonical addresses. Search and AI crawlers are allowed on the whole site, and the same files are mirrored at [github.com/tonizemani2/zemanium-open](https://github.com/tonizemani2/zemanium-open).
+
+08 / Contact
+
+## Work with us.
+
+We publish so that specialists can check the work, and so that people with a problem we can help with can find us. Three kinds of conversation have a clear next step.
+
+| You have | We can |
+|---|---|
+| A forecast, cost case or test plan you need checked | Review it independently and give you the numbers we reproduce and the ones we cannot |
+| A well, tool or material problem above 200 °C | Scope a sponsored experiment with a fixed question, a named engineer and raw results at the end |
+| A use for one of the hardware designs | License it, or develop it with you |
+
+Write to [toni@zemanium.com](mailto:toni@zemanium.com) with what you need to decide. Investors and engineers who want to join are welcome at the same address.
+
+---
+Source: https://zemanium.com/open/
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
