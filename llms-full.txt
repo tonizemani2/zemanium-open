@@ -388,6 +388,10 @@ ARPA-E's program description says conventional steel casing and Portland cement 
 
 Our work is on the well itself: how casing and cement behave through heating and cooling cycles above 375 °C, and how to record a test so that someone outside the company can check it. We use gauges that can be bought today. In November 2026 we stopped our own long-line acoustic sensor after it failed a simulation gate we had set in advance; the [record is on the research page](https://zemanium.com/room/#sensing).
 
+We rebuilt IDDP-1's production casing in a model and ran it through the well's recorded history: two discharges, then the kill of July 2012. The video log of 2014 found three couplings pulled apart at 300, 356 and 505 m. In 88 of 128 sampled wells our model reproduces that log (SIMULATED, registered and time-stamped before the run). The string parts first at 292 m, just below the point at 290 m where the outer anchor casing changes size, with gaps inside the logged 250 to 400 mm. Two wellhead readings the model was never fitted to land inside their measured bands. The model is calibrated to one well, and the next run is aimed at the second and third partings.
+
+That replay is the test bench for Pandora, our casing joint for wells at 450 to 500 °C. Pandora is built to carry a string through the same history without parting. Its first metal, a subscale joint, is next.
+
 If you operate, design or finance hot wells and want to compare notes, write to [toni@zemanium.com](mailto:toni@zemanium.com).
 
 07 / Questions
@@ -426,15 +430,16 @@ ARPA-E expects up to 30 to 50 megawatts of electricity per well, compared with a
 2. US Department of Energy, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems) and [EGS pilot demonstrations](https://www.energy.gov/hgeo/geothermal/egs-pilot-demonstrations).
 3. Friðleifsson and others, IDDP-2 at Reykjanes, Proceedings World Geothermal Congress 2020+1, paper 31002.
 4. Ilic and others, IDDP-1 fluid handling, Proceedings World Geothermal Congress 2020+1.
-5. Kruszewski and Wittig, "Review of failure modes in supercritical geothermal drilling projects", [Geothermal Energy 6:28](https://doi.org/10.1186/s40517-018-0113-4), 2018.
-6. LucidCatalyst and HERO for the Clean Air Task Force, superhot rock techno-economic study, November 2022.
-7. ThinkGeoEnergy, report of an Orkuveitan interview on IDDP-3, 10 September 2026.
-8. TechCrunch, [Mazama Energy](https://techcrunch.com/2026/11/16/mazama-energy-has-a-solution-for-geothermals-biggest-drilling-problem), 16 November 2026.
-9. Quaise Energy, [Looking back on 2025](https://www.quaise.com/news/looking-back-on-2025) and Project Obsidian release, 22 September 2026. Company statements.
-10. NEDO, supercritical geothermal project P21001, updated 9 July 2024.
-11. NASA Glenn Research Center, silicon carbide integrated circuits at 500 °C, HiTEC 2018.
-12. Hephae Energy Technology, [news](https://www.hephaeet.com/news-2-2/), September 2026; Exail, [harsh environment fibres](https://www.exail.com/product-range/harsh-environments-fibers).
-13. ISO/TS 12835:2022, Qualification of casing connections for thermal wells.
+5. Kaldal, G. S., [Nonlinear finite-element analysis of casings in high-temperature geothermal wells](https://opinvisindi.is/items/2a1661c9-f370-47de-9d65-e0a6555596c0), PhD thesis, University of Iceland, 2019. IDDP-1 casing programme, history and 2014 log.
+6. Kruszewski and Wittig, "Review of failure modes in supercritical geothermal drilling projects", [Geothermal Energy 6:28](https://doi.org/10.1186/s40517-018-0113-4), 2018.
+7. LucidCatalyst and HERO for the Clean Air Task Force, superhot rock techno-economic study, November 2022.
+8. ThinkGeoEnergy, report of an Orkuveitan interview on IDDP-3, 10 September 2026.
+9. TechCrunch, [Mazama Energy](https://techcrunch.com/2026/11/16/mazama-energy-has-a-solution-for-geothermals-biggest-drilling-problem), 16 November 2026.
+10. Quaise Energy, [Looking back on 2025](https://www.quaise.com/news/looking-back-on-2025) and Project Obsidian release, 22 September 2026. Company statements.
+11. NEDO, supercritical geothermal project P21001, updated 9 July 2024.
+12. NASA Glenn Research Center, silicon carbide integrated circuits at 500 °C, HiTEC 2018.
+13. Hephae Energy Technology, [news](https://www.hephaeet.com/news-2-2/), September 2026; Exail, [harsh environment fibres](https://www.exail.com/product-range/harsh-environments-fibers).
+14. ISO/TS 12835:2022, Qualification of casing connections for thermal wells.
 
 Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Superhot rock geothermal: what happens above 375 °C", Zemanium, 20 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
 
