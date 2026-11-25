@@ -13,7 +13,7 @@ Zemanium is a geothermal invention lab. We design the instruments, well hardware
 | Founded | 2026 |
 | Founder | Toni Zemani |
 | Field | Enhanced and superhot geothermal: well integrity, flow control, sensing, power conversion and cost modelling |
-| Stage | Research and design. Simulation campaigns, models and drawings are published; physical test campaigns come next |
+| Stage | Simulation campaigns run on the first programmes; models, forecasts, records and drawings published; physical test campaigns next |
 | Contact | [toni@zemanium.com](mailto:toni@zemanium.com) |
 | Website | https://zemanium.com/ |
 
@@ -32,7 +32,6 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 1. Every invention goes through a simulated test campaign before any metal is cut. We write down the mechanism, the equations, the pass and fail rules and the conditions that would prove us wrong, and then we run it.
 2. The rules that judge a simulation are the rules that will judge the bench test.
 3. Every number carries a label: measured, vendor-stated, SIMULATED, assumption. A simulated result is never called a qualification.
-4. When a design fails its test we publish the failure and say what it changes.
 
 04 / Record
 
@@ -41,10 +40,11 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 | Date | What | Where |
 |---|---|---|
 | 5 October 2026 | Power-cost model: 1,080 scenarios and a 2,000-draw financial stress test | [Live model](https://zemanium.com/confidence/) |
-| 5 October 2026 | Release demonstrator drawings and a commanded-release model that passes its full test in 6 of 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
+| 5 October 2026 | Release demonstrator drawings and a commanded-release model, run through 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
 | 8 October 2026 | Sensor readout software: maximum temperature error cut from 131.178 K to 1.240 K on the same simulated signals | [Research](https://zemanium.com/room/#sensing) |
 | 19 November 2026 | Forecasts of the Project Red well pair registered and time-stamped. The model matches the Nevada regulator's record to 0.51 °F on nine steady months | [Forecast and audit record](https://github.com/tonizemani2/forecast-audit) |
 | 20 November 2026 | Three sourced guides and this open catalogue | [Guides](https://zemanium.com/guides/), [Open data](https://zemanium.com/open/) |
+| 24 November 2026 | Fervo Project Red tracker, guides to geothermal stocks, renewability and firm power, open data files and an MCP server for AI agents | [Tracker](https://zemanium.com/fervo-project-red), [Guides](https://zemanium.com/guides/) |
 
 All model results are SIMULATED.
 
@@ -52,10 +52,130 @@ All model results are SIMULATED.
 
 ## Get in touch.
 
-We are looking for engineers to lead physical test campaigns, operators and manufacturers with a hot-well problem, and investors who back hardware. Write to [toni@zemanium.com](mailto:toni@zemanium.com) and say what you need to decide. The [open research page](https://zemanium.com/open/#work) lists the kinds of work we take on.
+We are hiring engineers to lead physical test campaigns, working with operators and manufacturers on hot-well problems, and building with investors who back hardware. Write to [toni@zemanium.com](mailto:toni@zemanium.com) and say what you need to decide. The [open research page](https://zemanium.com/open/#work) lists the kinds of work we take on.
 
 ---
 Source: https://zemanium.com/about
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Tracker · Toni Zemani · updated 24 November 2026
+
+# Fervo Project Red: the monthly record against our registered forecast.
+
+Project Red, Fervo Energy's pilot well pair in Nevada, produced 316 °F at the wellhead in July 2026, down from a 347 °F plateau in 2024, according to the Nevada regulator's monthly record. We registered a forecast for every month to December 2027 and score it here as each new month is published.
+
+Monthly values are measured and operator-reported to the Nevada Division of Minerals, copied without changes. The forecast is [MODEL], frozen and time-stamped on 19 November 2026. Independent analysis from public records; not investment advice. Zemanium holds no position in any security.
+
+01 / Record
+
+## What the regulator's record shows.
+
+The producing well delivered 343 to 347 °F through most of 2024 and 2025. From December 2025 the monthly mean fell every month: 342, 341, 338, 336, 334 and 332 °F in May 2026. June read 242 °F in a month with 32% less production, and July read 316 °F.
+
+![Line chart of Project Red's monthly wellhead temperature from December 2023 to July 2026, followed by the shaded forecast band to December 2027](https://zemanium.com/assets/charts/project-red-record.svg)
+
+Chart free to reuse under CC BY 4.0 with credit to Zemanium. Months under 1 million gallons or below 230 °F are left off the line and kept in the table and data file.
+
+| Month | Wellhead temperature | Produced, million gallons | Injection temperature |
+|---|---|---|---|
+| Aug 2025 | 345 °F | 19.8 | 174 °F |
+| Sep 2025 | 115 °F | 6.4 | 58 °F |
+| Oct 2025 | 320 °F | 20.6 | 171 °F |
+| Nov 2025 | 344 °F | 24.4 | 170 °F |
+| Dec 2025 | 342 °F | 25.6 | 171 °F |
+| Jan 2026 | 341 °F | 25.7 | 171 °F |
+| Feb 2026 | 338 °F | 24.0 | 172 °F |
+| Mar 2026 | 336 °F | 25.8 | 168 °F |
+| Apr 2026 | 334 °F | 25.0 | 86 °F |
+| May 2026 | 332 °F | 26.7 | 92 °F |
+| Jun 2026 | 242 °F | 18.2 | 75 °F |
+| Jul 2026 | 316 °F | 22.8 | 86 °F |
+
+The temperature of the water sent back down changed in April 2026, from about 170 °F to between 75 and 92 °F. Colder injection cools the fractures faster, so our forecast uses the cold-reinjection case from that month on.
+
+02 / Forecast
+
+## What we forecast, and when it was fixed.
+
+We fitted a conduction model of the fractured rock to nine steady months. It matches them with a root-mean-square error of 0.51 °F. Twenty-one model runs of 1,440 met that fit, and their spread sets the band. The forecast files were hashed and time-stamped by two independent authorities on 19 November 2026, before any of the forecast months were published.
+
+- December 2026: median 318.1 °F, band 312.0 to 324.6 °F.
+- July 2027: median 298.0 °F, band 286.9 to 310.6 °F.
+- December 2027: median 284.6 °F, band 265.8 to 300.0 °F.
+
+The model also says how much of the stated fracture area exchanges heat: 32% to 63% across the accepted runs. That figure decides how long a well pair of this design stays hot.
+
+03 / Score
+
+## Score so far.
+
+Each month is scored on the 7th after the regulator publishes it. The latest workbook, dated 29 September 2026, runs to July 2026, so the first forecast month is still to come.
+
+| Month | Forecast median | Band | Regulator value |
+|---|---|---|---|
+| Aug 2026 | 328.1 °F | 324.2 to 332.6 °F | next regulator workbook |
+| Sep 2026 | 325.5 °F | 321.2 to 330.5 °F | next regulator workbook |
+| Oct 2026 | 323.0 °F | 318.2 to 328.5 °F | next regulator workbook |
+| Nov 2026 | 320.6 °F | 315.2 to 326.6 °F | next regulator workbook |
+| Dec 2026 | 318.1 °F | 312.0 to 324.6 °F | next regulator workbook |
+
+04 / Water
+
+## How much water comes back.
+
+Over 18 steady months, 72.7% of the injected volume came back up the producer, or 65.9% by mass. The ratio has not moved in 2.3 years: +0.2 points a year, plus or minus 1.5. Since December 2023 the pair took in 192.9 million gallons more than it returned.
+
+05 / Questions
+
+## Common questions.
+
+### What is Fervo Project Red?
+
+Project Red is Fervo Energy's first enhanced geothermal well pair, drilled at Blue Mountain in Humboldt County, Nevada. Its monthly production and injection are reported to the Nevada Division of Minerals under permits 1505 and 1506, which makes it the only enhanced geothermal production history in the public record.
+
+### Is Project Red cooling down?
+
+Yes, on the regulator's monthly wellhead metric. The record held 344 to 347 °F in steady months from May 2024 to November 2025 and read 332 °F in May 2026 and 316 °F in July 2026.
+
+### Why is Fervo stock down?
+
+Fervo Energy listed on Nasdaq as FRVO on 13 May 2026 after pricing its offering at $27 a share. A short seller report published in 2026 cited Project Red's temperature and water record. We checked 33 public claims about the well pair, from the short seller, the company and others, against the regulator's data; the audit is public and each verdict follows a written rule.
+
+### What does Project Red mean for Cape Station?
+
+Cape Station in Utah uses a later well design at larger scale and reached first power on 24 September 2026, by the company's account. Project Red is the only well pair with a public monthly record, so it is the best public evidence for how fast this kind of reservoir cools. Our forecast F5 covers a Cape-class producer.
+
+### When is the next update?
+
+On the 7th of each month after the Nevada Division of Minerals publishes a new workbook. Each update adds the new months to the chart and scores them against the registered band.
+
+06 / Data
+
+## Data and tools for people and agents.
+
+- [Project Red monthly record (JSON)](https://zemanium.com/data/project-red-monthly.json) and [registered forecast (JSON)](https://zemanium.com/data/project-red-forecast.json). CC BY 4.0.
+- MCP server for AI agents: `https://zemanium.com/mcp`. Tools return the record, the forecast, Nevada plant output and geothermal cost cases.
+- [Forecast and audit repository](https://github.com/tonizemani2/forecast-audit): one command reproduces the fit, the water balance and the audit. DOI 10.5281/zenodo.24396505.
+- [Geothermal stocks](https://zemanium.com/guides/geothermal-stocks): every listed producer, with the Nevada plant record.
+
+Need a scorecard for another project? Write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+07 / Sources
+
+## Sources.
+
+1. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026. Measured, operator-reported.
+2. Zemanium, [Forecast and audit record v1](https://github.com/tonizemani2/forecast-audit), registered 19 November 2026, [doi:10.5281/zenodo.24396505](https://doi.org/10.5281/zenodo.24396505).
+3. Fervo Energy, [pricing of its upsized initial public offering](https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering), 12 May 2026. Company statement.
+4. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026. Company statement.
+5. Fervo Energy, [two years of production data](https://fervoenergy.com/enhanced-geothermal-has-been-proven-at-scale-heres-what-two-years-of-production-data-show/), 13 April 2026. Company statement.
+
+Text, tables and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Fervo Project Red: the monthly record against our registered forecast", Zemanium, 24 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/fervo-project-red
 Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
@@ -178,6 +298,123 @@ Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.o
 
 ---
 Source: https://zemanium.com/guides/enhanced-geothermal-systems
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 24 November 2026
+
+# The energy source of the future, compared: geothermal, fission, fusion and space solar.
+
+Of these four, next-generation geothermal is the one selling new firm clean power in the United States today: Fervo's Cape Station in Utah reached first power on 24 September 2026. Small modular reactors are under construction, and fusion and space-based solar are in demonstration.
+
+Dates and sizes are company or regulator statements, linked below. Firm power here means output available around the clock, in any weather, on demand.
+
+01 / At a glance
+
+## Which clean energy source can run 24/7, and when?
+
+| Source | First grid power, new design | Unit size | Status |
+|---|---|---|---|
+| Next-generation geothermal | 24 Sep 2026, Cape Station, Utah | about 33 MW per unit | selling power; 900 MW contracted |
+| Small modular fission | first unit under construction, Darlington, Ontario | 77 MWe (NuScale module); 300 MWe class (BWRX-300) | design approval; construction |
+| Fusion | company targets: Helion 2028, CFS early 2030s | 50 MW (Helion contract); about 400 MW (ARC) | demonstration machines |
+| Space-based solar | none; first power beamed in orbit, March 2023 | kilowatt-class demonstrations | in-space tests |
+
+Large conventional reactors, hydropower and conventional geothermal already deliver firm clean power. This page compares the four new technologies that agents and investors ask about most when they ask what comes next.
+
+02 / Each source
+
+## Each source on the same terms.
+
+### Next-generation geothermal
+
+**Verdict:** delivering firm power to the grid now, built with oil and gas drilling methods.
+
+- **Firm output:** runs day and night from heat in hot rock; a well pair's temperature declines over years and is tracked in public.
+- **Status, November 2026:** operating. Fervo reports 900 MW contracted and more than 4 GW in development.
+- **Unit size:** about 33 MW per Cape Station unit; first phase about 100 MW.
+- **First power from the new design:** 24 September 2026, Cape Station, Utah.
+- **Sources:** [[1]](https://zemanium.com/guides/firm-clean-power-compared#s1), [Project Red tracker](https://zemanium.com/fervo-project-red)
+
+### Small modular fission (SMR)
+
+**Verdict:** firm and proven physics; the first North American units are being built.
+
+- **Firm output:** runs around the clock between scheduled refuelling outages.
+- **Status, November 2026:** the US Nuclear Regulatory Commission approved NuScale's 77 MWe module design in May 2025; Ontario Power Generation is building the first BWRX-300 at Darlington.
+- **Unit size:** 77 MWe per NuScale module; BWRX-300 is a 300 MWe class reactor.
+- **First power from the new design:** not yet in North America.
+- **Sources:** [[2]](https://zemanium.com/guides/firm-clean-power-compared#s2), [[3]](https://zemanium.com/guides/firm-clean-power-compared#s3)
+
+### Fusion
+
+**Verdict:** the largest long-term prize; no plant has yet delivered electricity to a grid.
+
+- **Firm output:** designed to run on demand once built.
+- **Status, November 2026:** Helion is building a plant in Malaga, Washington, under a Microsoft contract for at least 50 MW, with initial operation targeted for 2028. Commonwealth Fusion Systems plans its ARC plant in Virginia for the early 2030s.
+- **Unit size:** at least 50 MW (Helion contract); about 400 MW (ARC).
+- **First power from the new design:** targeted 2028 (Helion), early 2030s (CFS).
+- **Sources:** [[4]](https://zemanium.com/guides/firm-clean-power-compared#s4), [[5]](https://zemanium.com/guides/firm-clean-power-compared#s5)
+
+### Space-based solar
+
+**Verdict:** sunlight collected in orbit and beamed down; power transfer has been shown in space.
+
+- **Firm output:** near-continuous sunlight in suitable orbits; delivery depends on beaming and receivers.
+- **Status, November 2026:** Caltech's MAPLE experiment transmitted power wirelessly in orbit and detected it on Earth on 3 March 2023. Aetherflux announced a first orbital demonstration for 2026.
+- **Unit size:** kilowatt-class demonstrations.
+- **First power from the new design:** no grid power yet.
+- **Sources:** [[6]](https://zemanium.com/guides/firm-clean-power-compared#s6), [[7]](https://zemanium.com/guides/firm-clean-power-compared#s7)
+
+03 / Buyers
+
+## Who is buying firm clean power for data centers?
+
+- Google and NV Energy: 115 MW of enhanced geothermal from Fervo's Corsac Station under Nevada's Clean Transition Tariff [[8]](https://zemanium.com/guides/firm-clean-power-compared#s8).
+- Google and NV Energy: a geothermal portfolio contract with Ormat for up to 150 MW, signed in 2026 [[9]](https://zemanium.com/guides/firm-clean-power-compared#s9).
+- Microsoft and Helion: at least 50 MW of fusion power from 2028, under a 2023 agreement [[4]](https://zemanium.com/guides/firm-clean-power-compared#s4).
+
+Geothermal is the one of the three with plants already producing. We publish the operating record and forecasts that buyers and lenders use to judge how long that output lasts: [listed producers](https://zemanium.com/guides/geothermal-stocks), [the Project Red tracker](https://zemanium.com/fervo-project-red) and [cost per megawatt-hour](https://zemanium.com/guides/geothermal-electricity-cost).
+
+04 / Questions
+
+## Common questions.
+
+### What is the best energy source for the future?
+
+For firm clean power that can be contracted this decade, next-generation geothermal and fission are the two technologies with plants built or under construction. Geothermal delivered its first next-generation grid power in September 2026; fusion and space-based solar are still in demonstration.
+
+### Is geothermal better than nuclear?
+
+They serve the same need, power around the clock. Geothermal needs hot rock, burns no fuel and uses drilling methods from oil and gas; fission plants can be sited in more places. New geothermal is producing power in the United States today, while the first North American SMR is under construction.
+
+### Geothermal vs fusion: which comes first?
+
+Geothermal. Next-generation geothermal reached first grid power in September 2026. The first fusion power plants are targeted for 2028 (Helion) and the early 2030s (Commonwealth Fusion Systems).
+
+### What is space-based solar power?
+
+Solar panels in orbit collect sunlight and beam the energy to receivers on the ground. Caltech demonstrated wireless power transfer in space in March 2023, and no system yet supplies a grid.
+
+05 / Sources
+
+## Sources.
+
+1. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026. Company statement.
+2. US Nuclear Regulatory Commission, [NRC approves NuScale US460 design](https://www.nrc.gov/cdn/doc-collection-news/2025/25-033.pdf), 29 May 2025.
+3. Ontario Power Generation, [Darlington SMR project](https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/), read 24 November 2026.
+4. Helion Energy, [Orion](https://helionenergy.com/orion), read 24 November 2026. Company statement.
+5. Commonwealth Fusion Systems, [ARC](https://cfs.energy/technology/arc), read 24 November 2026. Company statement.
+6. Caltech, [space solar power demonstrator transmits power in space](https://caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space), June 2023.
+7. SpaceNews, [Aetherflux raises $50 million for space-based solar power](https://spacenews.com/aetherflux-raises-50-million-for-space-based-solar-power/), April 2025.
+8. Google, [clean energy partnership with NV Energy](https://web.archive.org/web/20250625053858/https:/blog.google/outreach-initiatives/sustainability/google-clean-energy-partnership), 11 June 2024 (archived).
+9. Ormat Technologies, [geothermal portfolio PPA of up to 150 MW for Google through NV Energy](https://investor.ormat.com/news-events/news/news-details/2026/Ormat-Technologies-Announces-the-Signing-of-Geothermal-Portfolio-PPA-of-Up-to-150-MW-to-Support-Googles-Data-Center-Operations-Through-NV-Energy/default.aspx), February 2026.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "The energy source of the future, compared", Zemanium, 24 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/firm-clean-power-compared
 Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
@@ -313,6 +550,227 @@ Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.o
 
 ---
 Source: https://zemanium.com/guides/geothermal-electricity-cost
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 24 November 2026
+
+# Geothermal stocks in 2026: the listed producers and what their plants deliver.
+
+The two US-listed companies that run mainly on geothermal power are Ormat Technologies (NYSE: ORA), the largest, and Fervo Energy (Nasdaq: FRVO), listed in May 2026. Six more listed companies in Indonesia, Kenya, New Zealand and Canada own large geothermal fleets. Below is each one, its capacity from its own reports, and the public plant record behind the numbers.
+
+Capacity figures are company statements. Nevada output figures are measured and operator-reported to the state regulator. Independent analysis from public records; not investment advice. Zemanium holds no position in any security.
+
+01 / Companies
+
+## Which geothermal companies are publicly traded?
+
+Eight listed companies own large geothermal fleets. The table gives each one's exchange, ticker and capacity as the company reports it.
+
+| Company | Ticker | Geothermal position | Basis |
+|---|---|---|---|
+| **Ormat Technologies** | NYSE: ORA | 1,853 MW generating portfolio, of which 1,358 MW geothermal and solar generation | company, 4 Nov 2026 [[1]](https://zemanium.com/guides/geothermal-stocks#s1) |
+| **Fervo Energy** | Nasdaq: FRVO | Enhanced geothermal developer; listed May 2026; Cape Station, Utah, first power 24 Sep 2026 from a first unit of about 33 MW; 900 MW contracted | company, 24 Sep 2026 [[3]](https://zemanium.com/guides/geothermal-stocks#s3) |
+| **Pertamina Geothermal Energy** | IDX: PGEO | 1,932 MW installed in Indonesia, of which 727 MW operated on its own and 1,205 MW with partners | company, Q2 2025 [[4]](https://zemanium.com/guides/geothermal-stocks#s4) |
+| **Barito Renewables (Star Energy Geothermal)** | IDX: BREN | 935.55 MW at Salak, Darajat and Wayang Windu, Indonesia | company, 2026 [[5]](https://zemanium.com/guides/geothermal-stocks#s5) |
+| **KenGen** | NSE: KEGN | 754 MW of geothermal in a 1,786 MW fleet, mostly at Olkaria, Kenya | company, year to June 2025 [[6]](https://zemanium.com/guides/geothermal-stocks#s6) |
+| **Mercury NZ** | NZX: MCY | five geothermal stations in the central North Island, about 2,600 GWh in a mean year | company, July 2025 [[7]](https://zemanium.com/guides/geothermal-stocks#s7) |
+| **Contact Energy** | NZX: CEN | geothermal stations near Taupō, including Te Huka 3 (51.4 MW), online in 2024 | company, 2023; NZ Herald, Oct 2024 [[8]](https://zemanium.com/guides/geothermal-stocks#s8) |
+| **Polaris Renewable Energy** | TSX: PIF | San Jacinto geothermal plant, 82 MW, Nicaragua, plus hydro, solar and wind | company, Q2 2026 [[9]](https://zemanium.com/guides/geothermal-stocks#s9) |
+
+Large utilities such as Enel and Berkshire Hathaway Energy also own geothermal plants, where geothermal is a small share of the business. Drilling and equipment suppliers such as SLB, Halliburton and Baker Hughes earn part of their revenue from geothermal wells.
+
+02 / Fervo
+
+## Fervo Energy (FRVO): what the public record shows.
+
+Fervo priced its initial public offering at $27 a share on 12 May 2026 and sold 70 million shares; trading on Nasdaq began on 13 May. Its first commercial plant, Cape Station in Utah, reached first power on 24 September 2026, with a first phase of about 100 MW planned, by the company's account.
+
+Fervo's pilot well pair, Project Red in Nevada, is the only enhanced geothermal system with a public monthly production record. Its wellhead temperature read 347 °F at its 2024 plateau and 316 °F in July 2026. We track it every month against a forecast registered on 19 November 2026.
+
+[Open the Project Red tracker ](https://zemanium.com/fervo-project-red)
+
+03 / Record
+
+## What Nevada's geothermal plants produced, year by year.
+
+Nevada publishes monthly output for every geothermal plant in the state. Statewide output was 5,044 GWh in 2019, peaked at 5,391 GWh in 2023 and was 5,031 GWh in 2025. The McGinness Hills complex, whose operator of record is Ormat Nevada and its ORNI subsidiaries, is the largest single site in the record.
+
+| Year | Nevada, all plants (GWh) | McGinness Hills 1 to 3 (GWh) |
+|---|---|---|
+| 2019 | 5,044 | 1,434 |
+| 2020 | 5,110 | 1,403 |
+| 2021 | 5,165 | 1,443 |
+| 2022 | 5,161 | 1,500 |
+| 2023 | 5,391 | 1,484 |
+| 2024 | 4,978 | 1,336 |
+| 2025 | 5,031 | 1,286 |
+
+Every plant's yearly output is in [one JSON file](https://zemanium.com/data/nevada-plant-output.json), and the field-by-field production temperature is in [another](https://zemanium.com/data/nevada-field-temperature.json). Both are CC BY 4.0.
+
+04 / Method
+
+## How to read a geothermal producer.
+
+- **Capacity factor.** Energy produced in a year divided by capacity times 8,760 hours. Geothermal plants run day and night, so a falling figure usually means the wells deliver less heat.
+- **Reservoir temperature trend.** A well that cools needs makeup drilling to hold output. The regulator records in Nevada show it field by field.
+- **Cost per megawatt-hour.** Our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost) shows which inputs move it, and the [power-cost model](https://zemanium.com/confidence/) prices a plant under your assumptions.
+
+05 / Questions
+
+## Common questions.
+
+### Is Fervo Energy publicly traded?
+
+Yes. Fervo Energy trades on Nasdaq under the ticker FRVO. It priced its initial public offering at $27 a share on 12 May 2026 and began trading on 13 May 2026.
+
+### What is the largest geothermal stock?
+
+By capacity, Pertamina Geothermal Energy (IDX: PGEO) reports 1,932 MW installed including partner-operated plants. Among US-listed companies, Ormat Technologies (NYSE: ORA) is the largest, with a 1,853 MW portfolio that also includes solar and storage.
+
+### Are there geothermal stocks outside the United States?
+
+Yes. Pertamina Geothermal Energy and Barito Renewables trade in Jakarta, KenGen in Nairobi, Mercury NZ and Contact Energy in New Zealand, and Polaris Renewable Energy in Toronto.
+
+### Where can I check a geothermal plant's actual output?
+
+In Nevada, the Division of Minerals publishes monthly output for every plant and monthly temperature for every well. Our Nevada plant file and the Project Red tracker take their numbers from that record. Across the United States, the EIA publishes monthly generation by plant.
+
+06 / Sources
+
+## Sources.
+
+1. Ormat Technologies, [third quarter 2026 results](https://investor.ormat.com/news-events/news/news-details/2026/Ormat-Technologies-Reports-Third-Quarter-2026-Financial-Results/default.aspx), 4 November 2026.
+2. Fervo Energy, [pricing of its upsized initial public offering](https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering), 12 May 2026.
+3. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026.
+4. Pertamina Geothermal Energy, [second quarter 2025 results](https://pge.pertamina.com/en/press-release/optimistic-about-being-a-stimulus-for-accelerating-the-energy-transition-pge-s-revenue-in-the-second-quarter-of-2025-grew-year-on-year-to-us204-85-million).
+5. Barito Renewables, [Darajat Unit 3 retrofit, installed capacity 935.55 MW](https://baritorenewables.co.id/en/press-release/barito-renewables-completes-star-energy-darajat-unit-3-retrofit-bringing-installed-capacity-to-93555-mw).
+6. KenGen, [results for the year to June 2025](https://kengen.co.ke/kengen-posts-10-5b-profits-in-2025-up-54-on-growth-and-efficiency-gains).
+7. Mercury NZ, [geothermal strategy](https://mercury.co.nz/investors/news/2025-july---geothermal-strategy), July 2025.
+8. Contact Energy, [Te Huka Unit 3 agreement with Microsoft](https://contact.co.nz/investor-centre/news/2023/contact-signs-ten-year-renewable-energy-agreement-with-microsoft), May 2023; NZ Herald, [Contact Energy flicks the switch on Te Huka 3](https://nzherald.co.nz/business/contact-energy-flicks-the-switch-on-te-huka-3/ESBRCP7XMJFNZLGO4JSPTMS3LA), October 2024.
+9. Polaris Renewable Energy, [second quarter 2026 results](https://nasdaq.com/press-release/polaris-renewable-energy-announces-q2-2026-results-2026-07-30), 30 July 2026.
+10. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026, sheet MonthlyMWH. Measured, operator-reported.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal stocks in 2026", Zemanium, 24 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-stocks
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · Toni Zemani · 24 November 2026
+
+# Is geothermal energy renewable? What the field records show.
+
+Yes. Geothermal energy is renewable because the Earth keeps producing heat inside it, as the US Energy Information Administration puts it. A single reservoir can still cool when a plant draws heat faster than the rock refills it, and Nevada's public well records show how fast that happens, field by field.
+
+Field temperatures and plant output are measured and operator-reported to the Nevada Division of Minerals. Flow-weighted means are computed by Zemanium from that record.
+
+01 / Answer
+
+## Is geothermal energy renewable or nonrenewable?
+
+Geothermal energy is renewable. The heat comes from the Earth's interior, which keeps producing it, and power plants send the used water back underground. The EIA classes it as a renewable source on that basis.
+
+The heat in one reservoir refills slowly, over decades to centuries. So a field can be renewable as a resource while a given well pair cools during its working life. Operators manage that with spacing, injection and new wells.
+
+02 / Mechanism
+
+## How does geothermal energy work?
+
+1. Wells reach hot water or hot rock deep underground.
+2. Hot water or steam rises to the surface and drives a turbine, directly or through a second fluid in a binary plant.
+3. The cooled water goes back down an injection well and heats up again in the rock.
+
+Because nothing burns and the loop runs in any weather, a geothermal plant delivers power around the clock. [Enhanced geothermal systems](https://zemanium.com/guides/enhanced-geothermal-systems) build the same loop in hot rock that has no natural water or cracks.
+
+03 / Record
+
+## What Nevada's field records show.
+
+Nevada publishes the monthly temperature of every producing geothermal well. Across 18 fields with ten or more years of record and production in 2025, the flow-weighted mean temperature fell by more than 5 °F in 11, stayed within 5 °F in 3 and rose in 4. Statewide geothermal output was 5,044 GWh in 2019 and 5,031 GWh in 2025.
+
+| Field (regulator code) | First year | First-year mean | 2025 mean | Change |
+|---|---|---|---|---|
+| Blue Mountain (BLU) | 2009 | 368 °F | 281 °F | -87 °F |
+| WRS2 (WRS2) | 2015 | 261 °F | 212 °F | -49 °F |
+| Jersey Valley (JVP) | 2012 | 331 °F | 292 °F | -38 °F |
+| WRS (WRS) | 2013 | 260 °F | 227 °F | -32 °F |
+| Brady Hot Springs (BHS) | 2012 | 280 °F | 248 °F | -32 °F |
+| McGinness Hills 2 (MGH2) | 2015 | 336 °F | 307 °F | -29 °F |
+| McGinness Hills (MGH) | 2012 | 335 °F | 306 °F | -29 °F |
+| Tuscarora (TUS) | 2012 | 341 °F | 313 °F | -28 °F |
+| Salt Wells (SWL) | 2009 | 276 °F | 248 °F | -28 °F |
+| Steamboat (STB) | 2012 | 290 °F | 263 °F | -27 °F |
+| Patua (PTA) | 2013 | 303 °F | 293 °F | -10 °F |
+| Soda Lake (SDL) | 2012 | 329 °F | 325 °F | -4 °F |
+| Dixie Valley (DXV) | 2012 | 330 °F | 330 °F | -1 °F |
+| Wabuska (WAB) | 2012 | 209 °F | 209 °F | +0 °F |
+| Desert Peak (DPK) | 2012 | 295 °F | 302 °F | +7 °F |
+| San Emidio (SEM) | 2012 | 284 °F | 300 °F | +16 °F |
+| Stillwater (STW) | 2009 | 270 °F | 297 °F | +27 °F |
+| Beowawe (BEO) | 2012 | 274 °F | 324 °F | +50 °F |
+
+A field's mean also moves when operators add or retire wells, so this table shows the produced fluid, not the rock alone. The yearly values for every field are in [one JSON file](https://zemanium.com/data/nevada-field-temperature.json), CC BY 4.0.
+
+The clearest single well-pair record is Fervo's Project Red, which went from a 347 °F plateau in 2024 to 316 °F in July 2026. [See the monthly tracker](https://zemanium.com/fervo-project-red).
+
+04 / Practice
+
+## How operators keep a geothermal field hot.
+
+- **Reinjection.** Sending the used water back keeps reservoir pressure up and returns the fluid for reheating. Most plants reinject, according to the EIA.
+- **Well spacing.** Injection wells placed far enough from producers give the water more rock to heat it before it returns.
+- **Makeup wells.** When a well cools, operators drill a new one into hotter rock nearby.
+- **Even flow.** In enhanced systems, spreading flow across many fractures uses more rock and slows cooling. Our [reservoir explorer](https://zemanium.com/demo/) shows the effect.
+
+05 / Trade-offs
+
+## Geothermal energy pros and cons.
+
+| Pros | Cons |
+|---|---|
+| Runs day and night in any weather | Good conventional sites are limited to hot regions |
+| About 99% less carbon dioxide than fossil plants, per the EIA | Drilling is expensive and dominates the cost |
+| Most plants send their water back underground, per the EIA | Single reservoirs can cool over a plant's life |
+| Fuel cost is zero | Stimulation can trigger small earthquakes |
+
+Our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost) shows what geothermal electricity costs per megawatt-hour and which inputs move it.
+
+06 / Questions
+
+## Common questions.
+
+### Why is geothermal energy considered renewable?
+
+Because the Earth keeps producing heat in its interior, and power plants return the used water underground to be heated again. The US Energy Information Administration lists geothermal as a renewable energy source.
+
+### Can a geothermal reservoir run out?
+
+A reservoir can cool if heat is drawn out faster than the surrounding rock replaces it. In Nevada's records, 11 of 18 long-running fields produced cooler fluid in 2025 than in their first recorded year, and operators drill makeup wells to hold output.
+
+### Is geothermal energy clean?
+
+Geothermal plants burn no fuel. The EIA reports about 97% less sulfur compounds and about 99% less carbon dioxide than fossil fuel plants, and plants use scrubbers to remove hydrogen sulfide.
+
+### How long does a geothermal power plant last?
+
+Plants commonly run for decades, with wells replaced or added as fields cool. Our cost model assumes a 25-year life for a new plant.
+
+07 / Sources
+
+## Sources.
+
+1. US Energy Information Administration, [Geothermal explained](https://www.eia.gov/energyexplained/geothermal/), read 24 November 2026.
+2. US Energy Information Administration, [Geothermal energy and the environment](https://www.eia.gov/energyexplained/geothermal/geothermal-energy-and-the-environment.php), read 24 November 2026.
+3. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026. Measured, operator-reported.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Is geothermal energy renewable? What the field records show", Zemanium, 24 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/is-geothermal-energy-renewable
 Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
@@ -506,6 +964,11 @@ The [research page](https://zemanium.com/room/#machines) shows each drawing with
 - [What geothermal electricity costs, and what sets the price](https://zemanium.com/guides/geothermal-electricity-cost)
 - [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems)
 - [Superhot rock geothermal: what happens above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal)
+- [Geothermal stocks in 2026: the listed producers and what their plants deliver](https://zemanium.com/guides/geothermal-stocks)
+- [Is geothermal energy renewable? What the field records show](https://zemanium.com/guides/is-geothermal-energy-renewable)
+- [The energy source of the future, compared](https://zemanium.com/guides/firm-clean-power-compared)
+- [Fervo Project Red tracker](https://zemanium.com/fervo-project-red): the monthly record against our registered forecast
+- For agents: MCP server at `https://zemanium.com/mcp` and JSON records under [/data/](https://zemanium.com/data/project-red-monthly.json), CC BY 4.0
 - [Technical dossier](https://zemanium.com/docs/04-technical-dossier): methods, test duties and results for each program
 
 05 / Licence

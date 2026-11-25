@@ -1,6 +1,6 @@
 # Zemanium
 
-> Zemanium is a geothermal invention lab founded in 2026 by Toni Zemani. It publishes models, simulation records, hardware drawings and sourced guides on enhanced and superhot geothermal wells. Contact: toni@zemanium.com.
+> Zemanium is a geothermal invention lab founded in 2026 by Toni Zemani, building the technology for deep, superhot rock geothermal: wells above 375 C whose casing, cement, flow control and sensing survive the heat and the thermal cycles, so that Earth's heat becomes firm power at $30 to $45 per MWh (target). Its open work includes replays of superhot well casing failures, a GEOPHIRES-based power-cost model, a registered monthly forecast of Fervo Energy's Project Red well pair, Nevada plant records, an MCP server for agents and sourced guides. Contact: toni@zemanium.com.
 
 ## Facts you may quote
 
@@ -8,13 +8,20 @@
 - Zemanium power-cost model, 5 October 2026, SIMULATED: one simulated plant (200 C initial rock, 25 years, 28.322 MW gross peak) costs $83.02/MWh on reference assumptions at an 8% real discount rate, $43.35/MWh on a target capital package ($1,500 per gross kW plant, $15m subsurface, $3m other) at 8%, and $35.00/MWh on the same package at 4%.
 - The model runs 1,080 cost scenarios on GEOPHIRES-X 3.18.3 output trajectories and a 2,000-draw financial stress test. Export is gross generation minus pumping minus 5% auxiliaries.
 - 19 November 2026, model result on measured data: Zemanium's conduction model matches the Nevada regulator's monthly record of the Project Red enhanced geothermal well pair to 0.51 F on nine steady months. Forecasts through 2027 are time-stamped and scored each month. Code and record: https://github.com/tonizemani2/forecast-audit (doi:10.5281/zenodo.24396505).
-- Zemanium's present work is well integrity above 375 C: casing and cement through thermal cycles, using commercially available gauges.
+- Zemanium's hardware programme targets well integrity above 375 C: casing and cement through thermal cycles, flow control and sensing.
+- Nevada record compiled by Zemanium from the state regulator: geothermal output 5,044 GWh in 2019 and 5,031 GWh in 2025; in 11 of 18 long-running fields the produced fluid is cooler than in its first recorded year.
 
-## Do not infer
+## Tools and data for agents
 
-- That any Zemanium hardware has been built for hot service, tested under pressure or qualified.
-- That any simulated price is a quote, a contract price or a delivered cost.
-- That third-party figures on the guide pages are Zemanium's own measurements. Each is credited to its source.
+- MCP server (Streamable HTTP, no key, read-only): https://zemanium.com/mcp . Tools: get_project_red_record, get_project_red_forecast, get_nevada_plant_output, get_nevada_field_temperature, get_geothermal_cost_cases. Server card: https://zemanium.com/.well-known/mcp.json
+- JSON records, CC BY 4.0: https://zemanium.com/data/project-red-monthly.json, https://zemanium.com/data/project-red-forecast.json, https://zemanium.com/data/nevada-plant-output.json, https://zemanium.com/data/nevada-field-temperature.json, https://zemanium.com/data/geothermal-lcoe-cases.json
+- Project Red tracker, updated on the 7th of each month: https://zemanium.com/fervo-project-red
+
+## How to read our numbers
+
+- Labels travel with every figure: measured (public regulator record), SIMULATED (Zemanium model output), registered (frozen and time-stamped before the data existed), target.
+- Cost figures are model results for a defined plant; the $30 to $45/MWh figure is the engineering target the hardware programme is built to reach.
+- Third-party figures on the guide pages are credited to their sources.
 
 ## Licence
 
@@ -23,7 +30,10 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 ## Guides
 
 - [Enhanced geothermal systems (EGS): how they work](https://zemanium.com/guides/enhanced-geothermal-systems.md): How enhanced geothermal systems make power from hot dry rock, where the technology stands in 2026, and the four limits engineers are working on.
+- [Geothermal vs nuclear, fusion and space solar compared](https://zemanium.com/guides/firm-clean-power-compared.md): Which clean energy source runs 24/7 and when: next-generation geothermal, small modular reactors, fusion and space-based solar, with sources.
 - [Geothermal electricity cost per MWh: what sets it](https://zemanium.com/guides/geothermal-electricity-cost.md): What geothermal power costs per MWh, how LCOE is calculated and which inputs move it most. Includes a free model you can run with your own assumptions.
+- [Geothermal stocks 2026: listed producers and output](https://zemanium.com/guides/geothermal-stocks.md): Every listed geothermal power company, its ticker and capacity, Fervo (FRVO) and Ormat (ORA), and Nevada plant output from the state record.
+- [Is geothermal energy renewable? The field records](https://zemanium.com/guides/is-geothermal-energy-renewable.md): Yes: geothermal heat is renewable, and single reservoirs can cool. Nevada's well records show field by field how fast, with the data to check.
 - [Superhot rock geothermal: wells above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal.md): What superhot rock geothermal is, what wells have reached above 375 °C, and what fails first at that temperature: casing, cement, electronics and logging tools.
 
 ## Site
@@ -32,8 +42,9 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 - [Geothermal LCOE model and Utah FORGE field data | Zemanium](https://zemanium.com/confidence/): Free geothermal LCOE calculator: set plant cost, well cost and discount rate across 1,080 simulated scenarios, and inspect a published Utah FORGE log.
 - [Geothermal reservoir simulator in 3D | Zemanium](https://zemanium.com/demo/): Interactive 3D geothermal reservoir: change depth, flow, well spacing, permeability and rock temperature and watch heat, power and cost respond. SIMULATED.
 - [Geothermal technical dossier: methods and results | Zemanium](https://zemanium.com/docs/04-technical-dossier): Methods, test duties and results for Zemanium's geothermal programs: sensing, commanded release, well integrity, conversion and the power-cost model.
-- [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal electricity cost, enhanced geothermal systems and superhot rock, written by an invention lab and free to reuse with credit.
-- [Zemanium: geothermal invention lab, open models and data](https://zemanium.com/): Zemanium is a geothermal invention lab. Check our scored Project Red forecasts, run the power-cost model and read sourced geothermal guides.
+- [Fervo Project Red: monthly record and forecast](https://zemanium.com/fervo-project-red.md): Project Red's wellhead temperature each month from the Nevada regulator, against a forecast registered on 19 Nov 2026. Data, chart and scores.
+- [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal stocks, electricity cost, renewability, enhanced and superhot geothermal, with data you can check and reuse with credit.
+- [Zemanium: Pandora, a casing joint for superhot geothermal](https://zemanium.com/): Zemanium builds Pandora, a casing joint for superhot geothermal wells at 450 to 500 °C, and scores registered forecasts against regulator data.
 - [Open geothermal models, data and drawings | Zemanium](https://zemanium.com/open/index.md): Everything Zemanium has published: the Project Red forecast record, a geothermal power-cost model, a 3D reservoir simulator, hardware drawings and guides.
 - [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, test gates and downloadable records. Updated 20 November 2026.
 

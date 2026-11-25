@@ -55,6 +55,11 @@ The [research page](https://zemanium.com/room/#machines) shows each drawing with
 - [What geothermal electricity costs, and what sets the price](https://zemanium.com/guides/geothermal-electricity-cost)
 - [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems)
 - [Superhot rock geothermal: what happens above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal)
+- [Geothermal stocks in 2026: the listed producers and what their plants deliver](https://zemanium.com/guides/geothermal-stocks)
+- [Is geothermal energy renewable? What the field records show](https://zemanium.com/guides/is-geothermal-energy-renewable)
+- [The energy source of the future, compared](https://zemanium.com/guides/firm-clean-power-compared)
+- [Fervo Project Red tracker](https://zemanium.com/fervo-project-red): the monthly record against our registered forecast
+- For agents: MCP server at `https://zemanium.com/mcp` and JSON records under [/data/](https://zemanium.com/data/project-red-monthly.json), CC BY 4.0
 - [Technical dossier](https://zemanium.com/docs/04-technical-dossier): methods, test duties and results for each program
 
 05 / Licence

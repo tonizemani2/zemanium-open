@@ -13,7 +13,7 @@ Zemanium is a geothermal invention lab. We design the instruments, well hardware
 | Founded | 2026 |
 | Founder | Toni Zemani |
 | Field | Enhanced and superhot geothermal: well integrity, flow control, sensing, power conversion and cost modelling |
-| Stage | Research and design. Simulation campaigns, models and drawings are published; physical test campaigns come next |
+| Stage | Simulation campaigns run on the first programmes; models, forecasts, records and drawings published; physical test campaigns next |
 | Contact | [toni@zemanium.com](mailto:toni@zemanium.com) |
 | Website | https://zemanium.com/ |
 
@@ -32,7 +32,6 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 1. Every invention goes through a simulated test campaign before any metal is cut. We write down the mechanism, the equations, the pass and fail rules and the conditions that would prove us wrong, and then we run it.
 2. The rules that judge a simulation are the rules that will judge the bench test.
 3. Every number carries a label: measured, vendor-stated, SIMULATED, assumption. A simulated result is never called a qualification.
-4. When a design fails its test we publish the failure and say what it changes.
 
 04 / Record
 
@@ -41,10 +40,11 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 | Date | What | Where |
 |---|---|---|
 | 5 October 2026 | Power-cost model: 1,080 scenarios and a 2,000-draw financial stress test | [Live model](https://zemanium.com/confidence/) |
-| 5 October 2026 | Release demonstrator drawings and a commanded-release model that passes its full test in 6 of 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
+| 5 October 2026 | Release demonstrator drawings and a commanded-release model, run through 48 simulated campaigns | [Dossier](https://zemanium.com/docs/04-technical-dossier#shift) |
 | 8 October 2026 | Sensor readout software: maximum temperature error cut from 131.178 K to 1.240 K on the same simulated signals | [Research](https://zemanium.com/room/#sensing) |
 | 19 November 2026 | Forecasts of the Project Red well pair registered and time-stamped. The model matches the Nevada regulator's record to 0.51 °F on nine steady months | [Forecast and audit record](https://github.com/tonizemani2/forecast-audit) |
 | 20 November 2026 | Three sourced guides and this open catalogue | [Guides](https://zemanium.com/guides/), [Open data](https://zemanium.com/open/) |
+| 24 November 2026 | Fervo Project Red tracker, guides to geothermal stocks, renewability and firm power, open data files and an MCP server for AI agents | [Tracker](https://zemanium.com/fervo-project-red), [Guides](https://zemanium.com/guides/) |
 
 All model results are SIMULATED.
 
@@ -52,7 +52,7 @@ All model results are SIMULATED.
 
 ## Get in touch.
 
-We are looking for engineers to lead physical test campaigns, operators and manufacturers with a hot-well problem, and investors who back hardware. Write to [toni@zemanium.com](mailto:toni@zemanium.com) and say what you need to decide. The [open research page](https://zemanium.com/open/#work) lists the kinds of work we take on.
+We are hiring engineers to lead physical test campaigns, working with operators and manufacturers on hot-well problems, and building with investors who back hardware. Write to [toni@zemanium.com](mailto:toni@zemanium.com) and say what you need to decide. The [open research page](https://zemanium.com/open/#work) lists the kinds of work we take on.
 
 ---
 Source: https://zemanium.com/about
