@@ -11,7 +11,7 @@ Zemanium is a geothermal invention lab. We design the instruments, well hardware
 | Name | Zemanium (zeh-MAY-nee-um) |
 |---|---|
 | Founded | 2026 |
-| Founder | Toni Zemani |
+| Founder | [Toni Zemani](https://zemanium.com/about#toni-zemani) |
 | Field | Enhanced and superhot geothermal: well integrity, flow control, sensing, power conversion and cost modelling |
 | Stage | Simulation campaigns run on the first programmes; models, forecasts, records and drawings published; physical test campaigns next |
 | Contact | [toni@zemanium.com](mailto:toni@zemanium.com) |
@@ -45,10 +45,24 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 | 19 November 2026 | Forecasts of the Project Red well pair registered and time-stamped. The model matches the Nevada regulator's record to 0.51 °F on nine steady months | [Forecast and audit record](https://github.com/tonizemani2/forecast-audit) |
 | 20 November 2026 | Three sourced guides and this open catalogue | [Guides](https://zemanium.com/guides/), [Open data](https://zemanium.com/open/) |
 | 24 November 2026 | Fervo Project Red tracker, guides to geothermal stocks, renewability and firm power, open data files and an MCP server for AI agents | [Tracker](https://zemanium.com/fervo-project-red), [Guides](https://zemanium.com/guides/) |
+| 27 November 2026 | Guides to geothermal pros and cons, wells and companies, and a free LCOE calculator | [Guides](https://zemanium.com/guides/), [Calculator](https://zemanium.com/lcoe-calculator) |
 
 All model results are SIMULATED.
 
-05 / Contact
+05 / Founder
+
+## Toni Zemani, founder.
+
+Toni Zemani founded Zemanium in 2026 and leads its engineering and research. He writes the guides on this site and built the work behind them:
+
+- the conduction model that matches the Nevada regulator's record of Fervo's Project Red well pair to 0.51 °F on nine steady months, with forecasts registered and time-stamped on 19 November 2026 and published as [forecast-audit](https://github.com/tonizemani2/forecast-audit) (doi:10.5281/zenodo.24396505);
+- the replay of IDDP-1's production casing through the well's recorded history, which reproduces the 2014 video log in 88 of 128 sampled wells (SIMULATED);
+- Pandora, a casing joint for superhot wells at 450 to 500 °C;
+- the GEOPHIRES-based power-cost model and the [LCOE calculator](https://zemanium.com/lcoe-calculator).
+
+Code and records are on GitHub at [github.com/tonizemani2](https://github.com/tonizemani2).
+
+06 / Contact
 
 ## Get in touch.
 
@@ -180,7 +194,7 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 20 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 20 November 2026
 
 # Enhanced geothermal systems: how they work and what limits them.
 
@@ -302,7 +316,7 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 24 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 24 November 2026
 
 # The energy source of the future, compared: geothermal, fission, fusion and space solar.
 
@@ -419,24 +433,153 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 20 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
 
-# What geothermal electricity costs, and what sets the price.
+# Geothermal companies in 2026: who is building what.
 
-A geothermal plant is paid for almost entirely before it produces anything. The cost of each megawatt-hour then depends on four things: what the wells cost, how much power each well delivers, how long that output lasts, and the interest rate on the money.
+Most geothermal power today comes from long-established operators such as Ormat in the United States, Pertamina Geothermal Energy in Indonesia and KenGen in Kenya. A newer group is adding enhanced, closed-loop and superhot geothermal: Fervo Energy's Cape Station in Utah sent its first power on 24 September 2026, Eavor's closed-loop plant in Germany has delivered power since December 2025, and Sage Geosystems, XGS Energy, Zanskar, Quaise Energy and Mazama Energy have plants under way.
+
+Milestones are the companies' own statements or press reports of them, dated and linked below. Capacity figures for listed producers are company statements. Independent summary; not investment advice. Zemanium holds no position in any security.
+
+01 / Developers
+
+## Which companies are building next-generation geothermal?
+
+| Company | Approach | Latest milestone | Basis |
+|---|---|---|---|
+| Fervo Energy (Nasdaq: FRVO) | enhanced geothermal with horizontal wells and hydraulic stimulation | Cape Station, Utah, first power 24 September 2026 from a first unit of about 33 MW, in a 500 MW multi-phase project; Project Red pilot in Nevada since 2023 | company statements; EnergyTech and Canary Media, 2026 [[1]](https://zemanium.com/guides/geothermal-companies#s1) [[2]](https://zemanium.com/guides/geothermal-companies#s2) [[3]](https://zemanium.com/guides/geothermal-companies#s3) |
+| Sage Geosystems | enhanced geothermal that stores water under pressure in fractures | 3 MW pilot near San Antonio, Texas, selling power since April 2026; next well at an Ormat plant in Nevada; 150 MW agreement with Meta | Canary Media, 19 August 2026 [[3]](https://zemanium.com/guides/geothermal-companies#s3) |
+| XGS Energy | solid-state geothermal system built on thermally conductive materials | 150 MW agreement with Meta in New Mexico; engineering services from Baker Hughes; ARPA-E SUPERHOT award of $3.0m, November 2026 | company statements; ARPA-E [[4]](https://zemanium.com/guides/geothermal-companies#s4) [[9]](https://zemanium.com/guides/geothermal-companies#s9) |
+| Zanskar | AI-guided exploration for hidden natural hydrothermal systems | $115m Series C, January 2026; 100 MW power purchase agreement with NV Energy for delivery by 2030; DOE field test selection, September 2026 | company statements; Renewable Energy Magazine [[5]](https://zemanium.com/guides/geothermal-companies#s5) [[6]](https://zemanium.com/guides/geothermal-companies#s6) [[2]](https://zemanium.com/guides/geothermal-companies#s2) |
+| Eavor Technologies | closed loop: sealed multilateral wells, no fracturing or water from the rock | Geretsried, Germany, first power to the grid December 2025; 12 laterals, 16 km of wellbore per pair | company statement [[7]](https://zemanium.com/guides/geothermal-companies#s7) |
+| Quaise Energy | millimetre-wave drilling into superhot rock | Project Obsidian, Oregon, 50 MW, power targeted by 2030; up to $25m from DOE, September 2026; $180m Series B, August 2026 | company statements; EnergyTech [[2]](https://zemanium.com/guides/geothermal-companies#s2) [[8]](https://zemanium.com/guides/geothermal-companies#s8) |
+| Mazama Energy | superhot enhanced geothermal, drill bits cooled with carbon dioxide | well at 331 °C at Newberry, Oregon, in October 2025 and a later well above 700 °F; $135m raised, September 2026 | TechCrunch, 16 November 2026 [[10]](https://zemanium.com/guides/geothermal-companies#s10) |
+
+The approaches differ in how they get heat out of the rock. Our guides explain [enhanced geothermal systems](https://zemanium.com/guides/enhanced-geothermal-systems) and [superhot rock geothermal](https://zemanium.com/guides/superhot-rock-geothermal), and the [wells guide](https://zemanium.com/guides/geothermal-wells) compares their drilling records.
+
+02 / Listed
+
+## Which geothermal companies are publicly traded?
+
+| Company | Ticker | Geothermal position |
+|---|---|---|
+| Ormat Technologies | NYSE: ORA | 1,853 MW generating portfolio, of which 1,358 MW geothermal and solar generation (4 November 2026) |
+| Fervo Energy | Nasdaq: FRVO | listed May 2026; Cape Station first power 24 September 2026 |
+| Pertamina Geothermal Energy | IDX: PGEO | 1,932 MW installed in Indonesia, including partner-operated plants (Q2 2025) |
+| Barito Renewables (Star Energy Geothermal) | IDX: BREN | 935.55 MW at Salak, Darajat and Wayang Windu, Indonesia |
+| KenGen | NSE: KEGN | 754 MW of geothermal, mostly at Olkaria, Kenya (year to June 2025) |
+| Mercury NZ | NZX: MCY | five geothermal stations, about 2,600 GWh in a mean year |
+| Contact Energy | NZX: CEN | geothermal stations near Taupō, including Te Huka 3 (51.4 MW, 2024) |
+| Polaris Renewable Energy | TSX: PIF | San Jacinto geothermal plant, 82 MW, Nicaragua |
+
+Company statements; sources and plant output records are in our [geothermal stocks guide](https://zemanium.com/guides/geothermal-stocks).
+
+03 / Utilities and suppliers
+
+## Utilities, operators and oilfield suppliers.
+
+- Large utilities such as Enel and Berkshire Hathaway Energy own geothermal plants as a small part of wider fleets. In Nevada's regulator record Enel is the operator of record at Salt Wells and Stillwater.
+- Geysers Power Company, a subsidiary of Calpine, runs The Geysers in California, which NLR calls the most prolific geothermal field in the United States.
+- Oilfield service companies sell into geothermal wells: Baker Hughes is providing engineering for XGS Energy's New Mexico project, and SLB interpreted Utah FORGE's production logs for the Department of Energy.
+
+04 / Buyers
+
+## Who is buying next-generation geothermal power?
+
+Data center owners and utilities. Meta has agreements for 150 MW each with Sage Geosystems and XGS Energy. Fervo built its Project Red pilot in partnership with Google, according to Canary Media. NV Energy signed a 20-year agreement with Zanskar for 100 MW by 2030. Public geothermal power contracts signed between November 2019 and June 2025 priced at $67.50 to $99 per megawatt-hour, according to the National Laboratory of the Rockies.
+
+05 / Zemanium
+
+## Where Zemanium fits.
+
+Zemanium is a geothermal invention lab working on the well itself: casing and cement that survive the heating and cooling cycles of superhot wells, and Pandora, a casing joint for wells at 450 to 500 °C. We also publish open records for the whole field: a monthly [Project Red tracker](https://zemanium.com/fervo-project-red) scored against the Nevada regulator, Nevada plant and field data, and an [LCOE calculator](https://zemanium.com/lcoe-calculator). Developers, operators and investors who want an independent review of a well or reservoir forecast can write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+06 / Questions
+
+## Common questions.
+
+### What are the biggest geothermal companies?
+
+By installed capacity, Pertamina Geothermal Energy reports 1,932 MW in Indonesia including partner-operated plants, and Ormat Technologies a 1,853 MW portfolio that includes solar and storage. KenGen runs 754 MW of geothermal in Kenya.
+
+### What companies are doing enhanced geothermal?
+
+Fervo Energy, which reached first power at Cape Station in Utah on 24 September 2026, Sage Geosystems, with a 3 MW pilot in Texas, and Mazama Energy, drilling superhot wells in Oregon. The Department of Energy selected Fervo, Zanskar, AlterG Resources, Quaise Energy and the University of Utah for field-scale enhanced geothermal tests in September 2026.
+
+### Is Fervo Energy a public company?
+
+Yes. Fervo Energy trades on Nasdaq under the ticker FRVO after pricing its initial public offering at $27 a share on 12 May 2026.
+
+### What is closed-loop geothermal?
+
+A system that circulates fluid through sealed wells in hot rock and takes heat by conduction, with no fracturing and no water drawn from the rock. Eavor's plant at Geretsried, Germany, connects 12 lateral wells into six pairs and has sent power to the grid since December 2025, by the company's account.
+
+### Which geothermal startups have raised the most money?
+
+Among the developers on this page, Quaise Energy closed a $180m Series B in August 2026, Mazama Energy raised $135m in September 2026, and Zanskar raised a $115m Series C in January 2026, bringing its equity to $180m. Fervo Energy raised public equity in its May 2026 listing.
+
+07 / Sources
+
+## Sources.
+
+1. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026, and [pricing of its initial public offering](https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering), 12 May 2026. Company statements.
+2. EnergyTech, [DOE selects Fervo, Zanskar and Quaise as part of $99M funding](https://www.energytech.com/renewables/news/55407907/doe-selects-fervo-zanskar-and-quaise-as-part-of-99m-funding-to-advance-next-gen-geothermal), 25 September 2026.
+3. Canary Media, [Sage Geosystems brings its first next-gen geothermal plant online](https://www.canarymedia.com/articles/geothermal/sage-geosystems-next-gen-geothermal-online), 19 August 2026.
+4. XGS Energy, [XGS Energy and Meta geothermal partnership](https://www.xgsenergy.com/governor-announces-xgs-energy-meta-geothermal-partnership-nation-leading-150-mw-geothermal-project-on-its-way-to-new-mexico/), and [collaboration with Baker Hughes](https://www.xgsenergy.com/xgs-energy-and-baker-hughes-announce-strategic-collaboration-to-advance-geothermal-development-in-new-mexico/). Company statements.
+5. Zanskar, [$115M Series C](https://www.globenewswire.com/news-release/2026/01/21/3222733/0/en/zanskar-raises-115m-series-c-following-record-setting-year-of-geothermal-discoveries.html), 21 January 2026. Company statement.
+6. Renewable Energy Magazine, [Zanskar inks 100 MW PPA with NV Energy](https://www.renewableenergymagazine.com/geothermal/zanskar-inks-100-mw-ppa-to-provide-20260520), 20 May 2026.
+7. Eavor Technologies, [first electricity production at Geretsried](https://eavor.com/press-releases/eavor-technologies-achieves-first-electricity-production-at-geretsried-site/), 4 December 2025. Company statement.
+8. Quaise Energy, [Looking back on 2025](https://www.quaise.com/news/looking-back-on-2025) and Project Obsidian release, 22 September 2026. Company statements.
+9. ARPA-E, [SUPERHOT project descriptions](https://arpa-e.energy.gov/sites/default/files/2026-11/SUPERHOT_Project_Descriptions_v2.pdf), November 2026.
+10. TechCrunch, [Mazama Energy has a solution for geothermal's biggest drilling problem](https://techcrunch.com/2026/11/16/mazama-energy-has-a-solution-for-geothermals-biggest-drilling-problem), 16 November 2026.
+11. Akindipe and Witter, [2025 Geothermal Drilling Cost Curves Update](https://docs.nlr.gov/docs/fy25osti/92793.pdf), NREL/CP-5700-92793, July 2025 (Geysers Power Company).
+12. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026 (power purchase agreements).
+13. Listed producers: company reports listed in our [geothermal stocks guide](https://zemanium.com/guides/geothermal-stocks), read 24 November 2026; Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal companies in 2026: who is building what", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-companies
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 20 November 2026, updated 27 November 2026
+
+# What geothermal electricity costs in 2026, and what sets the price.
+
+New geothermal power costs $67 to $111 per megawatt-hour before subsidies, by Lazard's 2026 estimate, close to new utility solar at $40 to $98 and onshore wind at $37 to $99. A geothermal plant is paid for almost entirely before it produces anything, so that price depends on four things: what the wells cost, how much power each well delivers, how long that output lasts, and the interest rate on the money.
 
 Numbers marked SIMULATED come from our own model and are scenarios built on assumptions. They are requirements for a design, and no plant has been built to them. Numbers from other organisations are quoted with their source.
 
 01 / In brief
 
-## The short answer.
+## How much does geothermal electricity cost?
 
-- The US Department of Energy wants enhanced geothermal power at $45 per megawatt-hour by 2035. It describes that as a cut of about 90% from where the technology stood in 2022.
-- ARPA-E's SUPERHOT program aims lower for wells above 375 °C: under $30 per megawatt-hour by 2040.
+- New geothermal plants: $67 to $111 per megawatt-hour unsubsidized, average $89, in Lazard's 2026 Levelized Cost of Energy+ (version 19.0).
+- Signed contracts: public geothermal power purchase agreements from November 2019 to June 2025 priced at $67.50 to $99 per megawatt-hour, for 10 to 30 years, as compiled in the 2025 Annual Technology Baseline of the National Laboratory of the Rockies (NLR, formerly NREL).
+- The US Department of Energy wants enhanced geothermal power at $45 per megawatt-hour by 2035, about 90% below where the technology stood in 2022. ARPA-E's SUPERHOT program aims under $30 for wells above 375 °C by 2040.
 - In our own model the same simulated plant costs $83.02, $43.35 or $35.00 per megawatt-hour depending on its capital cost and discount rate. The rock and the wells are identical in all three cases.
 - Zemanium's development target is $30 to $45 per megawatt-hour. It is what our hardware program is designed toward.
 
-02 / Method
+02 / Build cost
+
+## What a geothermal power plant and its wells cost.
+
+| Item | Figure | Source |
+|---|---|---|
+| New-build geothermal plant, capital cost | $5,135 to $6,635 per kW | Lazard LCOE+ 2026 |
+| Illustrative next-generation geothermal plant | $7,000 per kW, fixed O&M $160 per kW-year | Lazard LCOE+ 2026, from public estimates |
+| Hydrothermal flash sites at 200 °C or hotter, identified in the US | average $4,362 per kW overnight capital cost | NLR, Annual Technology Baseline 2025 |
+| Deep enhanced geothermal, example flash plant | $6,653 per kW | NLR, Annual Technology Baseline 2025 |
+| Drilling share of a new plant's capital cost | 30% to 57% | NLR, 2025 drilling cost curves |
+| Fervo Cape Station, cost per well | down from $9.4 million to $4.8 million | company statement, reported April 2024 |
+| Cost per foot drilled, Project Red pilot wells | $995 and $1,107 | NLR, 2025 drilling cost curves |
+| Cost per foot drilled, first six Cape Station wells (2023 to 2024) | $634 falling to $346 | NLR, 2025 drilling cost curves |
+
+A 13,000 foot well at $346 to $634 a foot costs about $4.5 million to $8.2 million to drill, before completion. Our [guide to geothermal wells](https://zemanium.com/guides/geothermal-wells) covers depth, drilling records and how long wells keep their temperature.
+
+03 / Method
 
 ## How LCOE is calculated.
 
@@ -448,7 +591,7 @@ Here `r` is the discount rate and `t` runs from construction to the last operati
 
 Use exported electricity in the denominator. A geothermal plant spends some of its own output on pumps and auxiliaries, and an LCOE computed on gross generation flatters the plant. Our model exports gross generation minus pumping minus 5% of gross for auxiliaries.
 
-03 / Targets
+04 / Targets
 
 ## Published cost targets.
 
@@ -460,7 +603,7 @@ Use exported electricity in the denominator. A geothermal plant spends some of i
 
 The analysis behind the Department of Energy figure put developed deep enhanced geothermal at $45.60 per megawatt-hour in 2035, rounded to $45. All three rows are goals.
 
-04 / Worked example
+05 / Worked example
 
 ## One simulated plant, three prices.
 
@@ -478,7 +621,7 @@ Halving the cost of capital takes $8.35 off each megawatt-hour without touching 
 
 The model runs 1,080 cost scenarios on output trajectories from GEOPHIRES-X 3.18.3, the open source simulator from NREL. It charges 2% of installed capital a year for operations, make-up water and $8 per exported megawatt-hour, books a $5m event in year 12 and $2m in year 25, and assumes the plant runs 90% of the time. A stress test draws 2,000 combinations of discount rate (4% to 12%), capital overrun (0.8 to 1.2 times) and a mid-life replacement of up to $10m.
 
-05 / Drivers
+06 / Drivers
 
 ## What moves the cost.
 
@@ -502,21 +645,21 @@ Because nearly all spending comes first, the discount rate acts on the whole bil
 
 Hotter fluid converts a larger share of its heat to electricity, so a 200 °C plant needs more equipment per kilowatt than a hotter one. The model lets you set installed plant cost from $1,500 to $4,500 per gross kilowatt.
 
-06 / Tool
+07 / Tool
 
 ## Run the model yourself.
 
-The [power-cost model](https://zemanium.com/confidence/) runs in your browser with no account. Set the plant cost, subsurface cost, discount rate and a target price, and it returns the LCOE and the capital the design can afford. It also shows the cases that fail. The 3D [reservoir explorer](https://zemanium.com/demo/) shows how flow, well spacing and rock temperature change thermal decline and pumping.
+For a quick estimate with your own numbers, the [LCOE calculator](https://zemanium.com/lcoe-calculator) takes capital cost, operating cost, capacity factor, life and discount rate for any power plant. The [power-cost model](https://zemanium.com/confidence/) goes further for geothermal and runs in your browser with no account. Set the plant cost, subsurface cost, discount rate and a target price, and it returns the LCOE and the capital the design can afford. It also shows the cases that fail. The 3D [reservoir explorer](https://zemanium.com/demo/) shows how flow, well spacing and rock temperature change thermal decline and pumping.
 
 If you want this analysis for a specific project, or an independent review of a forecast, write to [toni@zemanium.com](mailto:toni@zemanium.com).
 
-07 / Questions
+08 / Questions
 
 ## Common questions.
 
 ### Is geothermal energy expensive?
 
-It is expensive to build and cheap to run. Almost all of the cost is drilling and plant construction paid up front, so the price per megawatt-hour depends on well cost, output per well, how long that output lasts and the interest rate. The US Department of Energy target for enhanced geothermal is $45 per megawatt-hour by 2035.
+It costs more to build and less to run than most sources. Lazard puts new geothermal at $67 to $111 per megawatt-hour in 2026, against $40 to $98 for utility solar and $37 to $99 for onshore wind, and geothermal runs day and night. Almost all of the cost is drilling and plant construction paid up front.
 
 ### How is the LCOE of a geothermal plant calculated?
 
@@ -524,29 +667,37 @@ Add up every cost over the plant's life, discount each year's cost back to today
 
 ### How much does a geothermal well cost?
 
-It depends on depth, rock and temperature, and few operators publish their costs. The US Department of Energy says casing and cementing make up 30% to 40% or more of a well's cost. Our model treats the whole subsurface scope as an allowance of $15m, $25m or $37m per case. Those are assumptions for comparison, and no contractor has quoted them.
+Fervo Energy reported its Cape Station wells falling from $9.4 million to $4.8 million each. NLR's 2025 analysis puts the first six Cape Station wells at $346 to $634 per foot drilled, and drilling at 30% to 57% of a new plant's capital cost. Our model treats the whole subsurface scope as an allowance of $15m, $25m or $37m per case.
+
+### How much does a geothermal power plant cost?
+
+Lazard's 2026 range for a new plant is $5,135 to $6,635 per kilowatt of capacity, so a 50 MW plant costs roughly $257 million to $332 million. NLR's 2025 baseline averages $4,362 per kilowatt for hot hydrothermal sites and gives $6,653 for an example deep enhanced geothermal plant.
 
 ### Is there a free geothermal LCOE calculator?
 
-Yes. The Zemanium power-cost model at zemanium.com/confidence runs in a browser and needs no account. For full reservoir and plant simulation, GEOPHIRES-X is open source.
+Yes. The Zemanium [LCOE calculator](https://zemanium.com/lcoe-calculator) prices any plant from capital cost, operating cost, capacity factor, life and discount rate, and the power-cost model at zemanium.com/confidence prices a simulated geothermal plant. Both run in a browser and need no account. For full reservoir and plant simulation, GEOPHIRES-X is open source.
 
 ### Why does the discount rate matter so much for geothermal?
 
 Nearly all the money is spent before the first megawatt-hour is sold, so the financing cost applies to almost the whole budget. In our simulated example the same plant costs $43.35 per megawatt-hour at an 8% real discount rate and $35.00 at 4%.
 
-08 / Sources
+09 / Sources
 
 ## Sources.
 
-1. US Department of Energy, [DOE launches new Energy Earthshot to slash the cost of geothermal power](https://www.energy.gov/articles/doe-launches-new-energy-earthshot-slash-cost-geothermal-power), 8 September 2022.
-2. US Department of Energy, [Energy Earthshots initiative report](https://www.energy.gov/sites/default/files/2025-01/doe-energyearthshots-initiativereport.pdf), January 2025 ($45.60/MWh basis).
-3. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026.
-4. US Department of Energy, Office of Geothermal, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems), updated 20 August 2026 (casing and cementing share of well cost).
-5. Fervo Energy, [third-generation well design release](https://fervoenergy.gcs-web.com/news-releases/news-release-details/fervo-energy-learning-curve-continues-3rd-generation-well-design), 8 July 2026. Company statement.
-6. Zemanium, [power-cost model](https://zemanium.com/confidence/), 5 October 2026. SIMULATED.
-7. NREL, [GEOPHIRES-X](https://github.com/NREL/GEOPHIRES-X), version 3.18.3.
+1. Lazard, [Levelized Cost of Energy+, version 19.0](https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/), 13 July 2026 (geothermal, solar and wind ranges, capital cost).
+2. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026 (capital costs, power purchase agreements).
+3. Akindipe and Witter, [2025 Geothermal Drilling Cost Curves Update](https://docs.nlr.gov/docs/fy25osti/92793.pdf), NREL/CP-5700-92793, July 2025 (drilling share, cost per foot).
+4. Journal of Petroleum Technology, [Hot prospects](https://jpt.spe.org/hot-prospects-good-news-keeps-flowing-for-these-four-geothermal-firms), 18 April 2024 (Cape Station cost per well, company statement).
+5. US Department of Energy, [DOE launches new Energy Earthshot to slash the cost of geothermal power](https://www.energy.gov/articles/doe-launches-new-energy-earthshot-slash-cost-geothermal-power), 8 September 2022.
+6. US Department of Energy, [Energy Earthshots initiative report](https://www.energy.gov/sites/default/files/2025-01/doe-energyearthshots-initiativereport.pdf), January 2025 ($45.60/MWh basis).
+7. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026.
+8. US Department of Energy, Office of Geothermal, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems), updated 20 August 2026 (casing and cementing share of well cost).
+9. Fervo Energy, [third-generation well design release](https://fervoenergy.gcs-web.com/news-releases/news-release-details/fervo-energy-learning-curve-continues-3rd-generation-well-design), 8 July 2026. Company statement.
+10. Zemanium, [power-cost model](https://zemanium.com/confidence/), 5 October 2026. SIMULATED.
+11. NREL, [GEOPHIRES-X](https://github.com/NREL/GEOPHIRES-X), version 3.18.3.
 
-Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "What geothermal electricity costs, and what sets the price", Zemanium, 20 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "What geothermal electricity costs in 2026, and what sets the price", Zemanium, updated 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
 
 ---
 Source: https://zemanium.com/guides/geothermal-electricity-cost
@@ -554,7 +705,156 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 24 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
+
+# Geothermal energy pros and cons, with the numbers behind each.
+
+Geothermal power runs day and night: US plants ran at a 65.9% capacity factor in 2025, against 24.0% for solar and 33.8% for wind. It emits about 99% less carbon dioxide than fossil plants and burns no fuel. Its drawbacks are a high up-front drilling bill, a limited number of naturally hot, wet sites, reservoirs that cool over a plant's life, and earthquakes from stimulating rock.
+
+Each point carries its source. Capacity factors are measured by the US Energy Information Administration; costs are Lazard and NLR estimates; Nevada field temperatures are measured and operator-reported to the state regulator, and the field averages are computed by Zemanium.
+
+01 / Summary
+
+## What are the pros and cons of geothermal energy?
+
+| Pros | Evidence | Cons | Evidence |
+|---|---|---|---|
+| Runs day and night in any weather | 65.9% US capacity factor, 2025 (EIA) | High up-front cost | drilling is 30% to 57% of a new plant's capital cost (NLR) |
+| Very low emissions | about 99% less CO2 and 97% less sulfur compounds than fossil plants (EIA) | Exploration risk | baseline exploration drilling success rate 60% (NLR) |
+| No fuel to buy | contracts at $67.50 to $99 per MWh fixed for 10 to 30 years (NLR) | Limited natural sites | most US plants sit in western states and Hawaii (EIA) |
+| Plants last for decades | The Geysers has produced power since 1960 (EIA) | Reservoirs can cool | 11 of 18 long-running Nevada fields produce cooler fluid than in their first year (regulator record) |
+| Huge resource with new technology | about 7,500 GW of enhanced geothermal potential in the US (DOE analysis via NLR) | Induced earthquakes | a magnitude 5.5 earthquake at Pohang, South Korea, in 2017 was triggered by stimulation (Ellsworth and others, 2019) |
+
+02 / Advantages
+
+## What are the advantages of geothermal energy?
+
+### It produces power around the clock
+
+Heat underground does not depend on sun or wind. In 2025 the US geothermal fleet ran at a 65.9% capacity factor, meaning it produced 65.9% of what its available capacity could have delivered running flat out all year. Utility solar ran at 24.0%, wind at 33.8% and nuclear at 91.1%, by the EIA's count. Lazard models new geothermal plants at 80% to 90%.
+
+### It emits very little
+
+Geothermal plants burn nothing. The EIA puts their emissions at about 99% less carbon dioxide and about 97% less sulfur compounds than fossil fuel plants. Binary-cycle plants pass the hot water through a heat exchanger and send it back underground, so they produce no air emissions at all.
+
+### The fuel is free and the price is fixed
+
+Once the wells are drilled the heat costs nothing, so geothermal power sells on long fixed contracts. Public US agreements signed between November 2019 and June 2025 priced at $67.50 to $99 per megawatt-hour for 10 to 30 years, as compiled by the National Laboratory of the Rockies (NLR, formerly NREL).
+
+### Plants run for decades
+
+The first geothermal power plant ran in Italy in 1904, and The Geysers in California has produced electricity since 1960, according to the EIA. NLR's cost baseline assumes a 30-year life for plant and reservoir.
+
+### The resource is enormous once drilling gets cheaper
+
+Natural hot-water systems are rare, but hot rock is everywhere at depth. The US Department of Energy's Enhanced Geothermal Shot analysis estimated about 7,500 GW of enhanced geothermal potential in the United States, against about 2,700 MW of geothermal capacity running in 2025. Our guide to [enhanced geothermal systems](https://zemanium.com/guides/enhanced-geothermal-systems) explains how that rock is put to work.
+
+03 / Disadvantages
+
+## What are the disadvantages of geothermal energy?
+
+### Most of the money is spent before the first megawatt-hour
+
+Lazard's 2026 estimate for a new geothermal plant is $5,135 to $6,635 per kilowatt, against $1,250 to $1,850 for utility solar. Drilling accounts for 30% to 57% of the capital cost, by NLR's 2025 analysis. That makes the price of geothermal power sensitive to interest rates; our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost) shows by how much.
+
+### Wells can come up dry
+
+A geothermal field is proven only by drilling into it. NLR's 2025 baseline assumes 60% of exploration wells at a new hydrothermal site succeed, in line with a global average of 59% recorded in 2013. Each miss costs millions of dollars.
+
+### Natural sites are limited
+
+A conventional plant needs heat, water and permeable rock in the same place. That combination sits mostly near tectonic plate edges, and most US plants are in western states and Hawaii, according to the EIA. Enhanced and closed-loop systems are built to work without the natural water and cracks.
+
+### Reservoirs cool during a plant's life
+
+Cold water injected back into the rock cools it over time. Nevada publishes the temperature of every producing well each month. Across 18 fields with ten or more years of record, the flow-weighted produced temperature fell by more than 5 °F in 11, held within 5 °F in 3 and rose in 4. At Blue Mountain it fell from 368 °F in 2009 to 281 °F in 2025. Fervo's Project Red well pair went from 347 °F in 2024 to 316 °F in July 2026. Operators answer with new wells, which is a running cost. The field-by-field table is in our guide [is geothermal energy renewable](https://zemanium.com/guides/is-geothermal-energy-renewable).
+
+### Stimulating rock can trigger earthquakes
+
+Enhanced systems open fractures with water under pressure, and that can set off earthquakes. In November 2017 a magnitude 5.5 earthquake struck Pohang, South Korea, injuring 135 people; a government-appointed research committee concluded it was triggered by stimulation at an enhanced geothermal pilot. Fervo Energy's 2026 Department of Energy award in Idaho includes a high-temperature geophone array to monitor this.
+
+### Some plants release gases
+
+Geothermal fluid carries hydrogen sulfide and small amounts of carbon dioxide. Plants use scrubbers to remove the hydrogen sulfide, and most inject the steam and water back into the ground, according to the EIA.
+
+04 / Compared
+
+## Geothermal against other power sources.
+
+| Source | US capacity factor, 2025 | New-build cost, 2026, $/MWh unsubsidized | Runs at night |
+|---|---|---|---|
+| Geothermal | 65.9% | $67 to $111 | yes |
+| Solar PV, utility | 24.0% | $40 to $98 | no |
+| Wind, onshore | 33.8% | $37 to $99 | when the wind blows |
+| Nuclear | 91.1% | $175 to $255 | yes |
+| Gas, combined cycle | 58.7% | $51 to $129 | yes, with fuel |
+
+Capacity factors from EIA Electric Power Monthly tables 6.07.A and 6.07.B; costs from Lazard's Levelized Cost of Energy+ version 19.0. Our [firm clean power comparison](https://zemanium.com/guides/firm-clean-power-compared) sets geothermal against small reactors, fusion and space solar.
+
+05 / Outlook
+
+## Which disadvantages new technology is working on.
+
+- Drilling cost. Fervo Energy reported its Cape Station wells falling from $9.4 million to $4.8 million each, and NLR's 2025 cost curves cut 12% to 26% from the 2017 baseline. More in our [guide to geothermal wells](https://zemanium.com/guides/geothermal-wells).
+- Location. Enhanced geothermal reached commercial power at Cape Station, Utah, on 24 September 2026, by Fervo's account. Eavor's closed-loop plant at Geretsried, Germany, has sent power to the grid since December 2025.
+- Power per well. Wells in superhot rock above 375 °C could deliver 30 to 50 MW each against about 10 today, according to ARPA-E. Their steel casing is the limit; that is our work, described in the [superhot rock guide](https://zemanium.com/guides/superhot-rock-geothermal).
+- Cooling. Wider, even flow through more fractures uses more rock and slows cooling. Our [Project Red tracker](https://zemanium.com/fervo-project-red) scores a registered forecast of one well pair against the regulator record every month.
+
+The companies doing this work are listed in our [guide to geothermal companies](https://zemanium.com/guides/geothermal-companies).
+
+06 / Questions
+
+## Common questions.
+
+### What is the biggest disadvantage of geothermal energy?
+
+Up-front cost. Drilling makes up 30% to 57% of a new plant's capital cost, and the whole plant is paid for before it sells power. Lazard puts new geothermal at $5,135 to $6,635 per kilowatt, several times the cost of utility solar per kilowatt.
+
+### What is the main advantage of geothermal energy?
+
+It delivers clean power day and night. US geothermal plants ran at a 65.9% capacity factor in 2025, against 24.0% for solar and 33.8% for wind, while emitting about 99% less carbon dioxide than fossil plants.
+
+### Is geothermal energy bad for the environment?
+
+Its effects are small next to fossil fuels. Plants emit about 99% less carbon dioxide and 97% less sulfur compounds, scrub hydrogen sulfide and reinject their water. The local risks are induced earthquakes from stimulation and the land and water used at the site.
+
+### Why is geothermal energy not used more?
+
+Conventional plants need rare spots where heat, water and permeable rock meet, and drilling is expensive and risky. Enhanced and closed-loop systems remove the need for natural water and cracks, and their drilling costs fell sharply between 2022 and 2025.
+
+### Can geothermal energy run out?
+
+The Earth's heat will not run out, but a single reservoir can cool when heat is drawn faster than the rock refills it. In Nevada, 11 of 18 long-running fields produced cooler fluid in 2025 than in their first recorded year.
+
+### Does geothermal energy cause earthquakes?
+
+Stimulating rock for enhanced systems can trigger earthquakes. A government-appointed committee linked the magnitude 5.5 Pohang earthquake of 2017 in South Korea to stimulation at an enhanced geothermal pilot. Fervo Energy's 2026 Department of Energy award in Idaho includes a high-temperature geophone array to monitor seismicity.
+
+07 / Sources
+
+## Sources.
+
+1. US Energy Information Administration, Electric Power Monthly, capacity factors, [table 6.07.A](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_6_07_a) and [table 6.07.B](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_6_07_b), release of 24 November 2026.
+2. EnergyTech, [DOE selects Fervo, Zanskar and Quaise as part of $99M funding](https://www.energytech.com/renewables/news/55407907/doe-selects-fervo-zanskar-and-quaise-as-part-of-99m-funding-to-advance-next-gen-geothermal), 25 September 2026.
+3. US Energy Information Administration, [Geothermal energy and the environment](https://www.eia.gov/energyexplained/geothermal/geothermal-energy-and-the-environment.php), [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php) and [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php), read 27 November 2026.
+4. Lazard, [Levelized Cost of Energy+, version 19.0](https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/), 13 July 2026.
+5. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026.
+6. Akindipe and Witter, [2025 Geothermal Drilling Cost Curves Update](https://docs.nlr.gov/docs/fy25osti/92793.pdf), NREL/CP-5700-92793, July 2025.
+7. Ellsworth and others, [Triggering of the Pohang, Korea, earthquake (Mw 5.5) by enhanced geothermal system stimulation](https://doi.org/10.1785/0220190102), Seismological Research Letters, 2019.
+8. Journal of Petroleum Technology, [Hot prospects](https://jpt.spe.org/hot-prospects-good-news-keeps-flowing-for-these-four-geothermal-firms), 18 April 2024 (Cape Station well cost, company statement).
+9. Eavor Technologies, [first electricity production at Geretsried](https://eavor.com/press-releases/eavor-technologies-achieves-first-electricity-production-at-geretsried-site/), 4 December 2025. Company statement.
+10. ARPA-E, [SUPERHOT program](https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/superhot), read 20 November 2026.
+11. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026. Measured, operator-reported.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal energy pros and cons, with the numbers behind each", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-energy-pros-and-cons
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 24 November 2026
 
 # Geothermal stocks in 2026: the listed producers and what their plants deliver.
 
@@ -660,7 +960,152 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 24 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
+
+# Geothermal wells: how deep they go, what they cost and how long they last.
+
+Geothermal power wells reach 1.5 to 2.5 kilometres for a typical conventional plant and 3 to 7 kilometres for deep enhanced geothermal, by the national laboratories' cost baseline. Drilling one costs millions of dollars: Fervo Energy's Cape Station wells fell from $9.4 million to $4.8 million each. They produce for decades, while the water they bring up slowly cools; in Nevada's public record the median field ran about 1.9 °F cooler each year.
+
+Drilling figures come from the National Laboratory of the Rockies (NLR, formerly NREL) and company statements, labelled as such. Field temperatures are measured and operator-reported to the Nevada Division of Minerals; yearly rates are computed by Zemanium from that record.
+
+01 / In brief
+
+## Geothermal wells at a glance.
+
+- Depth: NLR's representative conventional plants draw on 175 °C water at 1.5 km and 225 °C water at 2.5 km; deep enhanced geothermal targets 3 to 7 km. The EIA notes some geothermal wells reach about 2 miles.
+- Cost: drilling makes up 30% to 57% of a new plant's capital cost. Fervo's Cape Station wells cost $346 to $634 per foot drilled, against $995 and $1,107 at its Project Red pilot.
+- Speed: the fastest of the first six Cape Station wells took 20 days for 13,289 feet. Fervo reported 19,448 feet in 21 days at its Sawtooth 7 well in 2026.
+- Life: NLR's cost baseline assumes 30 years for plant and reservoir. The Geysers in California has produced power since 1960.
+- Cooling: in 11 of 18 long-running Nevada fields the produced water is more than 5 °F cooler than in its first recorded year.
+
+02 / Depth
+
+## How deep are geothermal wells?
+
+As deep as the heat requires. Geothermal power plants need water or steam at 300 to 700 °F, according to the EIA, and how far down that sits depends on the local geology. Recent wells with public records:
+
+| Well | Measured depth | Temperature | Drilling time | Basis |
+|---|---|---|---|---|
+| GDC-36, The Geysers, California (2023) | 9,000 ft (2,743 m) | steam above 475 °F (246 °C) | 69 days | NLR 2025 |
+| Project Red pair, Nevada | 11,211 and 11,220 ft (3.42 km) | 376 °F (191 °C) maximum | 59 and 72 days | NLR 2025 |
+| Utah FORGE 16B(78)-32 (2023) | 10,947 ft (3.34 km) | research site | 75 days | NLR 2025 |
+| Cape Station, Utah, 14 horizontal wells (2023 to 2024) | 13,272 to 15,347 ft (4.0 to 4.7 km), laterals about 4,700 ft | 444 °F (229 °C) maximum | 20 to 34 days for the first six | NLR 2025 |
+| Sawtooth 7, Utah (2026) | 19,448 ft (5.9 km) with a 7,500 ft lateral | about 238 °C rock | 21 days | company statement |
+| IDDP-2, Reykjanes, Iceland | logged at about 4,550 m | 426 °C | research well | World Geothermal Congress paper |
+
+Measured depth is the length of the hole. Horizontal wells such as Cape Station's run sideways for thousands of feet at their target, so their vertical depth is shorter than their measured depth.
+
+03 / Cost
+
+## How much does it cost to drill a geothermal well?
+
+Millions of dollars per well, and falling. NLR's 2025 analysis of Fervo's wells, using data Fervo supplied:
+
+| Well | Total depth | Days | Feet per day | Cost per foot |
+|---|---|---|---|---|
+| Project Red 1 | 11,220 ft | 71 | 158 | $994.62 |
+| Project Red 2 | 11,211 ft | 58 | 193 | $1,106.74 |
+| Cape Station 3 | 13,316 ft | 33.75 | 312 | $633.45 |
+| Cape Station 4 | 13,272 ft | 25.91 | 440 | $471.59 |
+| Cape Station 5 | 13,601 ft | 24.26 | 504 | $395.71 |
+| Cape Station 6 | 13,289 ft | 20.1 | 567 | $346.45 |
+| Cape Station 7 | 13,949 ft | 23.71 | 472 | $394.08 |
+| Cape Station 8 | 13,734 ft | 22.27 | 539 | $357.36 |
+
+At $346.45 a foot, Cape Station 6 cost about $4.6 million to drill, before completion. Fervo itself reported its Cape Station well cost falling from $9.4 million to $4.8 million. NLR attributes the gains to diamond (PDC) bits, drilling practices that remove the limits on speed one by one, and drilling several wells from one pad, and its 2025 cost curves sit 12% to 24% below the 2017 baseline for vertical wells and 18% to 26% below for horizontal ones.
+
+Casing and cementing alone make up 30% to 40% or more of a well's cost, according to the US Department of Energy. And not every well finds what it is drilled for: NLR's baseline assumes 60% of exploration wells at a new conventional site succeed.
+
+What well costs do to the price of power is in our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost), and the [LCOE calculator](https://zemanium.com/lcoe-calculator) turns any capital cost into dollars per megawatt-hour.
+
+04 / Lifespan
+
+## How long do geothermal wells last?
+
+Decades. NLR's cost baseline assumes a 30-year life for plant and reservoir, and The Geysers in California has produced electricity since 1960, according to the EIA. Over that time the water a field produces cools as injected water draws heat from the rock, and operators drill makeup wells to hold output.
+
+Nevada publishes the monthly temperature of every producing geothermal well. Across 18 fields with ten or more years of record, the flow-weighted produced temperature changed by these amounts:
+
+| Field (regulator code) | Years | First-year mean | 2025 mean | Change per year |
+|---|---|---|---|---|
+| Blue Mountain (BLU) | 2009 to 2025 | 368 °F | 281 °F | -5.4 °F |
+| WRS2 (WRS2) | 2015 to 2025 | 261 °F | 212 °F | -4.9 °F |
+| Jersey Valley (JVP) | 2012 to 2025 | 331 °F | 292 °F | -2.9 °F |
+| McGinness Hills 2 (MGH2) | 2015 to 2025 | 336 °F | 307 °F | -2.9 °F |
+| Brady Hot Springs (BHS) | 2012 to 2025 | 280 °F | 248 °F | -2.5 °F |
+| McGinness Hills (MGH) | 2012 to 2025 | 335 °F | 306 °F | -2.2 °F |
+| Steamboat (STB) | 2012 to 2025 | 290 °F | 263 °F | -2.1 °F |
+| Patua (PTA) | 2013 to 2025 | 303 °F | 293 °F | -0.8 °F |
+| Dixie Valley (DXV) | 2012 to 2025 | 330 °F | 330 °F | 0.0 °F |
+| Stillwater (STW) | 2009 to 2025 | 270 °F | 297 °F | +1.7 °F |
+
+The median of all 18 fields is a change of about -1.9 °F per year. A field's mean also moves when operators add or retire wells, so these figures describe the produced water, not the rock alone. All 18 fields are in our guide [is geothermal energy renewable](https://zemanium.com/guides/is-geothermal-energy-renewable), and every yearly value is in [one JSON file](https://zemanium.com/data/nevada-field-temperature.json), CC BY 4.0.
+
+The clearest single well-pair record is Fervo's Project Red, which went from 347 °F at its 2024 plateau to 316 °F in July 2026. Our [Project Red tracker](https://zemanium.com/fervo-project-red) scores a forecast of it, registered on 19 November 2026, against the regulator's record every month.
+
+05 / Integrity
+
+## What fails first in a geothermal well.
+
+The steel and cement. A well heats when it produces and cools when cold water is pumped in or the well is shut in, and each cycle stresses the casing and its couplings. A 2018 review of 20 high-temperature wells found that most well failures came from thermal stress during quenching or the start of production. Iceland's IDDP-2 had its production casing damaged between 2,307 and 2,380 m, presumably by repeated heating and cooling. Downhole electronics stop working near 210 to 225 °C.
+
+That is our field. We rebuilt IDDP-1's production casing in a model and ran it through the well's recorded history, and we are building Pandora, a casing joint for wells at 450 to 500 °C. The [superhot rock guide](https://zemanium.com/guides/superhot-rock-geothermal) has the record and the sources.
+
+06 / Heat pumps
+
+## Geothermal heat pump wells are a different thing.
+
+A home or office geothermal heat pump uses the steady temperature a few hundred feet down; it makes no electricity. For a vertical system, holes about 4 inches across are drilled about 20 feet apart and 100 to 400 feet deep, according to the US Department of Energy. The shallowest power well in the table above goes more than 20 times deeper.
+
+07 / Questions
+
+## Common questions.
+
+### How deep is a geothermal well?
+
+For power plants, typically 1.5 to 2.5 km for conventional hydrothermal sites and 3 to 7 km for deep enhanced geothermal, by the NLR baseline. Recent wells range from 9,000 feet at The Geysers to 19,448 feet of measured depth at Fervo's Sawtooth 7 in Utah. Heat pump boreholes are 100 to 400 feet.
+
+### How much does a geothermal well cost?
+
+Fervo Energy reported its Cape Station wells falling from $9.4 million to $4.8 million each. NLR's analysis puts those wells at $346 to $634 per foot drilled, and drilling at 30% to 57% of a new geothermal plant's capital cost.
+
+### How long does a geothermal well last?
+
+Wells and plants run for decades; NLR's baseline assumes 30 years, and The Geysers has produced since 1960. The water they produce cools over time: the median long-running Nevada field ran about 1.9 °F cooler each year, and operators add makeup wells to hold output.
+
+### How long does it take to drill a geothermal well?
+
+Weeks. The fastest of Fervo's first six Cape Station wells took 20 days for 13,289 feet, down from 58 to 72 days for its Project Red pilot wells, and the company reported 19,448 feet in 21 days in 2026. The Geysers GDC-36 well took 69 days for 9,000 feet.
+
+### How hot is the water in a geothermal well?
+
+Power plants use water or steam at 300 to 700 °F, according to the EIA. Cape Station's production test ran at about 195 °C (383 °F), and research wells in Iceland have met fluid above 400 °C.
+
+08 / Sources
+
+## Sources.
+
+1. Akindipe and Witter, [2025 Geothermal Drilling Cost Curves Update](https://docs.nlr.gov/docs/fy25osti/92793.pdf), NREL/CP-5700-92793, July 2025 (Project Red, Cape Station, FORGE and Geysers wells; cost per foot; cost curves; drilling share).
+2. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026 (representative depths, success rates, 30-year life).
+3. US Energy Information Administration, [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php) and [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php), read 27 November 2026.
+4. Journal of Petroleum Technology, [Hot prospects](https://jpt.spe.org/hot-prospects-good-news-keeps-flowing-for-these-four-geothermal-firms), 18 April 2024 (Cape Station well cost, company statement).
+5. Fervo Energy, [third-generation well design release](https://fervoenergy.gcs-web.com/news-releases/news-release-details/fervo-energy-learning-curve-continues-3rd-generation-well-design), 8 July 2026. Company statement.
+6. US Department of Energy, Office of Geothermal, [Enhanced geothermal systems](https://www.energy.gov/hgeo/geothermal/enhanced-geothermal-systems), updated 20 August 2026 (casing and cementing share of well cost).
+7. US Department of Energy, [Geothermal heat pump basics](http://energy.gov/eere/energybasics/articles/geothermal-heat-pump-basics), read 27 November 2026.
+8. Kruszewski and Wittig, "Review of failure modes in supercritical geothermal drilling projects", [Geothermal Energy 6:28](https://doi.org/10.1186/s40517-018-0113-4), 2018.
+9. Friðleifsson and others, IDDP-2 at Reykjanes, Proceedings World Geothermal Congress 2020+1, paper 31002.
+10. Fervo Energy authors, [Cape Station production test preprint](https://eartharxiv.org/repository/object/7665/download/14559/), EarthArXiv.
+11. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026. Measured, operator-reported.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal wells: how deep they go, what they cost and how long they last", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-wells
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 24 November 2026
 
 # Is geothermal energy renewable? What the field records show.
 
@@ -775,7 +1220,7 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
-Guide · Toni Zemani · 20 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 20 November 2026
 
 # Superhot rock geothermal: what happens above 375 °C.
 
@@ -907,6 +1352,159 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
+Tool · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
+
+# LCOE calculator: the levelized cost of energy of any power plant.
+
+Enter what a plant costs to build and run, how much it produces and how long it lasts, and the calculator returns its levelized cost of energy (LCOE) in dollars per megawatt-hour. It uses the simple formula the US national laboratories publish, and starts on a new geothermal plant built to Lazard's 2026 assumptions: $91.11 per megawatt-hour.
+
+Presets are midpoints of the low and high inputs in Lazard's Levelized Cost of Energy+ version 19.0 (July 2026). The calculator leaves out taxes, depreciation and cost escalation, so its results sit near Lazard's published ranges without matching them exactly.
+
+01 / Calculator
+
+## Calculate LCOE. Start from Geothermal, new plant (Lazard 2026 midpoint) Solar PV, utility scale (Lazard 2026 midpoint) Wind, onshore (Lazard 2026 midpoint) Gas combined cycle (Lazard 2026 midpoint) Nuclear (Lazard 2026 midpoint) Your own numbers Capital cost, $ per kW Fixed operating cost, $ per kW per year Variable operating cost, $ per MWh Fuel cost, $ per MWh Capacity factor, % Own use of output (pumps, auxiliaries), % Life, years Discount rate (cost of capital), % Plant size, MW Levelized cost of energy $91.11 per MWh
+
+Capital share
+
+$72.15
+
+Fixed operating share
+
+$2.03
+
+Variable operating cost
+
+$16.93
+
+Fuel
+
+$0.00
+
+Capital recovery factor
+
+0.0913
+
+Net output per year
+
+372,300 MWh
+
+Capital cost of the plant
+
+$294.3 million
+
+Change any field and the result updates. Plant size changes the totals, not the cost per megawatt-hour.
+
+The calculator needs JavaScript. The formula below gives the same result by hand.
+
+For geothermal plants with a simulated reservoir behind them, our [power-cost model](https://zemanium.com/confidence/) runs 1,080 scenarios on GEOPHIRES-X output and shows how the price moves with well cost, plant cost and the cost of money.
+
+02 / Meaning
+
+## What is LCOE?
+
+The levelized cost of energy (LCOE), also called the levelized cost of electricity, is the constant price per megawatt-hour at which a power plant earns back everything spent on it over its life, including the return its lenders and owners expect. It puts plants with very different cost structures on one scale: a solar farm that is cheap to build and produces a quarter of the time, a geothermal plant that is expensive to drill and runs day and night, and a gas plant that is cheap to build and pays for fuel every hour.
+
+03 / Formula
+
+## The LCOE formula.
+
+The full definition discounts every year's cost and every year's output back to today:
+
+`LCOE = sum over years t of (capital + operating + fuel cost in year t) / (1 + r)^t, divided by sum over years t of (electricity in year t) / (1 + r)^t`
+
+When the plant is built at once and costs and output are the same each year, that reduces to the simple form the National Laboratory of the Rockies (NLR, formerly NREL) publishes, which this calculator uses:
+
+`LCOE = (capital cost per kW x CRF + fixed O&M per kW-year) x 1000 / (8760 x capacity factor) + variable O&M + fuel cost`
+
+`CRF = r (1 + r)^n / ((1 + r)^n - 1)`
+
+Here `r` is the discount rate, `n` the life in years and CRF the capital recovery factor, the share of the capital cost that has to be recovered each year. The factor 1000 turns kilowatts into megawatts and 8760 is the number of hours in a year.
+
+04 / Worked example
+
+## How to calculate LCOE, step by step.
+
+A new geothermal plant on Lazard's 2026 midpoint inputs: $5,885 per kW to build, $15.125 per kW-year fixed and $16.925 per MWh variable operating cost, no fuel, an 85% capacity factor, a 25-year life and a 7.7% discount rate.
+
+1. Capital recovery factor: 0.077 x 1.077^25 / (1.077^25 - 1) = 0.0913.
+2. Yearly cost per kW: $5,885 x 0.09129 + $15.125 = $552.37.
+3. Yearly output per kW: 8,760 hours x 85% = 7,446 kWh, or 7.446 MWh.
+4. Fixed cost per MWh: $552.37 / 7.446 = $74.18.
+5. Add variable cost and fuel: $74.18 + $16.925 + $0 = $91.11 per MWh.
+
+The same plant costs $69.55 per MWh at a 4% discount rate and $106.03 at 10%. Almost all of a geothermal plant's cost is paid before it runs, so the cost of money moves its price more than any operating figure. Our [guide to geothermal electricity cost](https://zemanium.com/guides/geothermal-electricity-cost) shows what sets each input.
+
+05 / Comparison
+
+## LCOE by energy source in 2026.
+
+| Technology | Unsubsidized LCOE, $/MWh | Average | Capital cost, $/kW | Capacity factor |
+|---|---|---|---|---|
+| Onshore wind | $37 to $99 | $68 | $1,900 to $2,750 | 30% to 55% |
+| Solar PV, utility scale | $40 to $98 | $69 | $1,250 to $1,850 | 20% to 30% |
+| Geothermal | $67 to $111 | $89 | $5,135 to $6,635 | 80% to 90% |
+| Gas combined cycle | $51 to $129 | $90 | $1,450 to $2,100 | 30% to 90% |
+| Coal | $72 to $177 | $125 | $3,495 to $7,405 | 65% to 85% |
+| Offshore wind | $105 to $167 | $136 | $5,600 to $7,100 | 45% to 55% |
+| Gas peaking | $144 to $276 | $210 | $1,100 to $1,650 | 10% to 15% |
+| Nuclear | $175 to $255 | $215 | $12,300 to $17,570 | 89% to 94% |
+
+Source: Lazard, Levelized Cost of Energy+ version 19.0, July 2026, new-build plants in the United States without tax credits.
+
+06 / Limits
+
+## What LCOE leaves out.
+
+- When the power arrives. A megawatt-hour at 7 pm on a still winter evening is worth more to a grid than one at noon in spring. Lazard publishes a separate cost of firming intermittency for that reason.
+- Grid costs. Transmission, interconnection and balancing sit outside the LCOE of a single plant.
+- Output that changes with age. The simple formula assumes the same output every year. A geothermal reservoir can cool and a solar panel degrades; the full discounted formula takes a year-by-year output instead.
+- Risk. Exploration wells that miss, construction overruns and fuel price swings shift the real cost. Our [power-cost model](https://zemanium.com/confidence/) draws 2,000 combinations of them.
+
+07 / Questions
+
+## Common questions.
+
+### What does LCOE stand for?
+
+Levelized cost of energy, or levelized cost of electricity. It is the price per megawatt-hour at which a power plant exactly pays back its lifetime costs, including the return on the money invested.
+
+### How do you calculate LCOE?
+
+Multiply the capital cost per kilowatt by the capital recovery factor, add the fixed operating cost per kilowatt-year, divide by the megawatt-hours each kilowatt produces in a year (8.76 times the capacity factor), then add variable operating and fuel cost per megawatt-hour.
+
+### How do I calculate LCOE in Excel?
+
+The capital recovery factor is =PMT(rate, years, -1), for example =PMT(0.077, 25, -1) returns 0.0913. Then LCOE = (capex_per_kW * CRF + fixed_OM) * 1000 / (8760 * capacity_factor) + variable_OM + fuel.
+
+### What is a good LCOE?
+
+It depends on what the plant delivers. In Lazard's 2026 figures new onshore wind and utility solar average $68 and $69 per megawatt-hour, geothermal $89 and gas combined cycle $90. Geothermal and gas run when needed; wind and solar need storage or backup for that.
+
+### What is the LCOE of geothermal energy?
+
+Lazard puts new geothermal at $67 to $111 per megawatt-hour in 2026, average $89. Public US geothermal power contracts signed from 2019 to mid-2025 priced at $67.50 to $99. The US Department of Energy targets $45 for enhanced geothermal by 2035.
+
+### Is this LCOE calculator free?
+
+Yes. It runs in your browser, needs no account and stores nothing. The text and tables on this page are CC BY 4.0, and the calculator code is MIT licensed.
+
+08 / Sources
+
+## Sources.
+
+1. Lazard, [Levelized Cost of Energy+, version 19.0](https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/), 13 July 2026 (ranges, capital costs, capacity factors, preset inputs).
+2. National Laboratory of the Rockies, [Simple Levelized Cost of Energy (LCOE) Calculator Documentation](https://nlr.gov/analysis/tech-lcoe-documentation), read 27 November 2026 (formula).
+3. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026 (power purchase agreements).
+4. US Department of Energy, [Enhanced Geothermal Shot](https://www.energy.gov/articles/doe-launches-new-energy-earthshot-slash-cost-geothermal-power), 8 September 2022.
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the calculator code is MIT. Cite as: Toni Zemani, "LCOE calculator", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/lcoe-calculator
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
 Open research · updated 20 November 2026
 
 # Open models, records and drawings.
@@ -923,6 +1521,7 @@ Model output is labelled SIMULATED, and field data is credited to the parties wh
 |---|---|---|
 | [Forecast and audit record, Project Red](https://github.com/tonizemani2/forecast-audit) | One command refits a conduction model to the Nevada regulator's monthly record of the first enhanced geothermal well pair, recomputes its water balance, and checks forecasts that were time-stamped on 19 November 2026. The model matches nine steady months to 0.51 °F. Each forecast is scored when the regulator publishes the month. | Model results on measured regulator data; code MIT, text CC BY 4.0; [doi:10.5281/zenodo.24396505](https://doi.org/10.5281/zenodo.24396505) |
 | [Power-cost model](https://zemanium.com/confidence/) | Computes the cost per megawatt-hour of a geothermal plant from plant cost, subsurface cost and discount rate across 1,080 scenarios, with a 2,000-draw financial stress test. Shows the cases that fail. | SIMULATED, on GEOPHIRES-X 3.18.3 trajectories, 5 October 2026 |
+| [LCOE calculator](https://zemanium.com/lcoe-calculator) | Returns the levelized cost of energy of any power plant from capital cost, operating cost, capacity factor, life and discount rate, with presets from Lazard's 2026 figures. | Formula of the National Laboratory of the Rockies; code MIT, text CC BY 4.0, 27 November 2026 |
 | [Reservoir explorer](https://zemanium.com/demo/) | A 3D reservoir where you change flow, well spacing, permeability and rock temperature and see thermal decline, power and pumping. | SIMULATED, illustrative, earlier design assumptions |
 | [Utah FORGE field replay](https://zemanium.com/confidence/#field) | 518 rows of a published production-log interpretation, with the unresolved intervals shown as gaps. | Measured and published by SLB and the University of Utah for Utah FORGE; CC BY 4.0; [doi:10.15121/2473673](https://doi.org/10.15121/2473673) |
 

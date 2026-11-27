@@ -9,7 +9,8 @@
 - The model runs 1,080 cost scenarios on GEOPHIRES-X 3.18.3 output trajectories and a 2,000-draw financial stress test. Export is gross generation minus pumping minus 5% auxiliaries.
 - 19 November 2026, model result on measured data: Zemanium's conduction model matches the Nevada regulator's monthly record of the Project Red enhanced geothermal well pair to 0.51 F on nine steady months. Forecasts through 2027 are time-stamped and scored each month. Code and record: https://github.com/tonizemani2/forecast-audit (doi:10.5281/zenodo.24396505).
 - Zemanium's hardware programme targets well integrity above 375 C: casing and cement through thermal cycles, flow control and sensing.
-- Nevada record compiled by Zemanium from the state regulator: geothermal output 5,044 GWh in 2019 and 5,031 GWh in 2025; in 11 of 18 long-running fields the produced fluid is cooler than in its first recorded year.
+- Nevada record compiled by Zemanium from the state regulator: geothermal output 5,044 GWh in 2019 and 5,031 GWh in 2025; in 11 of 18 long-running fields the produced fluid is cooler than in its first recorded year; across the 18 fields the median change is about 1.9 F cooler per year, and Blue Mountain's is 5.4 F per year.
+- Free LCOE calculator for any power plant, with the formula and Lazard's 2026 ranges by source (geothermal $67 to $111 per MWh): https://zemanium.com/lcoe-calculator
 
 ## Tools and data for agents
 
@@ -31,8 +32,11 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 
 - [Enhanced geothermal systems (EGS): how they work](https://zemanium.com/guides/enhanced-geothermal-systems.md): How enhanced geothermal systems make power from hot dry rock, where the technology stands in 2026, and the four limits engineers are working on.
 - [Geothermal vs nuclear, fusion and space solar compared](https://zemanium.com/guides/firm-clean-power-compared.md): Which clean energy source runs 24/7 and when: next-generation geothermal, small modular reactors, fusion and space-based solar, with sources.
-- [Geothermal electricity cost per MWh: what sets it](https://zemanium.com/guides/geothermal-electricity-cost.md): What geothermal power costs per MWh, how LCOE is calculated and which inputs move it most. Includes a free model you can run with your own assumptions.
+- [Geothermal companies 2026: developers, startups, stocks](https://zemanium.com/guides/geothermal-companies.md): The geothermal companies building power plants in 2026: next-generation developers such as Fervo, Sage, XGS, Eavor, Quaise and Mazama, and the listed producers.
+- [Cost of geothermal energy in 2026: $67 to $111 per MWh](https://zemanium.com/guides/geothermal-electricity-cost.md): New geothermal power costs $67 to $111 per MWh in 2026 and a well $4.8m to $9.4m. What sets the price, how LCOE works, and a free model for your own case.
+- [Geothermal energy pros and cons, with the numbers](https://zemanium.com/guides/geothermal-energy-pros-and-cons.md): Advantages and disadvantages of geothermal energy in 2026, each with its number: output day and night, 99% less CO2, $67 to $111 per MWh, cooling reservoirs.
 - [Geothermal stocks 2026: listed producers and output](https://zemanium.com/guides/geothermal-stocks.md): Every listed geothermal power company, its ticker and capacity, Fervo (FRVO) and Ormat (ORA), and Nevada plant output from the state record.
+- [Geothermal wells: depth, cost and lifespan in 2026](https://zemanium.com/guides/geothermal-wells.md): How deep geothermal power wells go, what one costs to drill ($4.8m to $9.4m at Cape Station), and how fast they cool, from public drilling and well records.
 - [Is geothermal energy renewable? The field records](https://zemanium.com/guides/is-geothermal-energy-renewable.md): Yes: geothermal heat is renewable, and single reservoirs can cool. Nevada's well records show field by field how fast, with the data to check.
 - [Superhot rock geothermal: wells above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal.md): What superhot rock geothermal is, what wells have reached above 375 °C, and what fails first at that temperature: casing, cement, electronics and logging tools.
 
@@ -45,6 +49,7 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 - [Fervo Project Red: monthly record and forecast](https://zemanium.com/fervo-project-red.md): Project Red's wellhead temperature each month from the Nevada regulator, against a forecast registered on 19 Nov 2026. Data, chart and scores.
 - [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal stocks, electricity cost, renewability, enhanced and superhot geothermal, with data you can check and reuse with credit.
 - [Zemanium: Pandora, a casing joint for superhot geothermal](https://zemanium.com/): Zemanium builds Pandora, a casing joint for superhot geothermal wells at 450 to 500 °C, and scores registered forecasts against regulator data.
+- [LCOE calculator: levelized cost of energy and formula](https://zemanium.com/lcoe-calculator.md): Free LCOE calculator for any power plant, with the levelized cost of energy formula, a worked geothermal example and 2026 LCOE by energy source.
 - [Open geothermal models, data and drawings | Zemanium](https://zemanium.com/open/index.md): Everything Zemanium has published: the Project Red forecast record, a geothermal power-cost model, a 3D reservoir simulator, hardware drawings and guides.
 - [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, test gates and downloadable records. Updated 20 November 2026.
 

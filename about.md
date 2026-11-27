@@ -11,7 +11,7 @@ Zemanium is a geothermal invention lab. We design the instruments, well hardware
 | Name | Zemanium (zeh-MAY-nee-um) |
 |---|---|
 | Founded | 2026 |
-| Founder | Toni Zemani |
+| Founder | [Toni Zemani](https://zemanium.com/about#toni-zemani) |
 | Field | Enhanced and superhot geothermal: well integrity, flow control, sensing, power conversion and cost modelling |
 | Stage | Simulation campaigns run on the first programmes; models, forecasts, records and drawings published; physical test campaigns next |
 | Contact | [toni@zemanium.com](mailto:toni@zemanium.com) |
@@ -45,10 +45,24 @@ Our development target is firm geothermal power at $30 to $45 per megawatt-hour.
 | 19 November 2026 | Forecasts of the Project Red well pair registered and time-stamped. The model matches the Nevada regulator's record to 0.51 °F on nine steady months | [Forecast and audit record](https://github.com/tonizemani2/forecast-audit) |
 | 20 November 2026 | Three sourced guides and this open catalogue | [Guides](https://zemanium.com/guides/), [Open data](https://zemanium.com/open/) |
 | 24 November 2026 | Fervo Project Red tracker, guides to geothermal stocks, renewability and firm power, open data files and an MCP server for AI agents | [Tracker](https://zemanium.com/fervo-project-red), [Guides](https://zemanium.com/guides/) |
+| 27 November 2026 | Guides to geothermal pros and cons, wells and companies, and a free LCOE calculator | [Guides](https://zemanium.com/guides/), [Calculator](https://zemanium.com/lcoe-calculator) |
 
 All model results are SIMULATED.
 
-05 / Contact
+05 / Founder
+
+## Toni Zemani, founder.
+
+Toni Zemani founded Zemanium in 2026 and leads its engineering and research. He writes the guides on this site and built the work behind them:
+
+- the conduction model that matches the Nevada regulator's record of Fervo's Project Red well pair to 0.51 °F on nine steady months, with forecasts registered and time-stamped on 19 November 2026 and published as [forecast-audit](https://github.com/tonizemani2/forecast-audit) (doi:10.5281/zenodo.24396505);
+- the replay of IDDP-1's production casing through the well's recorded history, which reproduces the 2014 video log in 88 of 128 sampled wells (SIMULATED);
+- Pandora, a casing joint for superhot wells at 450 to 500 °C;
+- the GEOPHIRES-based power-cost model and the [LCOE calculator](https://zemanium.com/lcoe-calculator).
+
+Code and records are on GitHub at [github.com/tonizemani2](https://github.com/tonizemani2).
+
+06 / Contact
 
 ## Get in touch.
 

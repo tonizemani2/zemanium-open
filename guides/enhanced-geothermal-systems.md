@@ -1,4 +1,4 @@
-Guide · Toni Zemani · 20 November 2026
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 20 November 2026
 
 # Enhanced geothermal systems: how they work and what limits them.
 
