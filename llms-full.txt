@@ -1024,7 +1024,7 @@ What well costs do to the price of power is in our [cost guide](https://zemanium
 
 Decades. NLR's cost baseline assumes a 30-year life for plant and reservoir, and The Geysers in California has produced electricity since 1960, according to the EIA. Over that time the water a field produces cools as injected water draws heat from the rock, and operators drill makeup wells to hold output.
 
-Nevada publishes the monthly temperature of every producing geothermal well. Across 18 fields with ten or more years of record, the flow-weighted produced temperature changed by these amounts:
+Nevada publishes the monthly temperature of every producing geothermal well. We tracked 18 fields with ten or more years of record; ten of them, from fastest cooling to warming, show the spread:
 
 | Field (regulator code) | Years | First-year mean | 2025 mean | Change per year |
 |---|---|---|---|---|
