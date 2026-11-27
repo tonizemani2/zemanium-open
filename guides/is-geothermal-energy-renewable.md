@@ -22,7 +22,7 @@ The heat in one reservoir refills slowly, over decades to centuries. So a field 
 2. Hot water or steam rises to the surface and drives a turbine, directly or through a second fluid in a binary plant.
 3. The cooled water goes back down an injection well and heats up again in the rock.
 
-Because nothing burns and the loop runs in any weather, a geothermal plant delivers power around the clock. [Enhanced geothermal systems](https://zemanium.com/guides/enhanced-geothermal-systems) build the same loop in hot rock that has no natural water or cracks.
+Because nothing burns and the loop runs in any weather, a geothermal plant delivers power around the clock. The three plant types, dry steam, flash and binary, are explained in our [guide to geothermal power plants](https://zemanium.com/guides/geothermal-power-plants). [Enhanced geothermal systems](https://zemanium.com/guides/enhanced-geothermal-systems) build the same loop in hot rock that has no natural water or cracks.
 
 03 / Record
 
