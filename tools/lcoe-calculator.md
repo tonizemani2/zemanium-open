@@ -46,7 +46,7 @@ For geothermal plants with a simulated reservoir behind them, our [power-cost mo
 
 02 / Meaning
 
-## What is LCOE?
+## What is the levelized cost of energy (LCOE)?
 
 The levelized cost of energy (LCOE), also called the levelized cost of electricity, is the constant price per megawatt-hour at which a power plant earns back everything spent on it over its life, including the return its lenders and owners expect. It puts plants with very different cost structures on one scale: a solar farm that is cheap to build and produces a quarter of the time, a geothermal plant that is expensive to drill and runs day and night, and a gas plant that is cheap to build and pays for fuel every hour.
 

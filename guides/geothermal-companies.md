@@ -77,11 +77,15 @@ Yes. Fervo Energy trades on Nasdaq under the ticker FRVO after pricing its initi
 
 ### What is closed-loop geothermal?
 
-A system that circulates fluid through sealed wells in hot rock and takes heat by conduction, with no fracturing and no water drawn from the rock. Eavor's plant at Geretsried, Germany, connects 12 lateral wells into six pairs and has sent power to the grid since December 2025, by the company's account.
+A system that circulates fluid through sealed wells in hot rock and takes heat by conduction, with no fracturing and no water drawn from the rock. Eavor's plant at Geretsried, Germany, connects 12 lateral wells into six pairs and has sent power to the grid since December 2025, by the company's account. Our [closed-loop geothermal guide](https://zemanium.com/guides/closed-loop-geothermal) has its results and costs.
 
 ### Which geothermal startups have raised the most money?
 
 Among the developers on this page, Quaise Energy closed a $180m Series B in August 2026, Mazama Energy raised $135m in September 2026, and Zanskar raised a $115m Series C in January 2026, bringing its equity to $180m. Fervo Energy raised public equity in its May 2026 listing.
+
+### Which geothermal companies are in the USA?
+
+Fervo Energy in Utah and Nevada, Sage Geosystems in Texas, XGS Energy in New Mexico, Zanskar with a power agreement with NV Energy, and Quaise Energy and Mazama Energy in Oregon, among the developers. Ormat Technologies and Calpine, operator of The Geysers in California, run the largest existing US fleets.
 
 07 / Sources
 

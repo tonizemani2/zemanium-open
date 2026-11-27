@@ -16,6 +16,11 @@ Contact: toni@zemanium.com
 | `guides/geothermal-energy-pros-and-cons.md` | [Geothermal energy pros and cons, with the numbers](https://zemanium.com/guides/geothermal-energy-pros-and-cons) |
 | `guides/geothermal-wells.md` | [Geothermal wells: depth, cost and lifespan](https://zemanium.com/guides/geothermal-wells) |
 | `guides/geothermal-companies.md` | [Geothermal companies in 2026](https://zemanium.com/guides/geothermal-companies) |
+| `guides/geothermal-power-plants.md` | [Geothermal power plants: how they work, the three types, and what they produce](https://zemanium.com/guides/geothermal-power-plants) |
+| `guides/geothermal-gradient.md` | [The geothermal gradient: how much hotter the Earth gets with depth](https://zemanium.com/guides/geothermal-gradient) |
+| `guides/geothermal-map.md` | [Geothermal map of the world, the United States and Europe](https://zemanium.com/guides/geothermal-map), with depth to 200 °C by state |
+| `guides/geothermal-environmental-impacts.md` | [Environmental impacts of geothermal energy, with data](https://zemanium.com/guides/geothermal-environmental-impacts) |
+| `guides/closed-loop-geothermal.md` | [Closed-loop geothermal: how it works and what it costs](https://zemanium.com/guides/closed-loop-geothermal) |
 | `guides/geothermal-stocks.md` | [Geothermal stocks in 2026](https://zemanium.com/guides/geothermal-stocks) |
 | `guides/is-geothermal-energy-renewable.md` | [Is geothermal energy renewable? The field records](https://zemanium.com/guides/is-geothermal-energy-renewable) |
 | `guides/enhanced-geothermal-systems.md` | [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems) |
@@ -41,6 +46,10 @@ Contact: toni@zemanium.com
 - In 11 of 18 long-running Nevada geothermal fields the produced fluid is
   cooler than in its first recorded year; the median change is about 1.9 °F
   per year. Measured, operator-reported; computed by Zemanium.
+- Nevada has the shallowest heat of any US state with 25 or more heat-flow
+  values: 200 °C at about 4.4 km at its median heat flow of 109 mW/m².
+  [MODEL] on the IHFC Global Heat Flow Database 2024; maps and the full state
+  table at https://zemanium.com/guides/geothermal-map.
 - Zemanium's development target is firm geothermal power at $30 to $45 per
   MWh (target).
 

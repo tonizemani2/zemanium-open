@@ -63,7 +63,7 @@ For 200 °C the median depth ranges from 7.4 to 10.3 km across that conductivity
 
 Depth to 200 °C from the median heat flow in each measured one-degree cell, IHFC Global Heat Flow Database 2024. Blank land is unmeasured. [MODEL] on measured data; free to reuse under CC BY 4.0 with credit to Zemanium.
 
-The shallowest heat follows young tectonics and volcanism: the western United States, Iceland, East Africa's rift, Indonesia, New Zealand and the rim of the Pacific, where the EIA notes most major geothermal resources sit. Old continental interiors run cooler. Local hot spots can be far hotter than their region: Cape Station in Utah drills into a local anomaly inside a region whose median heat flow puts 200 °C at 5.3 km.
+The shallowest heat follows young tectonics and volcanism: the western United States, Iceland, East Africa's rift, Indonesia, New Zealand and the rim of the Pacific, where the EIA notes most major geothermal resources sit. Old continental interiors run cooler. Local hot spots can be far hotter than their region: Cape Station in Utah drills into a local anomaly inside a region whose median heat flow puts 200 °C at 5.3 km. Close-up maps of the United States and Europe, with the depth to 200 °C in every measured US state, are on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 05 / Variation
 

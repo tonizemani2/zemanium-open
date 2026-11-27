@@ -194,6 +194,162 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 28 November 2026
+
+# Closed-loop geothermal: how sealed wells make power and heat.
+
+A closed-loop geothermal system circulates a fluid through sealed pipe or wellbore in hot rock and takes the heat by conduction, so no water is drawn from the ground and no rock is fractured. The name covers two very different machines: deep loops kilometres down that make electricity and district heat, and shallow loops beside a building that feed a geothermal heat pump. Eavor's first deep loop at Geretsried, Germany, produced about 8.5 MW of heat in 2026, as the company predicted before drilling.
+
+Geretsried figures are company statements by Eavor Technologies. Cost figures are from a 2023 study by the National Laboratory of the Rockies (NLR, formerly NREL) and Sandia National Laboratories. Heat pump figures are from the US Department of Energy. Depth and work-per-kilogram figures are Zemanium model results, labelled [MODEL].
+
+01 / Mechanism
+
+## How does a closed-loop geothermal system work?
+
+![Diagram of three closed-loop geothermal designs: a deep U-loop with two wells joined by sealed laterals, a coaxial single well with an insulated inner pipe, and a ground-source heat pump with shallow vertical loops beside a house](https://zemanium.com/assets/charts/closed-loop-geothermal-diagram.svg)
+
+Three closed-loop designs. In each, the fluid stays inside the pipe or wellbore and heat reaches it by conduction through the rock. Not to scale. Free to reuse under CC BY 4.0 with credit to Zemanium.
+
+1. A pump, or in a deep loop the difference in density between cold and hot fluid, drives the fluid down the inlet.
+2. The fluid runs through sealed wellbore or pipe in contact with warm rock, and heat conducts into it.
+3. The warmed fluid returns to the surface.
+4. At the surface it drives a power plant, usually an organic Rankine cycle, or a heat exchanger for district heating, or a heat pump in a building.
+5. The cooled fluid goes back down the same loop. It never mixes with groundwater.
+
+Because heat arrives only by conduction, the output of a deep loop scales with the area of wellbore in contact with hot rock and with the temperature of that rock. That is why deep closed-loop designs drill long horizontal laterals, and why they gain so much from depth.
+
+02 / Designs
+
+## What are the types of closed-loop geothermal systems?
+
+| Design | Layout | Use | Example |
+|---|---|---|---|
+| Multilateral U-loop | two vertical wells joined by many horizontal laterals | power and district heat | Eavor-Loop at Geretsried, Germany, first power to the grid December 2025 |
+| Coaxial | one well with an insulated inner pipe: fluid flows down the outer annulus and up the centre | heat, small power | modelled for thousands of designs in NLR and Sandia's 2023 closed-loop database |
+| Conductive-material system | wellbore surrounded by thermally conductive material that draws heat from a wider volume of rock | power | XGS Energy: 150 MW agreement with Meta in New Mexico, announced June 2025 |
+| Ground-source heat pump loop | horizontal, vertical or pond loops of plastic pipe near a building | heating and cooling buildings | by the Department of Energy's guide, the most common way to heat and cool with geothermal |
+
+The companies behind each approach are in our [guide to geothermal companies](https://zemanium.com/guides/geothermal-companies).
+
+03 / Record
+
+## What Eavor's Geretsried loop produced.
+
+Geretsried, in Bavaria, is the first commercial-scale closed-loop geothermal project. It sits on the site of an earlier conventional project whose wells found rock that was hot but dry. Eavor's technical update of 2026 gives these results, all company statements:
+
+- Design: four loops of 12 lateral pairs each, for a nameplate of 8.2 MW of electricity or 64 MW of heat.
+- Loop 1: six lateral pairs drilled and intersected at a measured depth of about 8,000 m, with four contributing to flow.
+- Heat: about 8.5 MW, the output predicted for four pairs before drilling. Each pair produces more than 2 MW of heat now and is expected to settle at 1.3 MW after five years, the basis of the nameplate.
+- Power: the Turboden organic Rankine cycle plant converts about 4.3% of the heat to electricity at the 11.8 MW average heat duty since start-up, because it is sized for the full four-loop project.
+- Fluid loss: 0.5% to 2% of the circulating fluid, after sealing the laterals with Eavor's Rock-Pipe; about 0.1% expected in deeper basement rock.
+- Lesson: cement behind the casing let fluid pass between the two drilling rigs, which forced one rig to work at a time and doubled drilling time and cost. Eavor has changed its cementing design for future loops and expects each new lateral pair to take about three weeks.
+
+Eavor states that loops built this way are cost-competitive for European district heating in an average gradient of 30 °C per km, and that drilling deeper gives a path to electricity below $75 per MWh: in that gradient, it puts the output of a 15 km loop at 20 MW of electricity, against 2 MW at Geretsried.
+
+04 / Cost
+
+## How much does closed-loop geothermal cost?
+
+For heat, little; for electricity, it depends on how hot the rock is. NLR and Sandia ran millions of simulations for their 2023 closed-loop database. Their worked example is one U-loop:
+
+| Input or result | Value |
+|---|---|
+| Vertical depth | 3,000 m |
+| Horizontal lateral | 9,000 m |
+| Rock gradient and bottom temperature | 60 °C per km, 205 °C |
+| Water flow | 20 kg/s |
+| Average heat output | 3.9 MW |
+| Average electricity output | 285 kW |
+| Drilling cost, at $1,000 per metre | $15 million |
+| Levelized cost of heat | $31 per MWh |
+| Levelized cost of electricity | $438 per MWh |
+
+The same loop sells heat at a district-heating price and electricity at several times the $67 to $111 per MWh of a new conventional geothermal plant in Lazard's 2026 estimate, shown in our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost). Electricity from a loop gets cheaper with hotter rock, more laterals per well and cheaper drilling per metre. Our [LCOE calculator](https://zemanium.com/lcoe-calculator) shows how each input moves the price.
+
+05 / Depth
+
+## Why closed loops need depth.
+
+A loop collects heat only through its walls, so hotter rock pays twice: more heat flows in, and each kilogram of hot fluid carries more work. At 200 °C a kilogram can deliver 172 kJ of work at the wellhead; at 300 °C, 354 kJ. Across the world's measured continental land, rock reaches 200 °C at a median depth of about 8.5 km.
+
+[MODEL] · IAPWS water properties and IHFC Global Heat Flow Database 2024 · 27 November 2026
+
+Where that heat lies shallow is on our [geothermal map](https://zemanium.com/guides/geothermal-map), and how fast rock heats with depth is in our [geothermal gradient guide](https://zemanium.com/guides/geothermal-gradient).
+
+06 / Heat pumps
+
+## Closed-loop geothermal heat pump systems.
+
+Most people who search for a closed-loop geothermal system want to heat or cool a house. The US Department of Energy describes four ground-loop types; three are closed loops:
+
+- Horizontal: usually the most cost-effective for homes, especially new construction with enough land. It needs trenches at least four feet deep.
+- Vertical: used where land is limited or the soil is too shallow for trenches, with holes drilled into the bedrock. It can cost more but uses less land and disturbs less of the site. The holes run 100 to 400 feet deep, as our [wells guide](https://zemanium.com/guides/geothermal-wells#heat-pumps) details.
+- Pond or lake: the cheapest option where a large enough body of water is on site. The pipe coils sit at least eight feet below the surface to prevent freezing.
+
+The fourth type, the open loop, pumps well or surface water straight through the heat pump and returns it to the ground. It works only with an adequate supply of relatively clean water and where local rules on groundwater discharge allow it. Geothermal heat pumps reach efficiencies of 300% to 600% on the coldest winter nights, use 25% to 50% less energy than air-source heat pumps, and last 20 years or more for the heat pump and 25 to 50 years for the ground loop, by the Department's guide.
+
+07 / Compared
+
+## Closed-loop against conventional and enhanced geothermal.
+
+| | Closed loop | Conventional hydrothermal | Enhanced geothermal |
+|---|---|---|---|
+| Fluid | sealed, recirculated | reservoir water produced and reinjected | water injected through fractured rock and recovered |
+| Needs natural water and permeable rock | no | yes | no |
+| Fracturing | none | none | hydraulic stimulation |
+| How heat reaches the fluid | conduction through the wellbore wall | flow through the reservoir | flow through engineered fractures |
+| Output set by | wellbore area and rock temperature | reservoir permeability and temperature | fracture area, flow and temperature |
+| Example | Eavor, Geretsried, Germany | The Geysers, California | Fervo Energy, Cape Station, Utah |
+
+How enhanced systems make a reservoir is in our [enhanced geothermal guide](https://zemanium.com/guides/enhanced-geothermal-systems), and how the surface plant turns heat into power is in our [power plant guide](https://zemanium.com/guides/geothermal-power-plants). The environmental footprint of each is in our guide to the [environmental impacts of geothermal energy](https://zemanium.com/guides/geothermal-environmental-impacts).
+
+08 / Questions
+
+## Common questions.
+
+### What is a closed-loop geothermal system?
+
+A system that circulates a fluid through sealed pipe or wellbore in the ground and takes heat by conduction, with no water drawn from the rock. Deep loops make electricity and district heat; shallow loops feed geothermal heat pumps in buildings.
+
+### How does closed-loop geothermal work?
+
+Cool fluid flows down one leg of the loop, warms as it passes through hot rock and returns to the surface, where it drives a power plant, a heat exchanger or a heat pump. The cooled fluid then goes back down the same sealed loop.
+
+### Is closed-loop geothermal better than open-loop?
+
+For heat pumps, a closed loop works almost anywhere, while an open loop needs an adequate supply of clean water and permission to discharge it. For power, closed loops need no natural reservoir but produce less heat per well, so they rely on long laterals and hot rock.
+
+### How much does closed-loop geothermal cost?
+
+In NLR and Sandia's 2023 worked example, one U-loop 3,000 m deep with a 9,000 m lateral delivered heat at $31 per MWh and electricity at $438 per MWh. Hotter rock, more laterals and cheaper drilling bring the electricity cost down.
+
+### Does closed-loop geothermal use fracking?
+
+No. A closed loop takes heat by conduction through sealed wellbore and does not fracture the rock. Eavor states that its loops do not rely on fracking and use very little water.
+
+### Who is building closed-loop geothermal?
+
+Eavor Technologies runs the first commercial-scale loop at Geretsried, Germany, sending power to the grid since December 2025. XGS Energy has a 150 MW agreement with Meta in New Mexico.
+
+09 / Sources
+
+## Sources.
+
+1. Eavor Technologies, [Technical update from Geretsried: what we built, what we learned, and what comes next](https://eavor.com/blog/technical-update-from-geretsried-what-we-built-what-we-learned-and-what-comes-next/), read 27 November 2026, and [first electricity production at Geretsried](https://eavor.com/press-releases/eavor-technologies-achieves-first-electricity-production-at-geretsried-site/), 4 December 2025. Company statements.
+2. K. Beckers, Y. Vasyliv, G. A. Bran-Anleu, M. Martinez, C. Augustine and M. White, [Tabulated Database of Closed-Loop Geothermal Systems Performance for Cloud-Based Technical and Economic Modeling of Heat Production and Electricity Generation](https://apps.openei.org/GeoCLUSTER/assets/pdfs/Tabulated%20Database%20of%20Closed-Loop.pdf), NREL/CP-5700-84979, 48th Stanford Geothermal Workshop, 2023.
+3. US Department of Energy, [Guide to Geothermal Heat Pumps](https://www.energy.gov/sites/prod/files/guide_to_geothermal_heat_pumps.pdf), DOE/EE-0385.
+4. Office of the Governor of New Mexico, [XGS Energy and Meta geothermal partnership](https://governor.nm.gov/newsroom/governor-announces-xgs-energy-meta-geothermal-partnership-nation-leadi-100004482), June 2025; XGS Energy, [partnership with Baker Hughes](https://www.xgsenergy.com/xgs-partners-with-baker-hughes-to-advance-meta-linked-150mw-geothermal-project-in-new-mexico/), 2026. Company statement.
+5. Lazard, Levelized Cost of Energy+, 2026, as summarised in our [cost guide](https://zemanium.com/guides/geothermal-electricity-cost).
+6. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, and the geothermal oracle depth model on the IHFC Global Heat Flow Database 2024, registered and time-stamped before the run, 27 November 2026. [MODEL].
+
+Text, tables and the diagram on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Closed-loop geothermal: how sealed wells make power and heat", Zemanium, 28 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/closed-loop-geothermal
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
 Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 20 November 2026
 
 # Enhanced geothermal systems: how they work and what limits them.
@@ -512,11 +668,15 @@ Yes. Fervo Energy trades on Nasdaq under the ticker FRVO after pricing its initi
 
 ### What is closed-loop geothermal?
 
-A system that circulates fluid through sealed wells in hot rock and takes heat by conduction, with no fracturing and no water drawn from the rock. Eavor's plant at Geretsried, Germany, connects 12 lateral wells into six pairs and has sent power to the grid since December 2025, by the company's account.
+A system that circulates fluid through sealed wells in hot rock and takes heat by conduction, with no fracturing and no water drawn from the rock. Eavor's plant at Geretsried, Germany, connects 12 lateral wells into six pairs and has sent power to the grid since December 2025, by the company's account. Our [closed-loop geothermal guide](https://zemanium.com/guides/closed-loop-geothermal) has its results and costs.
 
 ### Which geothermal startups have raised the most money?
 
 Among the developers on this page, Quaise Energy closed a $180m Series B in August 2026, Mazama Energy raised $135m in September 2026, and Zanskar raised a $115m Series C in January 2026, bringing its equity to $180m. Fervo Energy raised public equity in its May 2026 listing.
+
+### Which geothermal companies are in the USA?
+
+Fervo Energy in Utah and Nevada, Sage Geosystems in Texas, XGS Energy in New Mexico, Zanskar with a power agreement with NV Energy, and Quaise Energy and Mazama Energy in Oregon, among the developers. Ormat Technologies and Calpine, operator of The Geysers in California, run the largest existing US fleets.
 
 07 / Sources
 
@@ -775,7 +935,7 @@ Enhanced systems open fractures with water under pressure, and that can set off 
 
 ### Some plants release gases
 
-Geothermal fluid carries hydrogen sulfide and small amounts of carbon dioxide. Plants use scrubbers to remove the hydrogen sulfide, and most inject the steam and water back into the ground, according to the EIA.
+Geothermal fluid carries hydrogen sulfide and small amounts of carbon dioxide. Plants use scrubbers to remove the hydrogen sulfide, and most inject the steam and water back into the ground, according to the EIA. Emissions, water use and induced earthquakes are measured side by side in our guide to the [environmental impacts of geothermal energy](https://zemanium.com/guides/geothermal-environmental-impacts).
 
 04 / Compared
 
@@ -854,6 +1014,160 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 28 November 2026
+
+# The environmental impacts of geothermal energy, measured.
+
+Geothermal power has one of the smallest environmental footprints of any electricity source. Over its whole life it emits a median 37 grams of CO2-equivalent per kilowatt-hour, against 486 for natural gas and 1,001 for coal, by the 2021 review of the National Laboratory of the Rockies. Its local impacts are gases carried up in the fluid, water use, small induced earthquakes and, where fluid is drawn out and not replaced, sinking ground. Each has a working control: scrubbers, reinjection, dry cooling and seismic monitoring.
+
+Figures are quoted from the EIA, the National Laboratory of the Rockies (NLR, formerly NREL), the World Bank's ESMAP programme, the USGS, peer-reviewed papers and company statements, each named where it appears. Work-per-kilogram figures are Zemanium model results, labelled [MODEL].
+
+01 / Summary
+
+## What are the environmental impacts of geothermal energy?
+
+| Impact | What causes it | How large | How plants control it |
+|---|---|---|---|
+| Greenhouse gases | carbon dioxide dissolved in the reservoir fluid, plus building the plant and drilling | median 37 g CO2e/kWh over the life cycle (NLR) | binary plants and full reinjection keep the gas underground |
+| Air pollutants | hydrogen sulfide in the steam | about 97% less sulfur compounds than fossil fuel plants (EIA) | scrubbers |
+| Water use | evaporation in cooling towers and fluid lost in the reservoir | 5 to 505 gallons per MWh by plant type (Macknick and colleagues) | dry cooling and reinjection |
+| Induced earthquakes | injection, withdrawal and stimulation change the stress on small faults | mostly small; the largest at The Geysers is about magnitude 4.5 (USGS) | seismic monitoring and injection limits |
+| Sinking ground | pressure falls when fluid is drawn out and not replaced | about 15 m at the centre of the Wairakei bowl, New Zealand, by 2009 | reinjection to hold reservoir pressure |
+| Natural features | drawing on the same hot water that feeds geysers and hot springs | site-specific | legal protection at places such as Yellowstone (EIA) |
+
+Direct use of geothermal heat and geothermal heat pumps have almost no negative effects on the environment, by the EIA's account. The impacts in this guide are those of geothermal power plants.
+
+02 / Emissions
+
+## How much CO2 does geothermal energy emit?
+
+A median 37 grams of CO2-equivalent per kilowatt-hour over the whole life cycle: building the plant, drilling, operation and decommissioning. That sits beside solar and far below fossil fuels in NLR's 2021 review of published life-cycle studies:
+
+| Source | Median life-cycle emissions (g CO2e/kWh) |
+|---|---|
+| Coal | 1,001 |
+| Oil | 840 |
+| Natural gas | 486 |
+| Solar photovoltaic | 43 |
+| Geothermal | 37 |
+| Concentrating solar | 28 |
+| Hydropower | 21 |
+| Wind | 13 |
+| Nuclear | 13 |
+
+Operating emissions depend on the field, because the carbon dioxide comes from the rock and the fluid, not from burning anything. The World Bank's ESMAP programme reports a global weighted average of 122 g/kWh from a 2001 survey of operating plants, and measured 400 to 1,300 g/kWh at plants in Turkey. Binary plants pass the heat through a closed heat exchanger and inject all the fluid back underground, so they have no air emissions, according to the EIA. Across the fleet, geothermal plants emit about 99% less carbon dioxide than fossil fuel plants, by the EIA's count.
+
+03 / Pollution
+
+## Does geothermal energy cause pollution?
+
+Very little. A geothermal plant burns no fuel, so it makes no smoke, soot or ash. The pollutant to manage is hydrogen sulfide, a gas in the steam that smells of rotten eggs. Plants remove it with scrubbers, and the EIA puts geothermal plants at about 97% less of the sulfur compounds that cause acid rain than fossil fuel plants.
+
+The water that comes up carries dissolved minerals and salts. Most plants inject the steam and water they use back into the earth, which keeps those minerals underground, renews the resource and further reduces emissions, according to the EIA.
+
+04 / Water
+
+## How much water does a geothermal power plant use?
+
+It depends on the plant type and its cooling. The review of operational water consumption by Macknick and colleagues gives these medians:
+
+| Plant | Cooling | Water consumed, gallons per MWh (median) | Range |
+|---|---|---|---|
+| Geothermal flash | dry | 5 | one study |
+| Geothermal flash | cooling tower | 15 | 5 to 361 |
+| Geothermal binary | dry | 270 | one study |
+| Geothermal binary | hybrid | 461 | 221 to 700 |
+| Enhanced geothermal | dry | 505 | 290 to 720 |
+| Natural gas combined cycle | cooling tower | 205 | 130 to 300 |
+| Nuclear | cooling tower | 672 | 581 to 845 |
+| Coal | cooling tower | 687 | 480 to 1,100 |
+
+A flash plant with a cooling tower consumes a fraction of the water of a gas, nuclear or coal plant with the same cooling. Enhanced systems also need water to stimulate the rock, which is why they sit at the top of the geothermal range.
+
+05 / Earthquakes
+
+## Does geothermal energy cause earthquakes?
+
+It can cause small ones. At The Geysers in California, the withdrawal of steam and the injection of cold water induce small earthquakes that workers and nearby residents often feel. The USGS reports that seismicity there has been fairly stable since the mid-1980s, that the largest quake recorded at the field is about magnitude 4.5, and that much larger ones are thought unlikely because no large continuous fault runs through the field.
+
+Stimulating hot rock for an enhanced system carries the larger risk. In November 2017 a magnitude 5.5 earthquake struck Pohang, South Korea; Ellsworth and colleagues showed in 2019 that stimulation at an enhanced geothermal pilot triggered it. Projects now follow induced-seismicity protocols such as the US Department of Energy's of 2012: screen the site, monitor in real time and adjust or stop injection when quakes pass agreed thresholds. Fervo Energy publishes its own approach to managing induced seismicity.
+
+06 / Ground
+
+## Can geothermal energy make the ground sink?
+
+Yes, where fluid is drawn out faster than it is replaced and reservoir pressure falls. At Wairakei in New Zealand, which has produced power since 1958, the centre of the main subsidence bowl had sunk about 15 m by 2009, at a peak rate of 498 mm a year in 1979, by the account of Brockbank and colleagues. Injecting the fluid back holds reservoir pressure up, and most geothermal plants now do it, according to the EIA.
+
+07 / Heat pumps
+
+## Geothermal heat pumps and the environment.
+
+Geothermal heat pumps move heat between a building and the ground through sealed loops of pipe. They can use 25% to 50% less energy than air-source heat pumps, by the US Department of Energy's guide, and the EIA counts them among the geothermal uses with almost no negative effects on the environment. Our guide to [closed-loop geothermal](https://zemanium.com/guides/closed-loop-geothermal) explains the loop types.
+
+08 / New designs
+
+## How newer geothermal designs change the footprint.
+
+- Closed-loop systems circulate their own fluid through sealed wells and exchange no water with the rock by design. At Geretsried, Germany, Eavor's first loop lost 0.5% to 2% of its circulating fluid to the rock, and the company expects about 0.1% in deeper, tighter basement rock.
+- Enhanced systems open fractures in hot dry rock, which raises water use and calls for seismic monitoring. More in our [enhanced geothermal guide](https://zemanium.com/guides/enhanced-geothermal-systems).
+- Hotter fluid does more work per kilogram. At 400 °C a kilogram of fluid can deliver 566 to 617 kJ of work, against 172 kJ at 200 °C, so a plant on 400 °C fluid lifts and reinjects less than a third as much fluid for the same work. That is the case for [superhot rock geothermal](https://zemanium.com/guides/superhot-rock-geothermal).
+
+[MODEL] · IAPWS water properties · 27 November 2026
+
+Where these resources lie is on our [geothermal map](https://zemanium.com/guides/geothermal-map), and the trade-offs beyond the environment are in our guide to [geothermal energy pros and cons](https://zemanium.com/guides/geothermal-energy-pros-and-cons).
+
+09 / Questions
+
+## Common questions.
+
+### What are the environmental impacts of geothermal energy?
+
+Low carbon emissions, a median 37 g CO2e per kWh over the life cycle, and four local impacts: hydrogen sulfide in the steam, water use of 5 to 505 gallons per MWh by plant type, small induced earthquakes and, where fluid is not reinjected, sinking ground.
+
+### Does geothermal energy cause pollution?
+
+Very little. Plants burn no fuel, scrub hydrogen sulfide from the steam and emit about 97% less sulfur compounds and 99% less carbon dioxide than fossil fuel plants, according to the EIA. Binary plants have no air emissions.
+
+### Is geothermal energy clean?
+
+Yes. Its median life-cycle emissions of 37 g CO2e per kWh are close to solar photovoltaic at 43 and about a thirteenth of natural gas at 486, by NLR's 2021 review.
+
+### Does geothermal energy cause earthquakes?
+
+Sometimes, and mostly small ones. The largest recorded at The Geysers in California is about magnitude 4.5, according to the USGS. Stimulation at an enhanced geothermal pilot triggered the magnitude 5.5 Pohang earthquake in South Korea in 2017, and projects now monitor seismicity and limit injection.
+
+### How much water does geothermal energy use?
+
+From about 5 gallons per MWh for a dry-cooled flash plant to 505 for an enhanced system, by the review of Macknick and colleagues, against 672 for a nuclear plant and 687 for a coal plant with cooling towers.
+
+### What are the problems with geothermal energy?
+
+For the environment: gases in the steam, water use, induced earthquakes and sinking ground, controlled by scrubbers, dry cooling, monitoring and reinjection. For the business: high upfront drilling cost and the risk of dry wells, both covered in our [pros and cons guide](https://zemanium.com/guides/geothermal-energy-pros-and-cons).
+
+10 / Sources
+
+## Sources.
+
+1. National Laboratory of the Rockies, [Life Cycle Greenhouse Gas Emissions from Electricity Generation: Update](https://docs.nlr.gov/docs/fy21osti/80580.pdf), 2021.
+2. US Energy Information Administration, [Geothermal energy and the environment](https://www.eia.gov/energyexplained/geothermal/geothermal-energy-and-the-environment.php) and [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php), read 27 November 2026.
+3. T. Fridriksson and colleagues, [Greenhouse Gases from Geothermal Power Production](https://doi.org/10.1596/24691), ESMAP technical report 009/16, World Bank, 2016; ESMAP, [Understanding CO2 emissions from geothermal power generation in Turkey](https://www.esmap.org/understanding-co2-emissions-geothermal-power-generation-turkey).
+4. J. Macknick, R. Newmark, G. Heath and K. C. Hallett, [Operational water consumption and withdrawal factors for electricity generating technologies: a review of existing literature](https://iopscience.iop.org/article/10.1088/1748-9326/7/4/045802), Environmental Research Letters 7, 045802, 2012.
+5. US Geological Survey, [Why are there so many earthquakes in the Geysers area in Northern California?](https://www.usgs.gov/faqs/why-are-there-so-many-earthquakes-geysers-area-northern-california), read 27 November 2026.
+6. W. L. Ellsworth and colleagues, [Triggering of the Pohang, Korea, earthquake (Mw 5.5) by enhanced geothermal system stimulation](https://doi.org/10.1785/0220190102), Seismological Research Letters, 2019.
+7. E. Majer and colleagues, [Protocol for Addressing Induced Seismicity Associated with Enhanced Geothermal Systems](https://www1.eere.energy.gov/geothermal/pdfs/geothermal_seismicity_protocol_012012.pdf), US Department of Energy, DOE/EE-0662, January 2012; Fervo Energy, [Fervo's approach to induced seismicity management](https://fervoenergy.com/fervos-approach-to-induced-seismicity-management/), 2024. Company statement.
+8. K. Brockbank and colleagues, [Overview of the Wairakei-Tauhara subsidence investigation program](https://pangea.stanford.edu/ERE/pdf/IGAstandard/SGW/2011/brockbank.pdf), Stanford Geothermal Workshop, 2011.
+9. US Department of Energy, [Guide to Geothermal Heat Pumps](https://www.energy.gov/sites/prod/files/guide_to_geothermal_heat_pumps.pdf), DOE/EE-0385.
+10. Eavor Technologies, [Technical update from Geretsried](https://eavor.com/blog/technical-update-from-geretsried-what-we-built-what-we-learned-and-what-comes-next/), read 27 November 2026. Company statement.
+11. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, registered and time-stamped before the run, 27 November 2026. [MODEL].
+
+Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "The environmental impacts of geothermal energy, measured", Zemanium, 28 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-environmental-impacts
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
 Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
 
 # The geothermal gradient: how much hotter the Earth gets with depth.
@@ -919,7 +1233,7 @@ For 200 °C the median depth ranges from 7.4 to 10.3 km across that conductivity
 
 Depth to 200 °C from the median heat flow in each measured one-degree cell, IHFC Global Heat Flow Database 2024. Blank land is unmeasured. [MODEL] on measured data; free to reuse under CC BY 4.0 with credit to Zemanium.
 
-The shallowest heat follows young tectonics and volcanism: the western United States, Iceland, East Africa's rift, Indonesia, New Zealand and the rim of the Pacific, where the EIA notes most major geothermal resources sit. Old continental interiors run cooler. Local hot spots can be far hotter than their region: Cape Station in Utah drills into a local anomaly inside a region whose median heat flow puts 200 °C at 5.3 km.
+The shallowest heat follows young tectonics and volcanism: the western United States, Iceland, East Africa's rift, Indonesia, New Zealand and the rim of the Pacific, where the EIA notes most major geothermal resources sit. Old continental interiors run cooler. Local hot spots can be far hotter than their region: Cape Station in Utah drills into a local anomaly inside a region whose median heat flow puts 200 °C at 5.3 km. Close-up maps of the United States and Europe, with the depth to 200 °C in every measured US state, are on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 05 / Variation
 
@@ -982,6 +1296,164 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
+Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 28 November 2026
+
+# Geothermal map: where the Earth's heat is closest to the surface.
+
+These maps show where geothermal heat lies shallowest, from 51,882 heat-flow measurements on land in the IHFC Global Heat Flow Database 2024. The world map shows measured heat flow. The maps of the United States and Europe turn it into the depth at which rock reaches 200 °C, where flash power plants start, with our conduction model. Nevada has the shallowest heat of any US state: 200 °C at about 4.4 km at its median heat flow. In Europe, Iceland leads at 3.6 km.
+
+Heat flow is measured, compiled by the International Heat Flow Commission. Depths are Zemanium model results on that data, labelled [MODEL]. Outlines are from Natural Earth. Every map is free to reuse under CC BY 4.0 with credit to Zemanium.
+
+01 / World
+
+## World geothermal map: measured heat flow.
+
+![World geothermal map of measured heat flow on land, median per one-degree cell; the highest values in orange run along the western United States, Iceland, the East African Rift, Indonesia, Japan and New Zealand, and old continental interiors in grey run lowest](https://zemanium.com/assets/charts/geothermal-heat-flow-map.webp)
+
+Median heat flow in every one-degree cell of land with a measurement, IHFC Global Heat Flow Database 2024. Squares mark the 166 cells holding a value above 250 mW/m². Blank land is unmeasured. Measured; free to reuse under CC BY 4.0 with credit to Zemanium.
+
+Heat flow is the heat escaping through each square metre of ground, in milliwatts per square metre (mW/m²): the temperature gradient measured in a borehole times the conductivity of the rock. The median of the world's measured continental cells is 59 mW/m², which puts 200 °C at about 8.5 km by our model. The hottest belts follow plate boundaries, rifts and young volcanoes: the western United States, Iceland, the East African Rift, Indonesia, Japan, New Zealand and the rim of the Pacific, where the EIA notes most major geothermal resources sit. The squares mark convective hot spots, where hot water rising through the rock carries heat faster than conduction alone.
+
+![World map of the modelled depth to 200 °C in every measured one-degree cell of continental land; shallow cells in orange cluster in the western United States, central Europe, East Africa and around the Pacific](https://zemanium.com/assets/charts/depth-to-200c-map.webp)
+
+Depth to 200 °C from the median heat flow in each measured one-degree cell. [MODEL] on measured data; free to reuse under CC BY 4.0 with credit to Zemanium.
+
+02 / United States
+
+## Geothermal map of the United States.
+
+![Geothermal map of the contiguous United States showing the modelled depth to 200 °C in every measured half-degree cell; the shallowest heat in dark orange covers Nevada, Idaho, Oregon, California and Utah, with The Geysers, Salton Sea, Coso, Cape Station and McGinness Hills marked](https://zemanium.com/assets/charts/geothermal-map-united-states.webp)
+
+Depth to 200 °C from the median heat flow in each measured half-degree cell. Squares mark cells with a value above 250 mW/m², convective hot spots the conduction model leaves out. Dots mark operating or pilot fields at approximate locations. [MODEL] on measured data; free to reuse under CC BY 4.0 with credit to Zemanium.
+
+The shallow heat of the United States covers the Great Basin of Nevada and western Utah, the Snake River Plain of Idaho, Oregon and California. That is where the country's geothermal power plants are: most are in western states and Hawaii, and California leads in geothermal electricity, according to the EIA. Nevada publishes the output of every plant; our [power plant guide](https://zemanium.com/guides/geothermal-power-plants) lists all of them.
+
+Squares mark 155 half-degree cells with a value above 250 mW/m² in the map's frame, all but one west of the 104th meridian. The Atlantic coast and Great Lakes states in the table, measured in fewer places, run cooler: 200 °C lies 9.1 km down or deeper at their medians.
+
+03 / By state
+
+## How deep is 200 °C in each US state?
+
+Every state with at least 25 heat-flow values in the database, shallowest heat first:
+
+| State | Heat-flow values | Median heat flow (mW/m²) | Depth to 150 °C (km) | Depth to 200 °C (km) |
+|---|---|---|---|---|
+| Nevada | 2,061 | 109.1 | 3.2 | 4.4 |
+| Idaho | 831 | 96 | 3.7 | 5.0 |
+| California | 1,025 | 83 | 4.3 | 5.9 |
+| Oregon | 1,106 | 83 | 4.3 | 5.9 |
+| Colorado | 369 | 80 | 4.4 | 6.1 |
+| Utah | 814 | 79.5 | 4.5 | 6.1 |
+| Arizona | 330 | 79 | 4.5 | 6.2 |
+| Arkansas | 289 | 73 | 4.9 | 6.8 |
+| Alaska | 104 | 71 | 5.0 | 7.0 |
+| New Mexico | 1,045 | 70 | 5.1 | 7.1 |
+| South Dakota | 165 | 68 | 5.3 | 7.3 |
+| North Dakota | 292 | 64 | 5.6 | 7.8 |
+| Kansas | 54 | 61.9 | 5.8 | 8.1 |
+| Montana | 936 | 62 | 5.8 | 8.1 |
+| Wyoming | 153 | 62 | 5.8 | 8.1 |
+| Washington | 414 | 61 | 5.9 | 8.3 |
+| Mississippi | 693 | 58 | 6.3 | 8.8 |
+| Nebraska | 73 | 57 | 6.4 | 8.9 |
+| Virginia | 56 | 56 | 6.5 | 9.1 |
+| Louisiana | 917 | 55 | 6.7 | 9.3 |
+| New Hampshire | 101 | 54 | 6.8 | 9.5 |
+| Maryland | 28 | 53.5 | 6.9 | 9.7 |
+| Alabama | 197 | 52 | 7.1 | 10.0 |
+| Maine | 112 | 52 | 7.1 | 10.0 |
+| Oklahoma | 284 | 51 | 7.3 | 10.2 |
+| Texas | 4,583 | 51 | 7.3 | 10.2 |
+| North Carolina | 57 | 50 | 7.5 | 10.5 |
+| Florida | 101 | 46 | 8.2 | 11.7 |
+| Michigan | 33 | 44 | 8.7 | 12.4 |
+
+[MODEL] · IHFC Global Heat Flow Database 2024, values of 20 to 250 mW/m² · 28 November 2026
+
+A state median hides its hot spots. Cape Station in Utah drills into a local anomaly far hotter than Utah's median, and Fervo Energy reported a 2026 well in Utah, Sawtooth 7, at 5.9 km of measured depth into rock of about 238 °C. What wells to those depths cost is in our [wells guide](https://zemanium.com/guides/geothermal-wells).
+
+04 / Europe
+
+## Geothermal map of Europe.
+
+![Geothermal map of Europe showing the modelled depth to 200 °C in every measured half-degree cell; the shallowest heat in dark orange covers Iceland, France, Germany, Tuscany, Hungary and western Turkey, while Finland and Ukraine in grey run deepest, with Larderello, Hellisheiði, Kızıldere, Geretsried and Soultz-sous-Forêts marked](https://zemanium.com/assets/charts/geothermal-map-europe.webp)
+
+Depth to 200 °C from the median heat flow in each measured half-degree cell. Squares mark the 11 cells with a value above 250 mW/m². Dots mark operating or pilot fields at approximate locations. [MODEL] on measured data; free to reuse under CC BY 4.0 with credit to Zemanium.
+
+Europe's shallowest heat lies in Iceland, Tuscany, the Upper Rhine Graben between France and Germany, the Paris and Molasse basins, Hungary's Pannonian Basin and western Turkey. Tuscany's Larderello field ran the first geothermal power plant, in 1904. The old shields of Finland, Scandinavia and Ukraine run coldest, with 200 °C at 11.7 km or deeper.
+
+| Region | Heat-flow values | Median heat flow (mW/m²) | Depth to 150 °C (km) | Depth to 200 °C (km) |
+|---|---|---|---|---|
+| Iceland | 117 | 133 | 2.6 | 3.6 |
+| Upper Rhine Graben, France and Germany | 266 | 106 | 3.3 | 4.5 |
+| Tuscany, Italy | 98 | 104.7 | 3.3 | 4.6 |
+| Paris Basin, France | 216 | 92 | 3.8 | 5.3 |
+| Molasse Basin, Bavaria | 92 | 86.6 | 4.1 | 5.6 |
+| Pannonian Basin, Hungary | 260 | 84.1 | 4.2 | 5.8 |
+| Western Turkey | 199 | 80 | 4.4 | 6.1 |
+| Iberia | 923 | 74 | 4.8 | 6.7 |
+| North German Basin | 459 | 70 | 5.1 | 7.1 |
+| Great Britain | 267 | 64.8 | 5.6 | 7.7 |
+| Ukrainian Shield | 535 | 46 | 8.2 | 11.7 |
+| Finland and northern Scandinavia | 200 | 38 | 10.5 | 15.0 |
+
+[MODEL] · regions drawn as latitude and longitude boxes · 28 November 2026
+
+Eavor's closed-loop plant at Geretsried sits in the Molasse Basin; how it works is in our [closed-loop geothermal guide](https://zemanium.com/guides/closed-loop-geothermal).
+
+05 / Method
+
+## How to read these maps.
+
+- Heat flow is measured. Each cell shows the median of the values inside it: one-degree cells on the world map, half-degree cells on the regional maps.
+- Depth is modelled. We solve heat conduction down from the surface with rock conductivity of 2.5 W/m/K, 1 µW/m³ of heat produced in the top 10 km and a surface at 12 °C. A conductivity of 2.2 to 3.0 W/m/K moves the world median depth to 200 °C between 7.4 and 10.3 km, as our [geothermal gradient guide](https://zemanium.com/guides/geothermal-gradient) shows.
+- Values above 250 mW/m², 2,023 of them, mark places where moving water carries the heat. Conduction does not describe them, so they are drawn as squares and left out of the depths.
+- Blank land is unmeasured, not cold.
+
+The world map of depth to 150, 200, 250 and 400 °C, and the share of land within reach of each drilling depth, are in the gradient guide. What the heat is worth in a power plant is in our [power plant guide](https://zemanium.com/guides/geothermal-power-plants).
+
+06 / Questions
+
+## Common questions.
+
+### Where is geothermal energy found in the United States?
+
+Mostly in the West. Nevada, Idaho, California, Oregon, Colorado, Utah and Arizona reach 200 °C within about 6.2 km at their median heat flow, by our model, and most US geothermal power plants are in western states and Hawaii, according to the EIA.
+
+### Which US state has the most geothermal energy?
+
+Nevada has the shallowest heat, with 200 °C at about 4.4 km at its median heat flow of 109 mW/m². California generates the most geothermal electricity, according to the EIA, led by The Geysers.
+
+### Where is geothermal energy found in Europe?
+
+In Iceland, Tuscany, the Upper Rhine Graben, the Paris and Molasse basins, Hungary's Pannonian Basin and western Turkey, where 200 °C lies between 3.6 and 6.1 km at the regional median, by our model.
+
+### What does a geothermal map show?
+
+Usually heat flow, the heat escaping through the ground in mW/m², or the temperature at a given depth. Our maps show measured heat flow worldwide and the modelled depth to 200 °C in the United States and Europe.
+
+### How deep do you have to drill for geothermal energy?
+
+For electricity, to rock of about 110 °C or hotter for a binary plant and about 200 °C for a flash plant, by NLR's baseline. At the state median, 150 °C lies at 3.2 km in Nevada and 7.3 km in Texas, and much shallower at local hot spots, by our model.
+
+07 / Sources
+
+## Sources.
+
+1. Global Heat Flow Data Assessment Group and others, [The Global Heat Flow Database: Release 2024](https://doi.org/10.5880/fidgeo.2024.014), version 2026.03, GFZ Data Services, CC BY 4.0, compiled for the International Heat Flow Commission.
+2. Natural Earth, [1:50m countries and 1:110m states](https://www.naturalearthdata.com/), public domain.
+3. US Energy Information Administration, [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php), read 28 November 2026.
+4. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026.
+5. Zemanium, depth-to-temperature model on the IHFC database, registered and time-stamped before the run, 27 November 2026, and the maps and tables drawn from it on 28 November 2026. [MODEL].
+
+Text, tables and maps on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal map: where the Earth's heat is closest to the surface", Zemanium, 28 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/guides/geothermal-map
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
 Guide · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 27 November 2026
 
 # Geothermal power plants: how they work, the three types, and what they produce.
@@ -994,6 +1466,10 @@ Plant types and figures are quoted from the EIA, the National Laboratory of the 
 
 ## How does a geothermal power plant work?
 
+![Diagram of how a geothermal power plant works: a production well brings hot water and steam from the reservoir, a separator splits off the steam, the steam spins a turbine and generator, a condenser and cooling tower turn it back into water, and an injection well returns the water to the reservoir](https://zemanium.com/assets/charts/geothermal-power-plant-diagram.svg)
+
+A flash geothermal power plant, the most common type. Binary plants swap the separator for a heat exchanger and a second working fluid. Not to scale. Free to reuse under CC BY 4.0 with credit to Zemanium.
+
 1. Production wells reach a reservoir of hot water or steam, or hot rock that engineers have made permeable. The EIA notes that plants use water or steam at 300 to 700 °F and that some wells go as deep as about 2 miles.
 2. The fluid rises to the surface under its own pressure or with a downhole pump.
 3. Its heat drives a turbine: as steam directly, as steam flashed from hot water, or through a heat exchanger that boils a second fluid.
@@ -1001,6 +1477,10 @@ Plant types and figures are quoted from the EIA, the National Laboratory of the 
 5. The cooled water goes back down injection wells, keeping reservoir pressure up and returning the fluid to be heated again.
 
 Nothing burns, and the heat does not depend on weather, so a geothermal plant runs day and night. In 2025 the US fleet produced 65.9% of what its available capacity could deliver running flat out, against 24.0% for solar and 33.8% for wind, by the EIA's count.
+
+### How is geothermal energy produced?
+
+Geothermal energy comes from deep inside the Earth, produced by the slow breakdown of radioactive particles, a process that happens naturally in all rocks, by the EIA's account. The heat flows up through the crust, so the deeper you go, the hotter the rock. Where it meets water in permeable rock it forms a reservoir of hot water or steam, and a power plant turns that into electricity in the steps above. How fast rock heats with depth is in our [geothermal gradient guide](https://zemanium.com/guides/geothermal-gradient), and where the heat lies shallowest is on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 02 / Types
 
@@ -1040,7 +1520,7 @@ Moving from 200 °C to 400 °C more than triples the work per kilogram, so each 
 ## Enhanced and closed-loop geothermal plants.
 
 - Enhanced geothermal systems make a reservoir in hot rock that lacks water or cracks, by opening fractures and circulating water between wells. Fervo Energy's Cape Station in Utah sent first power on 24 September 2026. More in our [enhanced geothermal guide](https://zemanium.com/guides/enhanced-geothermal-systems).
-- Closed-loop systems circulate a fluid through sealed wells and take heat by conduction, with no fracturing. Eavor's plant at Geretsried, Germany, has sent power to the grid since December 2025, and its loop circulates by thermosiphon without a pump after start-up, by the company's account.
+- Closed-loop systems circulate a fluid through sealed wells and take heat by conduction, with no fracturing. Eavor's plant at Geretsried, Germany, has sent power to the grid since December 2025, and its loop circulates by thermosiphon without a pump after start-up, by the company's account. More in our [closed-loop geothermal guide](https://zemanium.com/guides/closed-loop-geothermal).
 
 Both still run a flash or binary plant on the surface. The companies building them are in our [guide to geothermal companies](https://zemanium.com/guides/geothermal-companies).
 
@@ -1062,7 +1542,7 @@ Both still run a flash or binary plant on the surface. The companies building th
 | Japan | 607 MW |
 | World | 17,173 MW in 35 countries |
 
-Source: ThinkGeoEnergy, January 2026. The largest single complex is The Geysers in California: 13 plants operated by Calpine, with a capacity of about 725 MW by Calpine's account.
+Source: ThinkGeoEnergy, January 2026. The largest single complex is The Geysers in California: 13 plants operated by Calpine, with a capacity of about 725 MW by Calpine's account. Where the underground heat lies shallowest is on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 06 / Record
 
@@ -1132,11 +1612,19 @@ The Geysers in northern California, a complex of 13 plants operated by Calpine w
 
 The United States, with 3,953 MW installed at the end of 2025, followed by Indonesia with 2,742 MW and the Philippines with 2,034 MW, according to ThinkGeoEnergy.
 
+### How efficient is a geothermal power plant?
+
+Geothermal plants convert about 12% of the heat they draw from the ground into electricity on average worldwide, and the best reported, at Darajat in Indonesia, about 21%, by the 2014 worldwide review of Zarrouk and Moon. The heat itself costs nothing, so the efficiency sets how many wells a plant needs.
+
+### Are geothermal power plants bad for the environment?
+
+Their footprint is small. Over their life they emit a median 37 g of CO2-equivalent per kWh, against 486 for natural gas, by NLR's 2021 review, and they scrub hydrogen sulfide and reinject their water. Our guide to the [environmental impacts of geothermal energy](https://zemanium.com/guides/geothermal-environmental-impacts) has the full data.
+
 08 / Sources
 
 ## Sources.
 
-1. US Energy Information Administration, [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php) and [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php), read 27 November 2026.
+1. US Energy Information Administration, [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php), [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php) and [Geothermal explained](https://www.eia.gov/energyexplained/geothermal/), read 27 and 28 November 2026.
 2. US Energy Information Administration, Electric Power Monthly, [table 6.07.B](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_6_07_b), release of 24 November 2026.
 3. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026.
 4. ThinkGeoEnergy, [Global top 10 geothermal power countries at year-end 2025](https://www.thinkgeoenergy.com/global-top-10-geothermal-power-countries-at-year-end-2025/), 12 January 2026.
@@ -1144,7 +1632,8 @@ The United States, with 3,953 MW installed at the end of 2025, followed by Indon
 6. Eavor Technologies, [first electricity production at Geretsried](https://eavor.com/press-releases/eavor-technologies-achieves-first-electricity-production-at-geretsried-site/), 4 December 2025. Company statement.
 7. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026. Company statement.
 8. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026, sheet MonthlyMWH. Measured, operator-reported.
-9. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, registered and time-stamped before the run, 27 November 2026. [MODEL].
+9. S. J. Zarrouk and H. Moon, [Efficiency of geothermal power plants: a worldwide review](https://ui.adsabs.harvard.edu/abs/2014Geoth..51..142Z/abstract), Geothermics 51, 2014; National Laboratory of the Rockies, [Life Cycle Greenhouse Gas Emissions from Electricity Generation: Update](https://docs.nlr.gov/docs/fy21osti/80580.pdf), 2021.
+10. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, registered and time-stamped before the run, 27 November 2026. [MODEL].
 
 Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal power plants: how they work, the three types, and what they produce", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
 
@@ -1355,11 +1844,15 @@ That is our field. We rebuilt IDDP-1's production casing in a model and ran it t
 
 ## Geothermal heat pump wells are a different thing.
 
-A home or office geothermal heat pump uses the steady temperature a few hundred feet down; it makes no electricity. For a vertical system, holes about 4 inches across are drilled about 20 feet apart and 100 to 400 feet deep, according to the US Department of Energy. The shallowest power well in the table above goes more than 20 times deeper.
+A home or office geothermal heat pump uses the steady temperature a few hundred feet down; it makes no electricity. For a vertical system, holes about 4 inches across are drilled about 20 feet apart and 100 to 400 feet deep, according to the US Department of Energy. The shallowest power well in the table above goes more than 20 times deeper. The loops that go into those holes are explained in our guide to [closed-loop geothermal](https://zemanium.com/guides/closed-loop-geothermal).
 
 07 / Questions
 
 ## Common questions.
+
+### What is a geothermal well?
+
+A hole drilled to bring the Earth's heat to the surface. Power plants use production wells that lift hot water or steam and injection wells that return it, typically 1.5 to 7 km deep. Geothermal heat pumps use boreholes 100 to 400 feet deep that hold a sealed loop of pipe.
 
 ### How deep is a geothermal well?
 
@@ -1700,7 +2193,7 @@ For geothermal plants with a simulated reservoir behind them, our [power-cost mo
 
 02 / Meaning
 
-## What is LCOE?
+## What is the levelized cost of energy (LCOE)?
 
 The levelized cost of energy (LCOE), also called the levelized cost of electricity, is the constant price per megawatt-hour at which a power plant earns back everything spent on it over its life, including the return its lenders and owners expect. It puts plants with very different cost structures on one scale: a solar farm that is cheap to build and produces a quarter of the time, a geothermal plant that is expensive to drill and runs day and night, and a gas plant that is cheap to build and pays for fuel every hour.
 

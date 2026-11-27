@@ -10,6 +10,10 @@ Plant types and figures are quoted from the EIA, the National Laboratory of the 
 
 ## How does a geothermal power plant work?
 
+![Diagram of how a geothermal power plant works: a production well brings hot water and steam from the reservoir, a separator splits off the steam, the steam spins a turbine and generator, a condenser and cooling tower turn it back into water, and an injection well returns the water to the reservoir](https://zemanium.com/assets/charts/geothermal-power-plant-diagram.svg)
+
+A flash geothermal power plant, the most common type. Binary plants swap the separator for a heat exchanger and a second working fluid. Not to scale. Free to reuse under CC BY 4.0 with credit to Zemanium.
+
 1. Production wells reach a reservoir of hot water or steam, or hot rock that engineers have made permeable. The EIA notes that plants use water or steam at 300 to 700 °F and that some wells go as deep as about 2 miles.
 2. The fluid rises to the surface under its own pressure or with a downhole pump.
 3. Its heat drives a turbine: as steam directly, as steam flashed from hot water, or through a heat exchanger that boils a second fluid.
@@ -17,6 +21,10 @@ Plant types and figures are quoted from the EIA, the National Laboratory of the 
 5. The cooled water goes back down injection wells, keeping reservoir pressure up and returning the fluid to be heated again.
 
 Nothing burns, and the heat does not depend on weather, so a geothermal plant runs day and night. In 2025 the US fleet produced 65.9% of what its available capacity could deliver running flat out, against 24.0% for solar and 33.8% for wind, by the EIA's count.
+
+### How is geothermal energy produced?
+
+Geothermal energy comes from deep inside the Earth, produced by the slow breakdown of radioactive particles, a process that happens naturally in all rocks, by the EIA's account. The heat flows up through the crust, so the deeper you go, the hotter the rock. Where it meets water in permeable rock it forms a reservoir of hot water or steam, and a power plant turns that into electricity in the steps above. How fast rock heats with depth is in our [geothermal gradient guide](https://zemanium.com/guides/geothermal-gradient), and where the heat lies shallowest is on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 02 / Types
 
@@ -56,7 +64,7 @@ Moving from 200 °C to 400 °C more than triples the work per kilogram, so each 
 ## Enhanced and closed-loop geothermal plants.
 
 - Enhanced geothermal systems make a reservoir in hot rock that lacks water or cracks, by opening fractures and circulating water between wells. Fervo Energy's Cape Station in Utah sent first power on 24 September 2026. More in our [enhanced geothermal guide](https://zemanium.com/guides/enhanced-geothermal-systems).
-- Closed-loop systems circulate a fluid through sealed wells and take heat by conduction, with no fracturing. Eavor's plant at Geretsried, Germany, has sent power to the grid since December 2025, and its loop circulates by thermosiphon without a pump after start-up, by the company's account.
+- Closed-loop systems circulate a fluid through sealed wells and take heat by conduction, with no fracturing. Eavor's plant at Geretsried, Germany, has sent power to the grid since December 2025, and its loop circulates by thermosiphon without a pump after start-up, by the company's account. More in our [closed-loop geothermal guide](https://zemanium.com/guides/closed-loop-geothermal).
 
 Both still run a flash or binary plant on the surface. The companies building them are in our [guide to geothermal companies](https://zemanium.com/guides/geothermal-companies).
 
@@ -78,7 +86,7 @@ Both still run a flash or binary plant on the surface. The companies building th
 | Japan | 607 MW |
 | World | 17,173 MW in 35 countries |
 
-Source: ThinkGeoEnergy, January 2026. The largest single complex is The Geysers in California: 13 plants operated by Calpine, with a capacity of about 725 MW by Calpine's account.
+Source: ThinkGeoEnergy, January 2026. The largest single complex is The Geysers in California: 13 plants operated by Calpine, with a capacity of about 725 MW by Calpine's account. Where the underground heat lies shallowest is on our [geothermal map](https://zemanium.com/guides/geothermal-map).
 
 06 / Record
 
@@ -148,11 +156,19 @@ The Geysers in northern California, a complex of 13 plants operated by Calpine w
 
 The United States, with 3,953 MW installed at the end of 2025, followed by Indonesia with 2,742 MW and the Philippines with 2,034 MW, according to ThinkGeoEnergy.
 
+### How efficient is a geothermal power plant?
+
+Geothermal plants convert about 12% of the heat they draw from the ground into electricity on average worldwide, and the best reported, at Darajat in Indonesia, about 21%, by the 2014 worldwide review of Zarrouk and Moon. The heat itself costs nothing, so the efficiency sets how many wells a plant needs.
+
+### Are geothermal power plants bad for the environment?
+
+Their footprint is small. Over their life they emit a median 37 g of CO2-equivalent per kWh, against 486 for natural gas, by NLR's 2021 review, and they scrub hydrogen sulfide and reinject their water. Our guide to the [environmental impacts of geothermal energy](https://zemanium.com/guides/geothermal-environmental-impacts) has the full data.
+
 08 / Sources
 
 ## Sources.
 
-1. US Energy Information Administration, [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php) and [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php), read 27 November 2026.
+1. US Energy Information Administration, [Geothermal power plants](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php), [Where geothermal energy is found](https://www.eia.gov/energyexplained/geothermal/where-geothermal-energy-is-found.php) and [Geothermal explained](https://www.eia.gov/energyexplained/geothermal/), read 27 and 28 November 2026.
 2. US Energy Information Administration, Electric Power Monthly, [table 6.07.B](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_6_07_b), release of 24 November 2026.
 3. National Laboratory of the Rockies, [Annual Technology Baseline 2025: geothermal](https://atb.nlr.gov/electricity/2025/2023/geothermal), read 27 November 2026.
 4. ThinkGeoEnergy, [Global top 10 geothermal power countries at year-end 2025](https://www.thinkgeoenergy.com/global-top-10-geothermal-power-countries-at-year-end-2025/), 12 January 2026.
@@ -160,7 +176,8 @@ The United States, with 3,953 MW installed at the end of 2025, followed by Indon
 6. Eavor Technologies, [first electricity production at Geretsried](https://eavor.com/press-releases/eavor-technologies-achieves-first-electricity-production-at-geretsried-site/), 4 December 2025. Company statement.
 7. Fervo Energy, [first power at Cape Station](https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-achieves-first-power-cape-station-landmark-moment), 24 September 2026. Company statement.
 8. Nevada Division of Minerals, [Geothermal Production and Well Data](https://data-ndom.opendata.arcgis.com/pages/oilgasandgeothermalproduction), workbook of 29 September 2026, sheet MonthlyMWH. Measured, operator-reported.
-9. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, registered and time-stamped before the run, 27 November 2026. [MODEL].
+9. S. J. Zarrouk and H. Moon, [Efficiency of geothermal power plants: a worldwide review](https://ui.adsabs.harvard.edu/abs/2014Geoth..51..142Z/abstract), Geothermics 51, 2014; National Laboratory of the Rockies, [Life Cycle Greenhouse Gas Emissions from Electricity Generation: Update](https://docs.nlr.gov/docs/fy21osti/80580.pdf), 2021.
+10. Zemanium, physics of deep geothermal power, flow exergy on IAPWS water properties, registered and time-stamped before the run, 27 November 2026. [MODEL].
 
 Text and tables on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Geothermal power plants: how they work, the three types, and what they produce", Zemanium, 27 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
 

@@ -93,11 +93,15 @@ That is our field. We rebuilt IDDP-1's production casing in a model and ran it t
 
 ## Geothermal heat pump wells are a different thing.
 
-A home or office geothermal heat pump uses the steady temperature a few hundred feet down; it makes no electricity. For a vertical system, holes about 4 inches across are drilled about 20 feet apart and 100 to 400 feet deep, according to the US Department of Energy. The shallowest power well in the table above goes more than 20 times deeper.
+A home or office geothermal heat pump uses the steady temperature a few hundred feet down; it makes no electricity. For a vertical system, holes about 4 inches across are drilled about 20 feet apart and 100 to 400 feet deep, according to the US Department of Energy. The shallowest power well in the table above goes more than 20 times deeper. The loops that go into those holes are explained in our guide to [closed-loop geothermal](https://zemanium.com/guides/closed-loop-geothermal).
 
 07 / Questions
 
 ## Common questions.
+
+### What is a geothermal well?
+
+A hole drilled to bring the Earth's heat to the surface. Power plants use production wells that lift hot water or steam and injection wells that return it, typically 1.5 to 7 km deep. Geothermal heat pumps use boreholes 100 to 400 feet deep that hold a sealed loop of pipe.
 
 ### How deep is a geothermal well?
 

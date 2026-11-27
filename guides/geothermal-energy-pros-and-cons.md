@@ -68,7 +68,7 @@ Enhanced systems open fractures with water under pressure, and that can set off 
 
 ### Some plants release gases
 
-Geothermal fluid carries hydrogen sulfide and small amounts of carbon dioxide. Plants use scrubbers to remove the hydrogen sulfide, and most inject the steam and water back into the ground, according to the EIA.
+Geothermal fluid carries hydrogen sulfide and small amounts of carbon dioxide. Plants use scrubbers to remove the hydrogen sulfide, and most inject the steam and water back into the ground, according to the EIA. Emissions, water use and induced earthquakes are measured side by side in our guide to the [environmental impacts of geothermal energy](https://zemanium.com/guides/geothermal-environmental-impacts).
 
 04 / Compared
 
