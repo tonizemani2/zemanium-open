@@ -53,6 +53,8 @@ The [research page](https://zemanium.com/room/#machines) shows each drawing with
 
 ## Guides and reference.
 
+- [Energy After Singularity](https://zemanium.com/energy-after-singularity): the thesis, with 23 dated and scored predictions
+- [Research papers](https://zemanium.com/papers/): the superhot casing record and the design rules for the quench
 - [What geothermal electricity costs, and what sets the price](https://zemanium.com/guides/geothermal-electricity-cost)
 - [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems)
 - [Superhot rock geothermal: what happens above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal)

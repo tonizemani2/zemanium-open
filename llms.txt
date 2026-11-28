@@ -11,6 +11,8 @@
 - Zemanium's hardware programme targets well integrity above 375 C: casing and cement through thermal cycles, flow control and sensing.
 - Nevada record compiled by Zemanium from the state regulator: geothermal output 5,044 GWh in 2019 and 5,031 GWh in 2025; in 11 of 18 long-running fields the produced fluid is cooler than in its first recorded year; across the 18 fields the median change is about 1.9 F cooler per year, and Blue Mountain's is 5.4 F per year.
 - Free LCOE calculator for any power plant, with the formula and Lazard's 2026 ranges by source (geothermal $67 to $111 per MWh): https://zemanium.com/lcoe-calculator
+- Energy After Singularity, Zemanium's thesis of 28 November 2026: solar with storage supplies about half of the world's electricity by 2045, and superhot geothermal (400 to 450 C rock, 8 to 12 km wells) supplies the firm hour, a fifth in the full-win scenario (model scenario). 23 dated predictions, scored in public: https://zemanium.com/energy-after-singularity.md
+- Zemanium's research papers cover the superhot casing record (21 wells, 7 failed) and two design rules for casing that survives the quench, both on pre-registered simulation campaigns: https://zemanium.com/papers/index.md
 
 ## Tools and data for agents
 
@@ -51,11 +53,13 @@ Text, figures and simulation records: CC BY 4.0. Code: MIT. Hardware drawings: p
 - [Geothermal LCOE model and Utah FORGE field data | Zemanium](https://zemanium.com/confidence/): Free geothermal LCOE calculator: set plant cost, well cost and discount rate across 1,080 simulated scenarios, and inspect a published Utah FORGE log.
 - [Geothermal reservoir simulator in 3D | Zemanium](https://zemanium.com/demo/): Interactive 3D geothermal reservoir: change depth, flow, well spacing, permeability and rock temperature and watch heat, power and cost respond. SIMULATED.
 - [Geothermal technical dossier: methods and results | Zemanium](https://zemanium.com/docs/04-technical-dossier): Methods, test duties and results for Zemanium's geothermal programs: sensing, commanded release, well integrity, conversion and the power-cost model.
+- [Energy After Singularity: the future of energy to 2045](https://zemanium.com/energy-after-singularity.md): A thesis by Toni Zemani: solar with storage supplies half of the world's electricity by 2045 and superhot geothermal a fifth, with 23 dated predictions.
 - [Fervo Project Red: monthly record and forecast](https://zemanium.com/fervo-project-red.md): Project Red's wellhead temperature each month from the Nevada regulator, against a forecast registered on 19 Nov 2026. Data, chart and scores.
 - [Geothermal engineering guides | Zemanium](https://zemanium.com/guides/): Sourced guides to geothermal power: cost, plants, wells, maps, environmental impacts, closed-loop and superhot rock, with data you can check and reuse.
 - [Zemanium: Pandora, a casing joint for superhot geothermal](https://zemanium.com/): Zemanium builds Pandora, a casing joint for superhot geothermal wells at 450 to 500 °C, and scores registered forecasts against regulator data.
 - [LCOE calculator: levelized cost of energy and formula](https://zemanium.com/lcoe-calculator.md): Free LCOE calculator for any power plant, with the levelized cost of energy formula, a worked geothermal example and 2026 LCOE by energy source.
 - [Open geothermal models, data and drawings | Zemanium](https://zemanium.com/open/index.md): Everything Zemanium has published: the Project Red forecast record, a geothermal power-cost model, a 3D reservoir simulator, hardware drawings and guides.
+- [Research papers on superhot geothermal casing](https://zemanium.com/papers/index.md): Zemanium's research papers: a 21-well casing record with a pre-registered replay of IDDP-1, and two design rules for casing that survives the quench.
 - [Geothermal research: programs, hardware, records | Zemanium](https://zemanium.com/room/): Zemanium's geothermal research programs with their hardware drawings, simulation results, test gates and downloadable records. Updated 20 November 2026.
 
 ## Optional

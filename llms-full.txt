@@ -74,6 +74,461 @@ Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
 
 
+Thesis · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 28 November 2026
+
+# Energy After Singularity.
+
+A thesis on the energy system after abundant research, with dated predictions. Solar with storage supplies about half of the world's electricity by 2045. Superhot geothermal, from rock at 400 to 450 °C, supplies the firm power: 1,650 GW in the full-win scenario, a fifth of the world's electricity.
+
+Labels travel with the numbers: [MODEL] is computed from published correlations, SIMULATED is the result of a physics simulation campaign, vendor-stated is taken from the maker. Each of the 23 predictions names the public record that settles it.
+
+## The thesis
+
+In autumn 2026 Levent Alpöge and Claude completed a formal proof of the Generalized Riemann Hypothesis in six weeks, certified in Lean on 21 November. Two months earlier, 10,000 autonomous OpenAI agents had produced a Lean-checked blow-up construction for forced 3D Navier-Stokes. Research is becoming abundant.
+
+This essay follows that trend to its end and describes the energy system that results. It assumes that digital research, design and multiphysics simulation run at near-zero marginal cost, and that embodied robots take the human field labour out of factories, mines and construction sites.
+
+When research is abundant, energy is decided by what research cannot shortcut: physical tests, physical ageing, supply chains and conservation laws. Those constraints are known today, so the energy system that follows can be described today. Solar with storage supplies about half of the world's electricity. Superhot geothermal, meaning 400-450 °C rock reached by 8-12 km wells, becomes the leading source of clean firm power and of industrial heat up to 450 °C. Fission, fusion and orbital power each take a later and narrower place, and several well-funded ideas are ruled out by physics.
+
+The centre of the argument is superhot rock. At 400-450 °C a kilogram of fluid carries four times the work it carries from today's 200 °C wells, so one pair of wells makes 40-55 MW where it now makes about 10. On good ground that power costs $25-$29/MWh. It runs through winter nights, burns no fuel and takes 1-3 km² of surface per gigawatt. Wells have already reached the depth, and every remaining step has a date in this essay.
+
+![Figure 1: Superhot geothermal in six numbers. The 2045 figures are the full-win scenario ([MODEL]).](https://zemanium.com/assets/thesis/figure-1-key-numbers.png)
+
+Figure 1: Superhot geothermal in six numbers. The 2045 figures are the full-win scenario (`[MODEL]`).
+
+Firm power is power available in any hour of the year, including a windless winter night. This essay calls that hour the firm hour, and most of the argument concerns who supplies it.
+
+The thesis rests on five claims:
+
+1. Three things set the pace: how cheaply a technology can be tested, how long it waits in queues, and how much energy physical industry needs.
+2. Solar with storage wins bulk energy and leaves the firm hour open.
+3. Firm power has to be generated locally, and every surface source of it has a cost floor.
+4. Superhot geothermal supplies the firm hour.
+5. Earth has a heat ceiling, and growth past it moves to orbit.
+
+At Zemanium we are building three of the links argued below: the superhot casing string (`U3`), downhole flow control (`U4`) and the reservoir scoring record (`U7`).
+
+Part I describes the future these claims produce, with dates. Part II gives the method, Part III argues each claim through twelve propositions, and Part IV lists the 23 dated predictions that score the thesis.
+
+## Part I: The future, stated in advance
+
+Every date in this part is a prediction. A prediction number in brackets points to Part IV, which gives the falsifier and its probability.
+
+### 2026-2031: grid queues
+
+Demand for power grows faster than grids can connect it. Frontier training compute grows 4.6× a year while chip efficiency grows 1.21× a year (Epoch AI), so the power drawn by a single training run compounds at 3.8× a year. Global data-centre electricity grows from 485 TWh in 2025 to 900 TWh a year or more by 2030 (prediction 4).
+
+A grid connection in the US or EU takes four to six years, and a Western reactor licence takes five to eight, so in these years buyers pay for speed. Hyperscalers run on gas engines installed behind the meter in 6-12 months, and clean firm contracts of 250 MW and more sign at $95/MWh or above to skip a three-year queue (prediction 21).
+
+Geothermal enters at 200-240 °C. In the US West, 5-6 km granite wells are drilled in about twenty days (Fervo's Sawtooth 7 reached 5.93 km in 21 days in July 2026), and next-generation geothermal contracts are reported at $80/MWh or below by 2028 (prediction 5). Those contracts fund the superhot step. Superhot well hardware is engineered in simulation today, is proven on the bench in 2027-2029 and runs in field wells in 2028-2030. By 2030 a well producing from rock at 400 °C or hotter delivers electricity to a grid (prediction 7). Google's 50 MW contract with Quaise, signed on 17 November 2026, calls for superhot power as early as 2030.
+
+In orbit, the first megawatt of solar-powered compute runs continuously by 2029 (prediction 3).
+
+### 2029-2034: solar, chip efficiency and drilling depth
+
+Robots take more than half of the field labour out of solar construction. Public sunbelt tenders clear unsubsidised solar with four or more hours of storage under $50/MWh by 2030 (prediction 10), and sunbelt solar with sodium-ion or iron-air storage falls below $35/MWh in 2028-2031. That leaves flat 200 °C geothermal in the US sunbelt a window of 2026-2030.
+
+Chips get more efficient in the same years. Optical interconnects and 3D compute-in-memory cut the energy per unit of intelligence 30× to 100× by 2032-2034. If efficiency improves 30× while AI demand grows 50×, data-centre electricity plateaus near 900 TWh in 2031-2034. Firm power that was contracted at $65-$90/MWh on urgency alone is stranded in that plateau, while firm power below $40/MWh keeps selling.
+
+Drilling reaches superhot depth. Granite wells of 8-12 km cost $15-$20 million in 2029-2032 (prediction 17), and operators sweep reservoirs at 400 °C and above in 2028-2031. Europe's rival is priced in the same period: Frankfurt's mix of wind, solar, eight-hour batteries and a 6% clean-fuel peaker reaches $53-$62/MWh in 2029-2034.
+
+### 2032-2040: small reactors, orbital compute and fusion
+
+Factory-built small reactors arrive in 2032-2038 with a cost floor of $52-$69/MWh. Orbital compute becomes economic in 2032-2036, once split-rail cooling cuts power and thermal mass by 24-30% and robotic fabs cut chip cost tenfold. Fusion delivers net facility electricity to a load after 2032 (prediction 9), and commercial D-³He fusion arrives in 2035-2040 at the earliest.
+
+Geothermal is in commercial build-out by then. At least 50 GW of next-generation geothermal is operating or under construction worldwide by 2035 (prediction 12), and Lazard, NREL ATB or BNEF puts its unsubsidised low end at $45/MWh or below (prediction 11).
+
+### 2045: the electricity mix
+
+The world uses 65,000 TWh of electricity a year, supplied as follows.
+
+![Figure 2: The 2045 electricity mix, with the energy each source supplies and the price it realises. Scenario shares, [MODEL].](https://zemanium.com/assets/thesis/figure-2-mix-2045.png)
+
+Figure 2: The 2045 electricity mix, with the energy each source supplies and the price it realises. Scenario shares, `[MODEL]`.
+
+| Source | Share of electricity | TWh per year | Realised price ($/MWh) | Its place |
+|---|---|---|---|---|
+| Solar PV + storage | 50% | 32,500 | 20.4 | Daytime bulk and the open sunbelt; with thermal batteries, industrial heat above 500 °C |
+| Superhot geothermal | 20% | 13,000 (1,650 GW firm) | 40.0 | The leading clean firm source: high-latitude winter grids, cold-craton metros, 100-450 °C industrial heat |
+| Wind + clean-fuel peakers | 16% | 10,400 | 42.0 | Coastal corridors, limited by wake and permitting |
+| Fission + hydro + early fusion | 14% | 9,100 | 48.0 | Hydro and fission, which generated about 7,200 TWh in 2024, plus state fleets (China), the coldest cratons, marine and defence |
+
+Solar and geothermal sell different products. About 60% of solar's energy is midday sunbelt bulk that clears at $10-$16/MWh, while the firm hour clears near $40/MWh, so a firm source can hold a fifth of the system next to much cheaper solar.
+
+The geothermal row is the full-win scenario (`[MODEL]`): 1,650 GW of firm capacity, which is 103× today's 16 GW fleet, plus 12,000 TWhₜₕ a year of 100-450 °C industrial and district heat from its own wells. Prediction 13 scores roughly the first quarter of it, the point where geothermal generates more electricity in a calendar year than nuclear fission, by 2045.
+
+### After 2050: physical industry
+
+Once intelligence is efficient, the load that keeps growing is physical: steel, hydrogen, aluminium, fresh water and chemicals. Global power scales 5× to 10× further, toward 50-100 TW in the 2050s and 100-500 TW beyond. At that scale geothermal is crustal heat mining, and each gigawatt takes 1-3 km² of surface pad where solar takes about 45 km².
+
+### Past 500 TW: the heat ceiling
+
+At 2,000 TW on Earth, 100× today's level, waste heat alone warms the planet as much as a doubling of CO₂. Growth past roughly 500 TW therefore moves into continuous orbital sunlight and radiates its heat to the 3 K sky. Launch from Earth carries the first 1-10 TW. Harnessing a millionth of the Sun's output is a 2060-2100+ project built from lunar and Mercurian material.
+
+### Every call and its date
+
+![Figure 3: Every YES call on one timeline. Appendix B lists each call, the NO calls and the predictions that score them.](https://zemanium.com/assets/thesis/figure-3-timeline.png)
+
+Figure 3: Every YES call on one timeline. Appendix B lists each call, the NO calls and the predictions that score them.
+
+## Part II: Method
+
+### The premise and its limit
+
+The Navier-Stokes result drew a specification dispute within weeks (`arXiv:2610.08144`), because the Lean formalization had proved a weaker statement than the natural-language claim. Even in pure mathematics, a formal compiler checks only the specification it is given. Abundant research can produce designs without limit, but each design still has to be tested in the physical world. Prediction 1 scores the premise itself.
+
+With AI at full strength, every energy technology whose physics is not forbidden reaches its engineering limit. What remains is the schedule set by physical testing, supply-chain scaling and conservation laws.
+
+### The four clocks
+
+Progress after AGI runs on four clocks, and only the first is digital.
+
+1. Clock 1 is digital design and simulation (Φ = ∞). It is compressed 5× to 20×, so years become weeks, and it already runs in casing design (Pandora, our superhot casing string), supercritical chemistry (`U6`) and AI plasma control.
+2. Clock 2 is bench hardware and robotic factories (Φ ~ 10³-10⁵). It is compressed 2× to 4× for builders who run their own test rigs instead of waiting six months on a contract lab.
+3. Clock 3 is physical ageing (treal), compressed 1× to 1.5×. Examples are 24 months of reservoir drawdown, 14.1 MeV neutron damage to a fusion wall and ten years of battery calendar ageing.
+4. Clock 4 is liability, project finance and supply chains. It runs at 1× normally and 3× under a national-security emergency, and it covers $15M well-loss liability, the 24 months of operating history lenders want before debt, and the manufacture of 3,000-HP deep rigs and high-voltage transformers.
+
+### The decision rule
+
+Whatever physics permits and high-Φ hardware can iterate on gets solved on a Clock-2 schedule. Whatever violates a conservation law or an extensive floor fails cleanly.
+
+Every YES and NO in this essay is that rule applied to one technology. We recompute vendor figures from first principles before using them.
+
+### The eight forces
+
+The rule is applied through eight forces, each argued in Part III.
+
+| # | Force | Governing law | Argued in |
+|---|---|---|---|
+| 1 | Reality loop Φeff = Φ·T and geometric scaling G | Learning speed scales with how cheaply a small test stands in for the full system, times how faithfully the result transfers. The floor is fixed by extensive physics unless G shrinks mass per unit of output. | 1 |
+| 2 | Permits, queues and time-to-gigawatt tGW | Grid queues take 4-6 yr, Western reactor licences 5-8 yr, behind-the-meter gas 6-12 months, geothermal pads in the US West 1-3 yr. | 2 |
+| 3 | Robotics and the materials floor | Robots remove more than 50% of field labour. Hardware cost falls toward raw elements, smelting energy and capital. | 4 |
+| 4 | Landauer vs. Gibbs | Energy per token can fall 30× to 100×. Steel, hydrogen, aluminium and desalination sit 1.5× to 3× above an irreducible ΔG. | 3 |
+| 5 | Proof lowers the cost of capital | Cutting the cost of capital from 12% to 6% cuts annual capital charges by 41.5%. | 10 |
+| 6 | Autarky, hardening and the two-planet split | China builds $30/MWh solar and storage, $65/MWh reactors and 11 km rigs. The UK rejected the $33B Xlinks cable. | 5 |
+| 7 | Surface and subsurface density | Solar needs 45 km²/GW. Superhot geothermal needs a 1-3 km² pad and 22 km³ of granite over 30 years. Continental recharge is 9.6 TWₜₕ. | 4, 12 |
+| 8 | Planetary heat ceiling | 2,000 TW of terrestrial waste heat adds 3.9 W/m², equal to a doubling of CO₂. | 12 |
+
+### Labels on numbers
+
+`[MODEL]` marks a figure computed from published correlations, `SIMULATED` marks the result of a physics simulation campaign, and `vendor-stated` marks a figure taken from the maker.
+
+## Part III: The argument
+
+### Claim 1. Three things set the pace: test size, queues and the energy needs of physical industry
+
+#### Proposition 1. Abundant research speeds up only what can be tested small.
+
+We tested 61 historical technologies in the Santa Fe Institute's Performance Curve Database. Mass-produced industrial hardware (cars, wind turbines, appliances) barely learned faster than site-built energy projects, at 4.0% a year against 3.2% (p = 0.21), while electronics learned at 46% a year. Replication alone does not bring cost down. What does is experimental variation across the design space, and it works inside two physical bounds.
+
+The first bound is effective scale-factorizability:
+
+Φeff = Cfull / Cproxy × Tproxy→full
+
+Silicon learns fast because a $10 single-transistor test structure falsifies a $100M processor with transfer fidelity T ≈ 0.999, since Czochralski wafers are atomically homogeneous. Electrochemistry iterates in $100 coin cells (Φ ~ 10⁵), but pouch-scale swelling and ten-year calendar ageing do not show in a coin cell, so T ≈ 0.7.
+
+Geothermal has both kinds of problem. Its component hardware (bits `U1`, casing joints `U3`, metal packers and chokes `U4`, alloy and brine chemistry `U6`) has high T: a $15k-$50k autoclave or frame test falsifies a $10M failure. Its macro-geology (500 m critically stressed faults `U9`, kilometre-scale fracture networks `U5`/`U7`) has low T, because a 5 cm rock core cannot contain an unmapped fault zone. The hardware therefore runs on Clock 2, and the reservoir needs field wells.
+
+The second bound is geometric miniaturization G. Photovoltaics also has Φ ~ 10⁶, yet it learned at 12-17% a year where silicon learned at 46%, because transistors shrank and doubled output per kilogram every two years. Energy hardware meets extensive floors instead: 1,000 W/m² of sunlight, 300 Wh/kg of electrochemistry, √(αt) = 31 m of rock conduction. A high Φeff gets a technology to its physics floor sooner and leaves the floor where it is.
+
+Predictions 2 and 22 score this proposition: a commercial service returns a third-party physical test record for a custom part in under seven days, and core-scale models predict field reservoir impedance.
+
+#### Proposition 2. Until the queues clear, time-to-gigawatt outranks cost.
+
+Per-run training power compounds at 3.8× a year, before algorithmic gains of about 3× a year, and capital and wafer supply cap single clusters around 2-5 GW in the near term. Against that growth, a 4-6 year interconnection queue or a 7-year reactor licence costs more than $150/MWh in lost compute lead during 2026-2031. Until the queues clear, a plant that can be built behind the meter quickly beats one that is cheaper on a spreadsheet.
+
+Speed decides the order of arrival, and cost decides the final mix. Gas engines and combined cycles behind the meter cost $70-$85/MWh unabated and $80-$95 with carbon capture, face a four-year turbine backlog and depend on pipelines, which makes them the fast bridge of 2026-2031.
+
+Predictions 21 and 4 score this.
+
+#### Proposition 3. AI is the first load, and transforming atoms is the lasting one.
+
+Today's AI silicon, at about 50 fJ per multiply-accumulate, sits 1.7 × 10⁷× above the Landauer limit (kB T ln 2 = 2.87 × 10⁻²¹ J/bit), and designers are using that headroom. In-die optical I/O (Marvell's $3.25B Celestial AI acquisition, closed February 2026; Lightmatter's 3D photonic Passage M1000) attacks the 75% of energy spent moving data. Together with 3D compute-in-memory and algorithmic compression, it brings joules per unit of intelligence down 30× to 100× by 2032-2034.
+
+Transforming atoms has far less headroom. Steel takes at least 7.4 MJ/kg, hydrogen 33.3 kWh/kg, aluminium 6.3 kWh/kg and seawater desalination 0.8 kWh/m³. These are Gibbs free energies, and industry already runs within 1.5× to 3× of them.
+
+Demand therefore has two regimes. AI drives the shock of 2026-2031, with a possible efficiency plateau in 2031-2034, and atomic industry, which needs baseload power and 100-450 °C heat, drives the growth to 100-500 TW. A firm source built for the first regime at $65-$90/MWh is stranded by the second. A firm source below $40/MWh serves both, selling into behind-the-meter AI demand now and powering metallurgy, chemicals, desalination and process heat afterwards.
+
+Prediction 4 scores this, and the plateau is the item to watch after 2030.
+
+### Claim 2. Solar with storage wins bulk energy and leaves the firm hour open
+
+#### Proposition 4. Solar reaches the materials floor first, and its limits are latitude, land and long storage.
+
+Commercial robotic field systems are already removing more than 50% of human field labour from utility solar and plant construction. Two examples are Terabase's autonomous *Terafab* ($130M Series C, March 2025) and Charge Robotics' portable solar factories. Hardware cost falls toward raw elements (silicon, iron, sodium, steel, concrete), smelting energy and capital. Firm solar with lithium-iron-phosphate or sodium-ion storage in the sunbelt costs $95 / $45 / $24 per MWh in the US and $60 / $33 / $21 globally in 2030 / 2035 / 2045. Solar wins daytime bulk everywhere, the open-land sunbelt below 40° N, and batch training loads.
+
+Sunlight delivers 1,000 W/m², so firm solar takes about 45 km² per gigawatt, and above 42° N the winter resource collapses. The storage that would carry a dark week stays expensive: 100-hour iron-air sits at $107-$158/MWh of stored energy at 45% round-trip efficiency.
+
+At 50° N the benchmark is therefore a mix of wind, solar, eight-hour batteries and a 6% clean-fuel peaker, at $90 / $58-$62 / $50 per MWh in 2030 / 2035 / 2045, or $55.5 if natural hydrogen fuels the peaker. The mix needs 75 km² per gigawatt, wind farms extract only 2-4 W/m² once wakes interact, and wind and HVDC take four to eight years to permit. A 240-hour-battery system would cost $144-$238/MWh, so the mix is the fair rival. It is also a generous one, because 15 ms of fibre round-trip spans 1,500 km, which puts North Sea wind, French nuclear and Spanish solar inside Frankfurt's latency cone.
+
+The firm hour at high latitude and near dense cities is therefore still open at $50-$62/MWh, and that is the price Claims 3 and 4 have to beat.
+
+Predictions 10 and 16 score this.
+
+### Claim 3. Firm power has to be generated locally, and every surface source of it has a cost floor
+
+#### Proposition 5. Firm power has to be generated domestically.
+
+On paper, the cheapest firm power is desert sun moved north by cable. The UK rejected Xlinks' $33B, 3.6 GW Morocco cable in June 2025, at about $123/MWh, and even an overland 3,500 km UHVDC or superconducting link adds $32-$56/MWh and a sabotage risk. Intercontinental supergrids do not get built in the West.
+
+Trade policy pushes the same way. Tariffs can raise US sunbelt firm solar and storage from $76 to $216/MWh today. Meanwhile China builds solar with storage at $25-$35/MWh, 63.9 GW of Hualong One reactors at $65-$80/MWh, the 125 MWe Linglong-1 small reactor (hot testing since October 2026) and 10.9 km ultra-deep land wells (Shenditake-1, 2025). Two industrial systems are forming, and each supplies its own firm power.
+
+Tariffs do not protect expensive firm power for long, because domestic robotic construction brings US sunbelt solar and storage to $45-$55/MWh by 2030-2031 inside the tariff wall. Western firm power has to win on physics at $25-$41/MWh, and it gains a hardening premium when the plant sits 6-12 km under granite.
+
+Not every load has to be supplied where it is used. Primary steel, aluminium, ammonia, hydrogen fuels and batch compute are tradeable: they can be made on firmed sunbelt solar at $21-$24/MWh and shipped by bulk carrier. On a first sizing they are 15-27% of the 65,000 TWh (`assumption`), and they belong to solar. The loads that cannot move are winter grids, electric heating, continuous inference, hardened sites and the local industry of cold and dense regions.
+
+Those immobile loads are geothermal's market. Above 42° N and in dense land, their firm part is about 12,700-13,400 TWh a year (`assumption`), the same size as the 13,000 TWh of the full-win scenario. Hydro, fission and China's west-to-east lines hold about 6,500 of it, so 6,200-6,900 is open, and prediction 13 fits inside that open pool. The rest of the 13,000 comes from three places: the firmed wind mix of the same grids, which costs $50-$53/MWh against geothermal's $41; baseload on the best volcanic ground at $25-$29/MWh; and industry that stays onshore behind the trade walls described above.
+
+#### Proposition 6. Each surface firm source has a cost floor above that range.
+
+Appendix A has the full audit of every source. The floors are as follows.
+
+- Large fission costs $185 / $160 / $140 per MWh in the US in 2030 / 2035 / 2045 and $65-$80 in China. With Φ ~ 1 every lesson costs a whole plant, and Western projects take 7-12 years against 5 in China. Fission holds China, Korea and France.
+- Factory small reactors cost $145 / $78 / $52 per MWh. Robotics removes site civil labour, but the $22-$26/MWh of nuclear fuel, quality assurance, armed security and decommissioning does not compress. Small reactors win the coldest shields, defence bases and ships.
+- Tokamak fusion costs $110 per MWh in 2035 and $55 in 2045. Its schedule runs on Clock 3, with 14.1 MeV neutron damage to the first wall, a lithium breeding blanket, 20 K magnets and a steam plant. It serves cold cratons and megacity cores after 2038.
+- Pulsed fusion costs $65 per MWh in 2035 and $35 in 2045 if its physics clears. Helion's Polaris ran deuterium-tritium at 13 keV, where D-³He would return Pfus/Pbrem = 0.05, and at 60 keV with 1% carbon the margin is 2.06. D-D breeding still produces neutrons, and thirty years at 1 Hz is 9.5 × 10⁸ pulses. Pulsed fusion serves warehouse-scale point loads after 2035.
+- Carbon thermal batteries own industrial heat from 500 to 1,600 °C. Antora's 5 GWh POET system has been live since May 2026 ($550M Series C, July 2026) and delivers heat at $37 / $24 / $18 per MWhₜₕ at 97% thermal round-trip efficiency. Turned back into electricity at 40-48%, the same energy costs $99 / $54 / $42 per MWhₑ.
+- Natural hydrogen is still at the exploration stage at Koloma ($394M raised). Even at $0.75/kg at the wellhead and $1.50-$2.25/kg delivered, baseload power from a 58%-efficient hydrogen turbine costs $99-$138/MWh. White hydrogen wins steel, ammonia and peakers.
+
+![Figure 4: Firm power cost by source in 2045, from Appendix A.](https://zemanium.com/assets/thesis/figure-4-firm-cost-2045.png)
+
+Figure 4: Firm power cost by source in 2045, from Appendix A.
+
+None of these reaches $25-$41/MWh as firm power in the 2030s. Prediction 9 scores the fusion call.
+
+#### Proposition 7. Five further ideas are ruled out by physics.
+
+The decision rule returns NO on each of the following.
+
+| Idea | Call | The law it meets |
+|---|---|---|
+| Closed-loop conduction geothermal for bulk power (Eavor class) | **NO** on power, district heat only | Fourier conduction. Eavor's May 2026 Geretsried update reports 8.5 MWₜₕ from four flowing lateral pairs, with a nameplate of 1.3 MWₜₕ (about 0.17 MWₑ) per roughly 6 km pair at year five. That is 0.22 MWₜₕ/km, and 75-95 km of bore per 10 MWₑ over 30 years even at 400 °C (`[MODEL]`). |
+| Pure mm-wave vaporisation to 10 km in wet granite (Quaise) | **NO**, stalls past 3-5 km | Energy and absorption. Vaporising rock takes 12-18 GJ/m³, which is 105-158 days at 0.3 dB/km attenuation, and less than 0.5 mm of water under 100 MPa of pore pressure absorbs 99% of a 100 GHz beam. Quaise's own Google contract (Project Obsidian) opens with conventional drilling into superhot rock, so superhot power is now contracted and its first phase drills mechanically. |
+| Solar-firebrick topping on 200 °C wells | **NO** | Turbine moisture of 25.8%, and pure 600 °C solar firebrick with no wells beats the hybrid by $5-$11/MWh in every price regime (Figure 5A). |
+| Desert LiBr absorption sub-cooling of a binary plant | **NO** | Second law. The LiBr loop exits at 75 °C or above (+0.50 MPa), yields no net gain on a 40 °C sink, and crystallises. |
+| Hydrogen co-produced in a stimulated granite reservoir | **NO** | A 1.5 cm/yr reaction front, +30% hydration swelling that chokes 1 mm fractures in 6.5-82 days, and granite where the chemistry needs ultramafic rock. |
+
+Predictions 14, 15 and 18 score these calls.
+
+#### Proposition 8. Orbital compute arrives in the 2030s, limited by its radiator and by chip cost.
+
+On 25 November 2026 the FCC granted SpaceX conditional authority (DA 26-1273) for up to one million Starmind satellites, in shells from 500 to 1,002 km at 30° and sun-synchronous inclinations, with the first satellite due by 2033. The AI1 satellite carries a 210 kW solar array, 175 kW average and 250 kW peak of Vera Rubin NVL72 compute, and a 160 m² double-sided liquid-ammonia radiator, at a `vendor-stated` 75 kW per tonne (13.3 kg/kW). Those numbers lead to five results.
+
+1. The radiator runs at the memory limit. With emissivity ε = 0.90, fin efficiency ηfin = 0.80 and a 235 K Earth-facing sink at 550 km, it sits at 358.1 K (85.0 °C) at average load and 385.9 K (112.8 °C) at peak. HBM4 memory loses retention near 85 °C, so there is no margin at average load. A heat pump on the full load is 2.9% lighter than passive cooling with today's 5.0 kg/m² radiator, but 3.0% heavier with a 2.5 kg/m² radiator and 18.5% heavier with a 0.8 kg/m² film radiator. Split-rail cooling pumps only the roughly 15% of heat that comes from memory, from 345 K to 430 K, and lets the 85% from logic radiate passively at 390-410 K. That cuts power and thermal mass by 24-30% with the first two radiators and by 4.8% with film (Figure 5B).
+2. The real mass is 19-24 kg per kilowatt. Compute, cold plates and regulators (about 1.0 t), 840 m² of array (about 1.2 t), radiator, pumps and shielding (about 1.0 t) and bus, propulsion and laser links (about 0.5 t) put AI1 at 3.5-4.2 tonnes for 175 kW. SpaceX's 75 kW per tonne, taken on the 250 kW peak, is 3.3 t, or 19 kg per average kilowatt. One million satellites deliver 175 GWₑ and take about 23,000-28,000 Starship flights.
+3. The chips cost more than the power. At $30/kg to orbit, power and launch come to $43/MWh at 13-14 kg/kW. A 20% radiation and error-correction overhead on $30,000/kW processors adds the equivalent of $216/MWh. Satellites in 30° shells sit dark 35% of the time, and optical links of 100-400 Gbps against 7.2 Tbps of NVLink per processor rule out tightly coupled training. Orbit becomes economic in 2032-2036, once robotic fabs cut chip cost about tenfold, toward $3,000/kW.
+4. The usable orbits are narrow. Packing multi-gigawatt arrays into dawn-dusk sun-synchronous ribbons to avoid eclipse raises debris collision flux more than 1,000×, and 700-1,002 km enters the inner Van Allen proton belt, where dose rises 10× to 100×.
+5. A millionth of the Sun's output cannot be launched from Earth. 10⁻⁶ L☉ is 3.83 × 10⁸ TWₜₕ, 2,210× all the sunlight that reaches Earth. Physics permits collecting it, but that takes 2.81 × 10¹¹ km² of collector at 1 AU, 551× Earth's surface, or 84× Earth's surface at Mercury's 0.39 AU. Even as 0.5 kg/m² film the collector weighs 1.41 × 10¹⁴ t, which is 940 billion Starship flights and about 4.7 × 10¹⁵ t of propellant, roughly the mass of Earth's atmosphere. Launch from Earth caps near 1-10 TW.
+
+Orbit is where the energy system continues once Earth's heat ceiling is reached. It takes asynchronous and batch compute from the mid-2030s and does not compete for the firm hour on the ground. Appendix C scales the constellation from one megawatt to a millionth of the Sun.
+
+![Figure 5: First-principles physics audits. (A) Pure 600 °C solar firebrick beats the geothermal-firebrick hybrid in every price regime. (B) Split-rail orbital cooling cuts mass 24-30% where a full-load heat pump adds mass.](https://zemanium.com/assets/thesis/figure-5-firebrick-orbital.png)
+
+Figure 5: First-principles physics audits. (A) Pure 600 °C solar firebrick beats the geothermal-firebrick hybrid in every price regime. (B) Split-rail orbital cooling cuts mass 24-30% where a full-load heat pump adds mass.
+
+Predictions 3 and 20 score this.
+
+### Claim 4. Superhot geothermal supplies the firm hour
+
+#### Proposition 9. Geothermal loses at 200 °C and wins at 400-450 °C.
+
+Across 51,882 onshore IHFC heat-flow measurements, 200 °C rock lies within 10 km under 65% of measured continental land, at a median depth of 8.5 km. Rock at 400 °C lies within 10 km under 7.5%. Its median depth is 18.5 km at constant conductivity k = 2.5 W/m/K, or 16.2 km with Vosteen-Schellschmidt granite conductivity k(T) falling to 1.8 W/m/K at 400 °C for heat production A = 1 μW/m³, and 19.0 km at A = 2 μW/m³.
+
+The work available from a kilogram of fluid rises steeply with rock temperature. An exact IAPWS-95 isentropic ascent (hwh = hres − g z) gives a flow exergy of 172-176 kJ/kg from 200 °C rock and 617-756 kJ/kg from 400-450 °C rock at the 90th percentile of crust, about four times as much. Net output per well pair rises from about 10 MW to 40-55 MW at 150 kg/s through about 10 km² of swept fracture plane, and the hot column circulates by thermosiphon, so the plant needs no pumping after start-up.
+
+At 200-240 °C the plant converts 12% of the heat to power and mines 137 km³ of granite per gigawatt over 30 years (at a 24% recovery factor; 60 km³ at 55%), against 22 km³ at 400-450 °C. Fervo's 3.0 design claims 15 MW gross per producer, about 11 MW net, but a static 0.137 km³ lateral box sustains 2.3 MWₑ for 30 years without wider sweep or make-up wells. As a result 200-240 °C geothermal costs $82 / $56 / $42 per MWh in 2030 / 2035 / 2045, and superhot costs $60 / $34 / $24-$41.
+
+The cost falls in four steps, each with its own physical mechanism.
+
+![Figure 6: (A) Work per kilogram of fluid and net output per well pair at 200 °C and at 400-450 °C. (B) Cost of geothermal power at each of the four steps, against the firmed wind mix at 50° N. [MODEL].](https://zemanium.com/assets/thesis/figure-6-ladder.png)
+
+Figure 6: (A) Work per kilogram of fluid and net output per well pair at 200 °C and at 400-450 °C. (B) Cost of geothermal power at each of the four steps, against the firmed wind mix at 50° N. `[MODEL]`.
+
+| Step (verified with IAPWS-95 / CoolProp) | Median crust ($/MWh) | 90th-percentile crust ($/MWh) | Mechanism |
+|---|---|---|---|
+| 1. Baseline 200-240 °C, today's rotary drilling | $106 | $82-$89 | Wells of 8.6 km / 4.3 km; 172-176 kJ/kg; 12% net efficiency. |
+| 2. Adds trip-free monobore drilling (`U1`+`U2`), active flow control (`U4`), bankable capital (`U7`+`U8`) | $58-$65 | $42-$48 | Removes L²/(b·v) bit trips and L¹·⁷ steel. Thermal chokes stop q ∝ w³ thief zones across a 3-5.7 km² sweep. Insurance-backed capital falls from about 12% to 7.5% before tax. *(sCO₂ plume geothermal adds $324/MWh at 3% bought leak-off, or turns negative-cost under US 45Q credits of $85/t.)* |
+| 3. Deep 300-400 °C factory superhot (9-10 km at the 90th percentile, 12-14 km at the median) | $40-$45 | $31-$35 | 371-617 kJ/kg; thermosiphon circulation; 25-42 MW per pair. Opened by `U3`, `U4` (which enables `U5`) and `U6`. |
+| 4. Deep 400-450 °C superhot, $900/kW plant, $8/MWh O&M | $34-$38 | $25-$29 | 617-756 kJ/kg; 40-55 MW per pair at about 10 km² of swept plane; wells of 9-11 km at the 90th percentile and 16-18.5 km at the median. A bore of 0.25 m or more keeps wellhead velocity under API 14E erosion limits. Silica handling costs about $1.6/MWh. Delivers firm electricity and 100-450 °C industrial heat. The median-crust column needs wells deeper than `U2` and falls after 2045. |
+
+Predictions 5 and 11 score this.
+
+#### Proposition 10. Nothing in the superhot chain is forbidden by physics, and every link has a date.
+
+Nine links separate today's wells from step 4. Each one is a problem in metallurgy, fluid mechanics, chemistry or mechanical drilling.
+
+| Link | What must be true | Call and date | Evidence |
+|---|---|---|---|
+| `U1` Factory drilling, 5-6 km crystalline | Repeatable fast wells | **YES**, 2026-2028 | Already happening: Sawtooth 7, 5.93 km MD in 21 days, July 2026. |
+| `U3` Superhot wellbore, ≥ 400 °C | Survive the thermal stress of a fully restrained string through quench cycling | **YES**, 2027-2029 | IDDP-1 parted on quench. Pandora, our casing joint and string, is engineered in simulation: 0/32 partings against 88/128 on the IDDP-1 replay (`SIMULATED`). |
+| `U4` Zonal isolation and thermal flow control, 200 to 450 °C | A zero-elastomer packer holding ΔP ≥ 35 MPa and an active choke that stops q ∝ w³ thief zones | **YES**, 2027-2029 | Oilfield inflow-control devices already run at 200-280 °C. The device serves 200-250 °C wells first and scales to 450 °C. |
+| `U6` Supercritical chemistry and silica | Carry 17-23 t/day of dissolved silica through the plant and back underground | **YES**, 2027-2029 | Dosing cost of +$0.07/MWh. |
+| `U7`+`U8` Sweep longevity and the cost of capital | Prove ≤ 10% drawdown over 25 years and compress debt spreads 200-350 bp | **YES**, 2027-2029 | Already live as our `Project Red F1–F6` record: monthly scoring of Project Red (NDOM) and Cape Station GeoBlocks 1-3 (EIA-923). |
+| `U5`+`U9` Superhot reservoir and aseismic licence | Hold about 10 km² of swept plane per pair at ≥ 400 °C with ΔV ≪ 10⁴ m³ | **YES**, 2028-2031 | Mazama (331 °C) and Krafla are testing sweep across the brittle-ductile transition. Eavor showed that zero seismicity opens €136M of EU/EIB capital. |
+| `U2` Deep reach, 8-12 km granite | A well for ≤ $15-$20M | **YES**, 2029-2032 | No physics barrier: Kola SG-3 reached 12.26 km in 1989 and Shenditake-1 reached 10.91 km in 2025. Eavor is building a rig for more than 9 km. Trip-free wireline or coiled-tubing bit exchange and expandable monobore liners solve it mechanically. |
+
+The hardware links (`U3`, `U4`, `U6`) are high Φ × T and run on Clock 2. An in-house 450 °C / 30 MPa wet-silica autoclave and thermal-cycle cell costs $50k-$120k and cuts one iteration from six months to seven days. Field proof follows in 2028-2030 in superhot test wells of the Mazama Athena, Krafla KMT-I and Japan class. Mazama Athena ($135M Series B) and Krafla KMT-I are drilling toward 400 °C now.
+
+Sweep area sets the output per pair (`U5`+`U7`). Conduction into a fracture plane fixes how much flow each square kilometre can heat for 30 years. At 150 kg/s, 5.7 km² of plane loses 34% of the injection-to-reservoir temperature difference by year 30 (112 K), while about 10 km² holds the loss under 10%. At that limit 3-5.7 km² carries 46-87 kg/s, which is 12-32 MW of the 40-55 (single-plane Bodvarsson-Gringarten solution, `[MODEL]`). Output per pair is therefore a stimulation specification, and the cost tolerates a miss. With two $17.5M wells, $900/kW of plant and $8/MWh of O&M, a pair delivers $25.6/MWh at 47.5 MW, $29 at 32 MW and $34 at 23 MW. It stays under the $47 that beats Frankfurt's $53 rival after seismic drag all the way down to 13 MW per pair.
+
+The remaining link is finance, on Clock 4. Cutting the pre-tax cost of capital from 12% to 6% cuts annual capital charges by 41.5% and the cost of energy by 25-37%. At a 4.3% Treasury yield, senior project debt at +225 bp (6.55%) at a 75% debt share with 11% equity gives about 7.7% before tax. Infrastructure debt normally waits 24 months for operating history. A live, scored longevity record with AA-backed parametric insurance compresses the spread by 200-350 bp without waiting five years per basin.
+
+Predictions 6, 7, 8, 17 and 19 score this proposition.
+
+#### Proposition 11. With those links in place, superhot geothermal wins the firm hour where solar cannot.
+
+A 25,000-draw Monte Carlo (`[MODEL]`) runs superhot geothermal against its rivals in six markets, five of which appear in Figure 7. It includes explicit silica heat-exchanger costs, +$6/MWh of European seismic drag, the $53-$62/MWh Frankfurt mix, $52-$69/MWh factory small reactors and $24-$31/MWh sunbelt solar with storage.
+
+Geothermal that stays at 200 °C loses everywhere by 2045, with a win rate of 0-11%. With `U2` and `U3` to `U6` delivered, geothermal is the leading clean firm source in 2045 across high-latitude Europe (88% win rate at $41/MWh) and in cold-craton metros such as Northern Virginia and Chicago (60% at $47/MWh, against $53 for wind with peakers and $61 for nuclear). It is co-winner in the best ground of the Western US at $32/MWh (35%). In the sunbelt the model picks solar, as Claim 2 says: geothermal wins 18% of draws in the tariffed US sunbelt and 1% in the untariffed global sunbelt.
+
+![Figure 7: Probability that geothermal is the leading clean firm source, by market and year, on the YES schedule of Part I (U3 to U6 2027-2029, U2 2029-2032). [MODEL].](https://zemanium.com/assets/thesis/figure-7-win-probability.png)
+
+Figure 7: Probability that geothermal is the leading clean firm source, by market and year, on the YES schedule of Part I (`U3` to `U6` 2027-2029, `U2` 2029-2032). `[MODEL]`.
+
+The markets it wins impose two conditions. Northern Virginia, Chicago and London sit on cold basins, with 200 °C at 8-10 km and 400 °C at 16-20 km, so wells of 12-14 km meet rock at 240-350 °C there. Where that rock reaches 300 °C, which the warmer half of the range does by 14 km, a pair delivers 20-30 MW at $35-$43/MWh with $20-$25M wells, and $45-$53 if the plant costs twice the $900/kW of the superhot case (`[MODEL]`). The rivals there are wind with peakers at $53 and nuclear at $61. The 12 km wells are `U2`, the 14 km wells are prediction 23, and the 400 °C case in those basins follows after 2045 at 16-20 km. Frankfurt and Zurich sit inside Europe's strictest seismic-moratorium belt, where Basel (ML 3.4), St. Gallen (ML 3.5) and Strasbourg (ML 3.6) all forced shutdowns. In that belt superhot plants run aseismic, pressure-balanced circulation (`U4`+`U7`+`U9`) and publish their pressure-balance and seismicity records.
+
+The 1,650 GW of the full-win scenario is about 70,000 deep wells. That takes some 500 rigs drilling flat out for thirteen years, or about 2,000 in the last year of a ramp of 42% a year, which is the US shale fleet at its peak rebuilt for depth (`[MODEL]`). The 12,000 TWhₜₕ of heat takes its own wells on top: about 19,000 if superhot doublets supply it as steady process heat, and two to four times that from cooler rock or for seasonal district heat (`[MODEL]`). About 150-200 land rigs worldwide reach 8-12 km today, and custom 100 MW steam turbines carry four-year backlogs, so the build uses standard machinable alloys, automated electric rigs and factory-built 10-20 MW power skids. The ramp starts from the 1.4 GW under contract in late 2026, and 50 GW by 2035 is 5.2 doublings from there.
+
+Predictions 12 and 13 score this.
+
+### Claim 5. Earth has a heat ceiling, and growth past it moves to orbit
+
+#### Proposition 12. Past 10 TW geothermal is heat mining, and past about 500 TW waste heat limits power on Earth.
+
+Natural continental heat flux is 9.6 TWₜₕ, about 2.4 TWₑ, so scaling geothermal past 10 TW means mining stored heat. The global stock lasts more than 1,000 years, and a local block lasts 25-30 years. The advantage is land: a 1-3 km² pad per gigawatt against about 45 km² for solar, which leaves urban and agricultural land alone while supplying the 100-450 °C heat and baseload that atomic industry runs on (Proposition 3).
+
+Waste heat sets the upper bound. At 2,000 TW on Earth, 100× today's level, direct waste heat adds 3.9 W/m², equal to a doubling of CO₂. Growth past roughly 500 TW moves to continuous orbital solar that radiates to the 3 K deep-space sink, with the mass and radiator limits of Proposition 8.
+
+## Part IV: The scored predictions
+
+Each prediction below names a public record that settles it yes or no by a date, and carries the probability we assign. Predictions 1-13 were registered on 26 November 2026. Predictions 14*-22* were added on 27 November 2026, after the physics audit, and prediction 23* on 28 November 2026. All are scored by Brier score.
+
+![Figure 8: The 23 predictions and the probability assigned to each. Geothermal predictions are in teal.](https://zemanium.com/assets/thesis/figure-8-predictions.png)
+
+Figure 8: The 23 predictions and the probability assigned to each. Geothermal predictions are in teal.
+
+| # | Prediction (explicit falsifier) | By | P | Governing physics |
+|---|---|---|---|---|
+| 1 | A further Clay Millennium Prize problem (after Poincaré and Alpöge-Claude RH) receives a Lean-certified proof *(BSD, Hodge, Yang-Mills, P vs NP, or unforced Navier-Stokes)* | 2027 | 0.45 | OpenAI's forced Navier-Stokes proof is disputed (`arXiv:2610.08144`); BSD is the sole realistic 2027 candidate. Clay's own award needs publication plus two years, so the falsifier is the Lean certificate. |
+| 2 | A commercial API service returns a third-party physical test record for a custom hardware part in < 7 days, with zero human scheduling | 2028 | 0.65 | Lights-out CNC and a robotic test cell; the high Φ × T Clock-2 wedge. |
+| 3 | ≥ 1 MW of solar-powered compute operating continuously in orbit (6+ Starmind AI1-class units) | 2029 | 0.50 | Fits one Starship (~21-25 t), but AI1's 160 m² radiator reaches 85 °C at ηfin=0.80, with zero HBM4 margin. |
+| 4 | Global data-centre electricity (incl. behind-the-meter) reaches ≥ 900 TWh/yr (IEA / BNEF) | 2030 | 0.82 | 13.2% a year from 485 TWh in 2025; watch the optical-I/O efficiency plateau after 2030. |
+| 5 | A US next-generation geothermal PPA is publicly reported at ≤ $80/MWh (unsubsidised or PTC-adjusted) | 2028 | 0.72 | Watch Fervo Phase II capex (GeoBlock 1 transferred $514.3M of PP&E for 33 MW, incl. shared infrastructure). |
+| 6 | A granite well of ≥ 5.0 km MD (≥ 3.5 km in basement) is drilled in ≤ 20 days spud to TD | 2029 | 0.95 | Nearly met in July 2026 (Sawtooth 7: 5.93 km MD, 21 days). Paired with 17*. |
+| 7 | A well producing from ≥ 400 °C rock delivers electricity to a grid | 2030 | 0.68 | `U3`+`U6` engineered in simulation on Clock 2; Mazama Athena and Krafla KMT-I drilling toward 400 °C; Google's 50 MW Quaise PPA calls for superhot power as early as 2030. |
+| 8 | A ≥ 100 MW EGS project closes non-recourse senior debt at ≤ +225 bp over Treasuries after 24 months of operation | 2029 | 0.48 | Tight calendar: Cape Phase I full COD is January 2027, so 24 months ends January 2029; exposed to drawdown surprises. |
+| 9 | A first fusion plant delivers net positive facility electricity (Qeng > 1 sustained ≥ 1 h) to a load | 2032 | 0.22 | Polaris ran D-T at 13 keV with no net electricity; D-³He Pfus/Pbrem = 2.06 at 60 keV (1% C); 9.5 × 10⁸ pulses per 30 yr. |
+| 10 | ≥ 3 public sunbelt tenders clear unsubsidised solar + ≥ 4h storage at < $50/MWh | 2030 | 0.88 | $50-$70/kWh LFP / Na-ion and Terabase robotic construction clear $35-$48/MWh outside tariff walls. |
+| 11 | Lazard / NREL ATB / BNEF puts unsubsidised next-generation geothermal at a low end ≤ $45/MWh (midpoint ≤ $55) | 2035 | 0.70 | Superhot doublets of 30-50 MW per pair and insurance-backed capital. |
+| 12 | ≥ 50 GW of next-generation geothermal operating or under construction worldwide | 2035 | 0.55 | 5.2 doublings from 1.4 GW contracted in late 2026, as superhot enters commercial build-out. |
+| 13 | Geothermal generates more electricity worldwide in a calendar year than nuclear fission | 2045 | 0.60 | With `U2` (2029-2032) and `U3` to `U6` superhot (2027-2029), geothermal scales to 10,000-16,000 TWh. |
+| 14* | A co-located ≥ 100 MW data centre + geothermal plant runs wide-bore 16h peaking or temperate / wet-cooled absorption chilling | 2030 | 0.45 | Dry-desert LiBr sub-cooling violates the second law; wide-bore dark-hour peaking is the surviving mechanism. |
+| 15* | *(Retired, low P)* A hybrid of 200 °C geothermal + solar firebrick reaches ≥ 35% commercial cycle efficiency | 2032 | 0.10 | Pure 600 °C solar firebrick with zero wells beats the hybrid by $5-$11/MWh in every regime. |
+| 16* | Multi-day storage (≥ 50h: iron-air, sodium or thermal) reaches ≤ $25/kWh all-in installed capex | 2032 | 0.58 | The Google / Xcel 30 GWh Form deal and Antora's 5 GWh POET show pull; iron-air stays at $107-$158/MWh of stored energy at 45% round-trip efficiency. |
+| 17* | A basement granite well of ≥ 8.0 km TVD is drilled in ≤ 25 days or for ≤ $15 M all-in | 2032 | 0.65 | Clock-2 mechanical monobore and trip-free bit exchange (2029-2032). |
+| 18* | A stimulated EGS doublet co-produces commercial power and ≥ 250 t/yr of geologic hydrogen | 2033 | 0.15 | A 1.5 cm/yr front, 82-day +30% fracture choking, and granite where the chemistry needs ultramafic rock. |
+| 19* | A multi-stage EGS lateral holds ≤ 15% stage-to-stage flow variance over 18 months with thermal or actuated downhole chokes | 2030 | 0.58 | The direct falsifier for our `U4` choke against q ∝ w³ thief zones. |
+| 20* | The first ≥ 10 MW orbital compute cluster uses a split-rail HBM heat pump, a < 0.8 kg/m² film radiator, or custom non-DRAM high-temperature silicon | 2032 | 0.58 | Full-load heat pumps fail on total spacecraft mass; split-rail saves 24-30%. |
+| 21* | ≥ 3 behind-the-meter firm clean power PPAs (≥ 250 MW) sign at ≥ $95/MWh to bypass ≥ 3-yr ISO queues | 2028 | 0.80 | Measures time-to-gigawatt directly in disclosed contracts. |
+| 22* | Meso-scale core-flow + PINN predicts 12-month field EGS impedance within ± 15% out-of-sample across ≥ 3 lithologies | 2029 | 0.18 | Unmapped natural fracture apertures (q ∝ w³) have low transfer fidelity (T ≪ 1) from 5 cm cores. |
+| 23* | A well reaches ≥ 14.0 km TVD in crystalline basement | 2045 | 0.55 | The record is 12.26 km (Kola SG-3, 1989). A steel string tapered about 4 to 1 in cross-section hangs 14 km at 75% of V-150 yield (`[MODEL]`), so the limit is borehole stability and budget. Opens the cold basins beyond `U2`. |
+
+## Conclusion
+
+The energy system after research waits on tests, wells, rigs and years, and each of those can be counted. The count gives sunlight the bulk of the world's energy wherever land is open and the sun is high. It gives the firm hour, the winter grid and industrial heat up to 450 °C to rock at 400-450 °C, reached by wells of a depth that has already been drilled, through nine links that each have a mechanism and a date. By 2045 that is 1,650 GW of firm power, 103× today's fleet and a fifth of the world's electricity. Fission, fusion and orbital power arrive where their own physics places them, and growth moves to orbit once the planet's heat budget is full. The first prediction resolves in 2027.
+
+## Appendix A: Source-by-source audit
+
+Firm cost of energy is in $/MWh for 2030 / 2035 / 2045.
+
+| Source | Firm cost: 2030 / 2035 / 2045 | Learning speed and clock | Physics bottleneck and footprint | Where it wins |
+|---|---|---|---|---|
+| Solar PV + LFP / Na-ion (sunbelt) | $95 / $45 / $24 (US); $60 / $33 / $21 (global) | Φ ~ 10⁵, T ≈ 0.7. 1-2 yr build (Terabase robotics); 4-6 yr grid queue (0 yr behind the meter) | 100h iron-air still $107-$158/MWh LCOS at 45% RTE; winter collapse above 42° N. 45 km²/GW; exposed glass | Daytime bulk everywhere; open-land sunbelt (< 40° N); batch training |
+| Wind + solar + 8h storage + 6% clean-fuel peaker (50° N, Frankfurt) | $90 / $58-$62 / $50 | PV 10⁵; wind 10². 4-8 yr wind and HVDC; peakers 1-2 yr | The real Frankfurt benchmark ($55.5/MWh if white hydrogen fuels the 6% tail); wake limits of 2-4 W/m². 75 km²/GW; exposed towers and fuel lines | High-latitude coastal grids until `U2` + superhot scales below $45/MWh |
+| Antora 1,800 °C thermal battery (+ TPV) | $99 / $54 / $42 (MWhₑ); $37 / $24 / $18 (MWhₜₕ) | Φ ~ 10⁴; modular blocks. < 12 months build (5 GWh POET live May 2026) | 40-48% TPV discards more than 50% of input electricity; 97% thermal RTE dominates heat above 500 °C. 0.5 km²/GW of blocks + PV land | Owns 500-1,600 °C industrial heat (cement, steel, glass) |
+| Behind-the-meter gas engines / combined cycle + CCS | $70-$85 (unabated); $80-$95 (CCS) | Φ ~ 10². 6-12 months engines / SOFC; 2-4 yr Class VI CCS | 4 yr turbine backlog; methane price and pipeline sabotage. 1.8 km²/GW; vulnerable pipelines | The 2026-2031 fast bridge for hyperscalers |
+| Fission A: large PWR | $185 / $160 / $140 (US); $65-$80 (China) | Φ ~ 1. 7-12 yr West; 5 yr China (63.9 GW Hualong pipeline) | Decay heat and stick-built civil labour in the West; factory build solved in China. 1.2 km²/GW; containment dome | China / Korea / France baseload; cold cratons |
+| Fission B: robotic factory SMR | $145 / $78 / $52 | Φ ~ 10. 4-7 yr West (Darlington C$20.9B+); China Linglong-1 COD 2027 | Irreducible $22-$26/MWh of fuel, QA, armed security and decommissioning. 0.8 km²/GW; bunkerable | Coldest shields (Stockholm, Shield), defence bases, marine |
+| Fusion A: high-field D-T tokamak (CFS) | n/a / $110 / $55 | Φ ~ 1-10. 3-6 yr (NRC Part 30 + tritium handling) | 14.1 MeV first-wall damage, lithium breeding blanket, 20 K HTS magnets, steam plant. 1.2 km²/GW | Cold cratons and megacity cores after 2038 |
+| Fusion B: pulsed FRC (Helion) | n/a / $65 / $35 (post-2034) | Φ ~ 10³. 1-2 yr (NRC Part 30, proposed Feb 2026) | Polaris ran D-T at 13 keV (fusion-to-bremsstrahlung power 0.05 for D-³He); 2.06 at 60 keV (1% C); D-D breeding is not aneutronic; 9.5 × 10⁸ pulses per 30 yr. 0.4 km²/GW | Warehouse point loads after 2035, if bremsstrahlung and > 90% energy recovery clear |
+| Orbital compute (Starmind AI1) | Equivalent $90 / $42 / $22 power; +$216/MWh chip overhead at $30k/kW | Φ ~ 10⁴. 1-2 yr (FCC DA 26-1273: 1M satellites, first by 2033) | 175 kW average on a 160 m² radiator (85 °C at fin efficiency 0.8, zero HBM4 margin); real mass ~19-24 kg/kW; 35% eclipse in 30° LEO; optical link far below NVLink. 0 km² on Earth; vacuum LEO | Asynchronous and batch compute after 2033, once robotic fabs cut chip cost ~10×; growth past 500 TW |
+| Geothermal A: 200-240 °C EGS (Fervo 3.0 class) | $82 / $56 / $42 | Hardware Φ ~ 10⁴; reservoir T ≪ 1. 1-2 yr US federal West; 4-7 yr EU seismic | 12% net efficiency; a 0.137 km³ box sustains 2.3 MWₑ for 30 yr without wider sweep or make-up wells; thief zones (flow scales with aperture cubed). 3.5 km² pad; 137 km³ granite/GW | US West clean firm PPAs in 2026-2031, the commercial bridge that funds superhot |
+| Geothermal B: deep 400-450 °C superhot (`U2` + `U3` to `U6`) | $60 / $34 / $24-$41 | Hardware Φ ~ 10⁴; reservoir T ≪ 1. 2-4 yr (aseismic balanced circulation) | Solved by Pandora (`U3`), thermal chokes (`U4`, enabling `U5`), silica chemistry (`U6`), and 8-12 km monobore (`U2`). 1.1-3 km² pad; 22 km³ granite/GW | The leading clean firm source on Earth: high-latitude winter grids, cold-craton metros, 100-450 °C industrial heat, sovereign bunkers |
+
+## Appendix B: Every call and its date
+
+| Technology | Call | When | Prediction (P) |
+|---|---|---|---|
+| Factory 5-6 km crystalline drilling (`U1`) | **YES** | 2026-2028 | 6 (0.95) |
+| Antora-class 1,800 °C carbon thermal blocks, heat above 500 °C | **YES** on heat | 2026-2030 | |
+| 400-450 °C wellbore, flow control and silica chemistry (`U3`+`U4`+`U6`) | **YES** | 2027-2029 hardware, 2028-2030 field | 7 (0.68), 19 (0.58) |
+| Proof of reservoir longevity lowering the cost of capital (`U7`+`U8`) | **YES** | 2027-2029 | 8 (0.48) |
+| Robotic solar + sodium-ion / iron-air under $35/MWh in the sunbelt | **YES** | 2028-2031 | 10 (0.88) |
+| Superhot reservoir sweep at ≥ 400 °C (`U5`) | **YES** | 2028-2031 | |
+| Optical AI interconnects and 3D compute-in-memory, 30× to 100× less energy per token | **YES** | 2028-2032 | |
+| Deep 8-12 km granite reach at ≤ $15-$20M (`U2`) | **YES** | 2029-2032 | 17 (0.65) |
+| Frankfurt wind + solar + 8h storage + 6% clean-fuel peaker at $53-$62/MWh | **YES** | 2029-2034 | |
+| Orbital compute with split-rail cooling and $3k/kW robotic chip fabs | **YES** | 2032-2036 | 20 (0.58) |
+| Robotic factory small reactors, $52-$69/MWh floor | **YES** | 2032-2038 | |
+| Deep 14 km reach for the cold basins | **YES** | 2040-2045 | 23 (0.55) |
+| Cross-border desert supergrids (Xlinks class) | **NO** | Rejected, above $63-$123/MWh | |
+| Closed-loop conduction geothermal for bulk power (Eavor class) | **NO** on power | District heat only | |
+| Natural "white" hydrogen for baseload electricity | **NO** on power | Wins steel, ammonia, peakers | |
+| Carbon thermal blocks for cheap baseload power | **NO** on power | Power stays $54-$99/MWhₑ | |
+| Pure mm-wave vaporisation to 10 km in wet granite (Quaise) | **NO** | Stalls past 3-5 km | |
+| Commercial Helion D-³He fusion before 2033 | **NO** | 2035-2040 at earliest | 9 (0.22 for any fusion plant by 2032) |
+| Solar-firebrick topping on 200 °C wells, desert LiBr sub-cooling, co-produced hydrogen | **NO** | Stopped by thermodynamics | 15 (0.10), 18 (0.15) |
+
+## Appendix C: Orbital compute from one megawatt to a millionth of the Sun
+
+| Scale | Continuous power | Array and radiator | Orbital mass | Starship flights (150 t) | Verdict |
+|---|---|---|---|---|---|
+| 1. Early Starmind demo (prediction 3) | 1 MWₑ (6 × AI1) | 5,040 m² array, 960 m² radiator (358 K at fin efficiency 0.8) | ~21-25 t at 20-24 kg/kW | 1 | By 2029, thermally pinned at the 358 K memory limit. |
+| 2. First gigawatt cluster | 1 GWₑ (5,700 × AI1) | 4.8 km² array, 0.96 km² radiator | ~20,000-24,000 t | ~135-160 | By 2031-2033, once chip cost is under $5k/kW. |
+| 3. Full US data-centre equivalent | 100 GWₑ | 245-400 km² array, 58 km² split-rail radiator | ~650k-1.0M t at 6.5-10 kg/kW | ~4,300-6,700 | Needs split-rail cooling or film radiators under 0.8 kg/m². |
+| 4. Full Starmind filing (10⁶ AI1) | 175 GWₑ (1 TW needs 5.7M satellites) | 840 km² array, 160 km² radiator | ~3.5-4.2M t | ~23,000-28,000 | Crowding in low orbit forces a move to medium or cislunar orbit, after 2038. |
+| 5. Past the planetary ceiling, to a millionth of the Sun's output | 500 TWₑ to 1.15 × 10⁸ TWₑ | 1.2M to 2.81 × 10¹¹ km² | 3B to 1.41 × 10¹⁴ t | Not from Earth | Self-replicating lunar and Mercurian mines and electromagnetic mass drivers, 2060+. |
+
+## What Zemanium builds.
+
+We are building three of the links in this thesis. [Pandora](https://zemanium.com/#pandora) is the casing joint and string for wells at 450 to 500 °C (`U3`). Downhole flow control (`U4`) is on the [research page](https://zemanium.com/room/). The reservoir scoring record (`U7`) is live as the [Project Red tracker](https://zemanium.com/fervo-project-red), where a registered forecast is scored against the Nevada regulator every month.
+
+The [superhot rock guide](https://zemanium.com/guides/superhot-rock-geothermal) covers what wells above 375 °C have measured so far, and the [papers](https://zemanium.com/papers/) cover the casing record and the design rules for the quench.
+
+If you operate, design or finance hot wells, or you want to argue with a prediction, write to [toni@zemanium.com](mailto:toni@zemanium.com).
+
+## Common questions.
+
+### What is the future of geothermal energy?
+
+In this thesis superhot geothermal becomes the leading source of clean firm power. The full-win scenario is 1,650 GW by 2045, a fifth of the world's electricity and 103 times today's 16 GW fleet (model scenario). The step that gets it there is hotter rock: 400 to 450 °C, reached by wells of 8 to 12 km.
+
+### What is superhot geothermal?
+
+Geothermal power from rock at 400 to 450 °C. A kilogram of fluid from that rock carries about four times the work it carries from today's 200 °C wells, so one pair of wells makes 40 to 55 MW where it now makes about 10.
+
+### Will geothermal be cheaper than solar?
+
+Solar with storage stays the cheapest bulk energy and supplies about half of the world's electricity in 2045, at a realised $20.4 per MWh. Superhot geothermal sells firm power, available in any hour of the year, at $25 to $29 per MWh on good ground and a realised $40 per MWh across the 2045 fleet.
+
+### Geothermal or nuclear for firm power?
+
+The thesis puts factory-built small reactors at $52 per MWh in 2045 and large fission in the United States at $140, against $24 to $41 for superhot geothermal. Prediction 13 gives a probability of 0.60 that geothermal generates more electricity than nuclear fission in a calendar year by 2045.
+
+### How are the predictions scored?
+
+Each of the 23 predictions names a public record that settles it yes or no by a date, and carries a probability. All are scored by Brier score. Predictions 1 to 13 were registered on 26 November 2026, 14 to 22 on 27 November and 23 on 28 November. The first resolves in 2027.
+
+## Cite and reuse.
+
+Text and figures on this page are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite as: Toni Zemani, "Energy After Singularity", Zemanium, 28 November 2026. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/energy-after-singularity
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
 Tracker · Toni Zemani · updated 24 November 2026
 
 # Fervo Project Red: the monthly record against our registered forecast.
@@ -2353,6 +2808,8 @@ The [research page](https://zemanium.com/room/#machines) shows each drawing with
 
 ## Guides and reference.
 
+- [Energy After Singularity](https://zemanium.com/energy-after-singularity): the thesis, with 23 dated and scored predictions
+- [Research papers](https://zemanium.com/papers/): the superhot casing record and the design rules for the quench
 - [What geothermal electricity costs, and what sets the price](https://zemanium.com/guides/geothermal-electricity-cost)
 - [Enhanced geothermal systems: how they work and what limits them](https://zemanium.com/guides/enhanced-geothermal-systems)
 - [Superhot rock geothermal: what happens above 375 °C](https://zemanium.com/guides/superhot-rock-geothermal)
@@ -2407,5 +2864,63 @@ Write to [toni@zemanium.com](mailto:toni@zemanium.com) with what you need to dec
 
 ---
 Source: https://zemanium.com/open/
+Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
+Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
+
+
+Papers · [Toni Zemani](https://zemanium.com/about#toni-zemani) · 28 November 2026
+
+# Research papers.
+
+Two papers on why superhot geothermal wells lose their casing and how to build casing that survives. Both run on pre-registered, time-stamped simulation campaigns, and both ship with the data and code to rerun every number.
+
+Labels travel with the numbers: verified is read in the cited source, SIMULATED is computed in a registered, time-stamped campaign, [MODEL] is computed outside one. Analysis alone does not qualify hardware; the campaigns are the predictions the bench is judged against.
+
+Paper 1 · preprint, version 1
+
+## Multi-break casing failure in superhot wells.
+
+*Multi-break casing failure in superhot (>375 °C) geothermal wells: a 21-well record, a pre-registered replay of IDDP-1, and an open qualification basis.* Toni Zemani, 2026.
+
+- A source-read record of casing outcomes in 21 superhot and high-temperature wells: 7 failed, 10 intact, 2 never cycled, 2 open (verified, read 20 November 2026).
+- Three of the seven failed wells broke at several depths in one thermal event.
+- Ten pre-registered Monte Carlo replays of IDDP-1's production casing put its first break at 292 m; the 2014 video log reads 300 m. In 88 of 128 sampled wells the model reproduces the log (SIMULATED).
+- Two wellhead readings the model was never fitted to land inside their measured bands.
+
+![The superhot well record: highest temperature read at source for each of 21 wells, coloured by casing outcome](https://zemanium.com/assets/papers/superhot-well-record.svg)
+
+Figure 1 of the paper: the 21-well record, read at source on 20 November 2026. The well record is public: [superhot-well-record on GitHub](https://github.com/tonizemani2/superhot-well-record), data and text CC BY 4.0.
+
+Paper 2 · preprint, version 1
+
+## Designing casing for the quench.
+
+*Designing superhot geothermal casing for the quench: travel and capacity rules evaluated in a pre-registered replay of IDDP-1.* Toni Zemani, 2026.
+
+At 450 °C, creep relaxes the compression a casing string builds on heat-up, so a quench loads it in tension by about twice the steel's elastic range. The paper states two design rules for the connections and tests them in IDDP-1's recorded history.
+
+- Travel rule: each connection takes the full quench contraction of its pipe from the creep-relaxed hot state.
+- Capacity rule: the connection stays elastic at the largest force the pipe body can deliver, so when travel runs out the body yields, not the connection.
+- [Pandora](https://zemanium.com/#pandora), a stroke joint meeting both rules, parted no joint in 16 registered replays of IDDP-1; connections that fall well short of the capacity rule part in nearly every replayed well (SIMULATED).
+- Sixteen bench measurements are registered with expected values, acceptance bands and falsifiers, time-stamped before any part exists.
+
+![Stress in a restrained L80 pipe body: compression on heat-up to 450 °C relaxes by creep over the hot hold, then the quench loads the string in tension](https://zemanium.com/assets/papers/quench-load-reversal.svg)
+
+Figure 1 of the paper: the load reversal that governs superhot casing. Cemented stress-free at 60 °C, heated to 450 °C, held 302 days, quenched ([MODEL]).
+
+The argument behind the papers
+
+## Why this is the problem worth solving.
+
+Our thesis, [Energy After Singularity](https://zemanium.com/energy-after-singularity), argues that superhot geothermal becomes the leading source of clean firm power, and that the casing string is one of the links on its critical path. The papers are the engineering record behind that link, and the [Project Red tracker](https://zemanium.com/fervo-project-red) is the live scoring record behind another.
+
+## Read, check, reuse.
+
+Each paper ships as PDF, HTML and DOCX with a deposit of every registration, input, per-well output and score. The PDFs post to Zenodo and EarthArXiv with their DOIs; this page carries each DOI as it goes live. Until then, write to [toni@zemanium.com](mailto:toni@zemanium.com) for a copy.
+
+Text, figures and data CC BY 4.0; deposit code MIT. Corrections to the well record are welcome: a row is only as good as the document behind it. [All open models, records and drawings ](https://zemanium.com/open/)
+
+---
+Source: https://zemanium.com/papers/
 Publisher: Zemanium (https://zemanium.com/). Contact: toni@zemanium.com
 Licence: text and figures CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); code MIT.
